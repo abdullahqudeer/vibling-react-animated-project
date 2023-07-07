@@ -130,7 +130,9 @@ const SignUp = () => {
       .post(`${BASE_URL}/influencer/signup`, payload)
       .then((res) => {
         setSuccess(true);
-        navigate("/successSignUp/" + res.data.referral_code);
+        console.log(res)
+        if(res && res.data.code === 200)
+        navigate("/successSignUp/" + res.data.data.referral_code);
         setInfo({
           city: "",
           country: "",
