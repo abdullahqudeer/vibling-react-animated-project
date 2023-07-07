@@ -1,0 +1,264 @@
+.text-grad{
+  background: transparent
+  linear-gradient(
+    90deg,
+    #b827dc 0%,
+    #a322de 26%,
+    #4190f5 86%,
+    #6bdef8 100%
+  )
+  0% 0% no-repeat padding-box !important;
+  font-size: 32px !important;
+  font-weight: bold !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+.infleunce-tex{
+  font-size: 22px !important;
+  line-height: 1.3;
+  font-weight: 300;
+}
+.home-div {
+  display: flex;
+  max-height: 386px;
+  .leftpart-top {
+    overflow: hidden;
+    .text-div {
+      height: 125px;
+      font-size: 103px;
+    }
+    .influence-div {
+      font-size: 103px;
+      background: transparent
+        linear-gradient(
+          90deg,
+          #b827dc 0%,
+          #a322de 26%,
+          #4190f5 86%,
+          #6bdef8 100%
+        )
+        0% 0% no-repeat padding-box;
+        background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+
+.unleash {
+  animation: slideIn 2s forwards infinite;
+  opacity: 0;
+  animation-delay: 2s;
+}
+.your {
+  animation: slideIn 2.2s forwards infinite;
+  animation-delay: 2.2s;
+  opacity: 0;
+}
+.influence {
+  animation: slideIn 2.4s forwards infinite;
+  animation-delay: 2.4s;
+  opacity: 0;
+}
+@keyframes slidein1 {
+  0% {
+    margin-left: 250px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(30%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0) skew(0, 0);
+  }
+  50%{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.gradient-border1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 67px;
+  // margin-left: 6px;
+  border-radius: 50px;
+  color: white;
+  background: #000000;
+  cursor: pointer !important;
+}
+.box {
+  --border-size: 4px;
+  --border-radius: 50px;
+  --border-angle: 0turn;
+  width: 242px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 600;
+  height: 75px;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #b827dc, #6bdef8);
+  background-size: calc(100% - (var(--border-radius) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  animation: bg-spin 3s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+
+.arrows {
+  width: 40px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke:#4190f5;
+  fill: transparent;
+  stroke-width: 2px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+@media screen and (max-width: 992px) {
+  .home-div {
+    .leftpart-top {
+      .text-div {
+        font-size: 80px;
+      }
+      .influence-div {
+        font-size: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .arrows {
+    position:static;
+  }
+  .text-grad{
+    font-size: 25px !important;
+  }
+  .infleunce-tex{
+    font-size: 20px !important;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}
+@media screen and (max-width: 520px) {
+  .home-div {
+    .leftpart-top {
+      .text-div {
+        font-size: 60px;
+        height: 60px;
+      }
+      .influence-div {
+        font-size: 60px;
+      }
+    }
+   
+  }
+  .tsize {
+    font-size: 2.8rem !important;
+    // margin-top: ;
+  }
+  .tsizeh1 {
+    font-size: 1.5rem !important;
+  }
+  .box{
+    width: 200px !important;
+    height: 60px !important;
+  }
+  .gradient-border1{
+    width: 190px !important;
+    height: 52px !important;
+    margin-top: -56px !important;
+    margin-left: 5.5px !important;
+    font-size: 16px !important;
+  }
+  #gradient-btn{
+    margin-top: 4px !important;
+    margin-left: 0 !important;
+  }
+  .unleash-video{
+    width: 105% !important;
+
+  }
+  .unleash-video-overlay{
+    width: 105% !important;
+  }
+}

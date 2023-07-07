@@ -1,0 +1,72 @@
+.easypay-main-div {
+  margin-bottom: 10rem;
+  .small-text-div {
+    // display: flex;
+    justify-content: end;
+    font-family: "Inter-Regular";
+  }
+  .small-text-div {
+    font-size: 43px;
+  }
+  .easy-div {
+    font-size: 140px;
+    background: transparent
+      linear-gradient(90deg, #b827dc 0%, #a322de 26%, #4190f5 86%, #6bdef8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+}
+.money-div {
+  font-size: 110px;
+  line-height: 110px;
+}
+
+@media screen and (max-width: 992px) {
+  .easypay-main-div {
+    margin-bottom: 6rem;
+
+    .easy-div {
+      font-size: 140px;
+    }
+  }
+  .money-div {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .easypay-main-div {
+    margin-bottom: 4rem;
+    .easy-div {
+      font-size: 100px;
+    }
+    .small-text-div {
+      font-size: 28px;
+    }
+  }
+  .money-div {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+.love-grad{
+  font-family: "Inter-Medium";
+  background: transparent
+    linear-gradient(
+      90deg,
+      #b827dc 0%,
+      #a322de 26%,
+      #4190f5 86%,
+      #6bdef8 100%
+    )
+    0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // animation: slideIn 0.4s forwards ease-in-out;
+  // animation-delay: 0.4s;
+  // opacity: 1;
+  // margin-left: 5/px;
+  font-weight: bolder !important;
+}
