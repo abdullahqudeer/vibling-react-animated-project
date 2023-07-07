@@ -9,14 +9,13 @@ const App = () => {
         <div className="page">
           <div className="page-main">
             <Header />
-            {/* <div className="sticky" style={{ paddingTop: "-74px" }}>
-            <Sidebar />
-          </div> */}
+
+            <div className="jumps-prevent d-md-block d-none"></div>
             <div
-              className="jumps-prevent d-md-block d-none"
-              style={{ paddingTop: "45px" }}
-            ></div>
-            <div className="main-content app-content mt-0" onClick={() => {}}>
+              className="main-content app-content mt-0"
+              style={{ paddingTop: "75px" }}
+              onClick={() => {}}
+            >
               <div className="side-app">
                 <div className="main-container ">
                   <Outlet />

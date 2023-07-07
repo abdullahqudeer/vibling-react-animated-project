@@ -8,6 +8,7 @@ import { BASE_URL } from "../constants/axios";
 import thankyou from "../assets/Images/thankyou.png";
 import countryList from "react-select-country-list";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
+import loadingimg from "../assets/videos/Loading.gif";
 
 const SignUp = () => {
   const [Info, setInfo] = useState();
@@ -15,6 +16,7 @@ const SignUp = () => {
   const [previewSource, setPreviewSource] = useState([]);
   const [mediafiles, setMediaFiles] = useState([]);
   const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
   const search = useLocation().search;
   const rcode = new URLSearchParams(search)?.get("rcode");
   const params = new URLSearchParams();
@@ -41,6 +43,8 @@ const SignUp = () => {
     let temp = Object.assign([], previewSource);
     try {
       if (acceptedFiles.length + previewSource.length < 5) {
+        setLoading(true);
+
         let array = Object.assign([], acceptedFiles);
         for (let i = 0; i < array.length; i++) {
           let formData = new FormData();
@@ -58,6 +62,7 @@ const SignUp = () => {
           temp.push(res.data.url);
         }
         setPreviewSource(temp);
+        setLoading(false);
       }
     } catch (error) {
       console.log(error);
@@ -772,84 +777,89 @@ const SignUp = () => {
                           </Dropzone>
                         </div>
                       </div>
-                      <div className="pt-2 preview">
-                        <p className="text-danger">
-                          {error &&
-                          !previewSource.find((i) => i.value === Info?.photos)
-                            ? "Maximum number of files exceeded!"
-                            : ""}
-                        </p>
+                      {loading ? (
+                        <div className="loading-div mt-3">
+                          <img src={loadingimg} />
+                        </div>
+                      ) : (
+                        <div className="pt-2 preview">
+                          <p className="text-danger">
+                            {error && previewSource.length < 1
+                              ? "Minimum 1 Photos Is Required"
+                              : ""}
+                          </p>
 
-                        {previewSource &&
-                          previewSource?.map((val, index) => {
-                            if (
-                              val.includes(".jpg") ||
-                              val.includes(".jpeg") ||
-                              val.includes(".png")
-                            ) {
-                              return (
-                                <div className="d-flex flex-column align-items-center justify-content-center">
-                                  <img
-                                    src={val}
-                                    className="p-2"
-                                    width={100}
-                                    height={100}
-                                    alt="img"
-                                  />
-                                  <div
-                                    className="px-3 py-1"
-                                    style={{
-                                      border: 1,
-                                      borderColor: "white",
-                                      cursor: "pointer",
+                          {previewSource &&
+                            previewSource?.map((val, index) => {
+                              if (
+                                val.includes(".jpg") ||
+                                val.includes(".jpeg") ||
+                                val.includes(".png")
+                              ) {
+                                return (
+                                  <div className="d-flex flex-column align-items-center justify-content-center">
+                                    <img
+                                      src={val}
+                                      className="p-2"
+                                      width={100}
+                                      height={100}
+                                      alt="img"
+                                    />
+                                    <div
+                                      className="px-3 py-1"
+                                      style={{
+                                        border: 1,
+                                        borderColor: "white",
+                                        cursor: "pointer",
 
-                                      borderStyle: "solid",
-                                      fontSize: 12,
-                                      width: "fit-content",
-                                      borderRadius: 50,
-                                    }}
-                                    onClick={() => {
-                                      console.log(index);
-                                      handleDelete(index);
-                                    }}
-                                  >
-                                    Remove
+                                        borderStyle: "solid",
+                                        fontSize: 12,
+                                        width: "fit-content",
+                                        borderRadius: 50,
+                                      }}
+                                      onClick={() => {
+                                        console.log(index);
+                                        handleDelete(index);
+                                      }}
+                                    >
+                                      Remove
+                                    </div>
                                   </div>
-                                </div>
-                              );
-                            } else {
-                              return (
-                                <div className="d-flex flex-column align-items-center justify-content-center">
-                                  <video
-                                    width={"auto"}
-                                    height={100}
-                                    className="p-2"
-                                    autoPlay
-                                    loop
-                                    playsInline
-                                  >
-                                    <source src={val} type="video/mp4" />
-                                  </video>
-                                  <div
-                                    className="px-3 py-1"
-                                    style={{
-                                      border: 1,
-                                      borderColor: "white",
-                                      cursor: "pointer",
-                                      borderStyle: "solid",
-                                      fontSize: 12,
-                                      width: "fit-content",
-                                      borderRadius: 50,
-                                    }}
-                                    onClick={(index) => handleDelete(index)}
-                                  >
-                                    Remove
+                                );
+                              } else {
+                                return (
+                                  <div className="d-flex flex-column align-items-center justify-content-center">
+                                    <video
+                                      width={"auto"}
+                                      height={100}
+                                      className="p-2"
+                                      autoPlay
+                                      loop
+                                      playsInline
+                                    >
+                                      <source src={val} type="video/mp4" />
+                                    </video>
+                                    <div
+                                      className="px-3 py-1"
+                                      style={{
+                                        border: 1,
+                                        borderColor: "white",
+                                        cursor: "pointer",
+                                        borderStyle: "solid",
+                                        fontSize: 12,
+                                        width: "fit-content",
+                                        borderRadius: 50,
+                                      }}
+                                      onClick={(index) => handleDelete(index)}
+                                    >
+                                      Remove
+                                    </div>
                                   </div>
-                                </div>
-                              );
-                            }
-                          })}
-                      </div>
+                                );
+                              }
+                            })}
+                        </div>
+                      )}
                     </div>
 
                     <div className="footer-btn d-flex justify-content-center mt-3 mb-3 cursor-pointer">

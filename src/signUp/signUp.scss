@@ -96,18 +96,16 @@
       background-repeat: no-repeat;
       height: 100%;
     }
-    .error-class{
-      color:#f62d51;
+    .error-class {
+      color: #f62d51;
       margin-bottom: 0;
-  }
-  
+    }
 
     input[type="checkbox"] {
       padding: 12px 20px;
       color: white !important;
       -webkit-appearance: none;
       appearance: none;
-      // background-image: url("../assets/Images/Googleicon.png");
       margin: 0;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
@@ -242,6 +240,14 @@
             align-items: center;
             img {
               margin-left: 40px;
+            }
+          }
+          .loading-div {
+            display: flex;
+            justify-content: center;
+            img {
+              height: 50px;
+              width: 50px;
             }
           }
           .preview {
@@ -398,10 +404,12 @@
 
 .check-clr:checked {
   filter: none !important;
-  // background-image: url("../assets/Images/Googleicon.png");
 }
 
-.swal2-popup, .swal2-modal, .swal2-icon-error, .swal2-show{
+.swal2-popup,
+.swal2-modal,
+.swal2-icon-error,
+.swal2-show {
   background: black;
   color: white;
   border: 1px solid white;

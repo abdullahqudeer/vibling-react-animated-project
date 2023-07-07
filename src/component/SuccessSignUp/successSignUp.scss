@@ -1,7 +1,5 @@
 .success-sign-up-div {
   height: 100vh;
-  //   background-image: url(../../assets/Images/successSignUp.png);
-  //   background-repeat: no-repeat;
   .content-div {
     text-align: center;
     .thanks-div {
@@ -20,6 +18,12 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media (max-width: 750px) {
+          height: unset;
+        }
+        @media (max-width: 600px) {
+          font-size: 42px;
+        }
       }
     }
     .congrets-div {
@@ -31,6 +35,9 @@
       .unlocked {
         line-height: 26px;
         width: 75%;
+        @media (max-width: 600px) {
+          width: unset;
+        }
       }
       .team {
         font-weight: 500;
@@ -40,6 +47,9 @@
       .friends {
         font-size: 48px;
         font-weight: 600;
+        @media (max-width: 600px) {
+          font-size: 38px;
+        }
         .invite {
           background: transparent
             linear-gradient(
@@ -94,9 +104,8 @@
     }
     .earn-div {
       width: 55%;
-      @media (max-width:800px) {
+      @media (max-width: 800px) {
         width: unset;
-        
       }
       h5 {
         text-align: center;
@@ -134,7 +143,7 @@
       left: 225px;
       bottom: 117px;
     }
-    @media (max-width:900px) {
+    @media (max-width: 900px) {
       display: none;
     }
   }
