@@ -1,3 +1,8 @@
+.main-content {
+  @media (max-width: 600px) {
+    padding-top: 40px !important;
+  }
+}
 .header-main-div {
   .navbar {
     height: 80px;

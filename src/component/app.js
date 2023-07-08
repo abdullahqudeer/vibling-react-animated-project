@@ -13,7 +13,7 @@ const App = () => {
             <div className="jumps-prevent d-md-block d-none"></div>
             <div
               className="main-content app-content mt-0"
-              style={{ paddingTop: "75px" }}
+              style={{ paddingTop: "65px" }}
               onClick={() => {}}
             >
               <div className="side-app">
