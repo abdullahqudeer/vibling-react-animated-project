@@ -3,8 +3,10 @@ import headerLogo from "../../assets/Images/header-logo.svg";
 import "./Header.scss";
 import { RxCross1 } from "react-icons/rx";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate =useNavigate();
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -21,7 +23,7 @@ const Header = () => {
           </div>
 
           <div className={active ? "nav-menu active" : "nav-menu"}>
-            <p className="mx-3 mt-1">For Brand</p>
+            <p className="mx-3 mt-1" onClick={()=> navigate("forbrand")}>For Brand</p>
             <p className="mx-3 mt-1">About Us</p>
             <div className="d-flex justify-content-center">
               <button className="login mx-3 d-flex">Login</button>

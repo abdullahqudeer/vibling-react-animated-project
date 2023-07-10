@@ -10,7 +10,7 @@ const Creativity = () => {
   }, []);
   return (
     <React.Fragment>
-      <div className="  creativity-main-div  mt-5 position-relative">
+      <div className="creativity-main-div  mt-5 position-relative">
         <div className="position-absolute overflow-hidden">
           <video
             className="video unleash-video"

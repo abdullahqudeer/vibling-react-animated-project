@@ -15,48 +15,6 @@ const Branding = () => {
   const navigationNextRef = React.useRef(null);
   return (
     <div className="marquee-div">
-      {/* <Swiper
-        modules={[Navigation, Autoplay]}
-        // spaceBetween={25}
-        loop={true}
-        slidesPerView="auto"
-        speed={1000}
-        autoplay={{
-          delay: 0,
-        }}
-        navigation={{
-          prevEl: navigationPrevRef.current,
-          nextEl: navigationNextRef.current,
-        }}
-        onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = navigationPrevRef.current;
-          swiper.params.navigation.nextEl = navigationNextRef.current;
-        }}
-        breakpoints={{
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 25,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 25,
-          },
-          1200: {
-            slidesPerView: 7,
-            spaceBetween: 30,
-          },
-        }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      > */}
       <Marquee speed={250}>
         <div>
           <img src={zara} />

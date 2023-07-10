@@ -1,18 +1,19 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "./signUp.scss";
 import Dropzone from "react-dropzone";
-import starimg from "../assets/Images/Starimg.png";
-import cameraimg from "../assets/Images/cameraimg.png";
+import starimg from "../../assets/Images/Starimg.png";
+import cameraimg from "../../assets/Images/cameraimg.png";
 import axios from "axios";
-import { BASE_URL } from "../constants/axios";
-import thankyou from "../assets/Images/thankyou.png";
+import { BASE_URL } from "../../constants/axios";
+import thankyou from "../../assets/Images/thankyou.png";
 import countryList from "react-select-country-list";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import loadingimg from "../assets/videos/Loading.gif";
+import loadingimg from "../../assets/videos/Loading.gif";
 
 const SignUp = () => {
   const [Info, setInfo] = useState();
   const [error, setError] = useState(false);
+  console.log(error);
   const [previewSource, setPreviewSource] = useState([]);
   const [mediafiles, setMediaFiles] = useState([]);
   const [success, setSuccess] = useState(false);
@@ -81,10 +82,10 @@ const SignUp = () => {
     e.preventDefault();
     setError(true);
     let payload = {};
-    if (mediafiles?.length > 5) {
-      setError(true);
-      return;
-    }
+    // if (mediafiles?.length > 5) {
+    //   setError(true);
+    //   return;
+    // }
     payload = {
       firstName: Info?.firstName,
       lastName: Info?.lastName,
@@ -177,13 +178,13 @@ const SignUp = () => {
               <div className="inf1-div mb-3">
                 <h1 className="sign-inf">Influence</h1>
               </div>
-              <span className="inf2-div fw-semibold" style={{ fontSize: 22 }}>
+              <p className="inf2-div fw-semibold mb-0" style={{ fontSize: 22 }}>
                 Power of AI-driven matching on Vidbling{" "}
-              </span>
-              <span style={{ fontSize: 18, fontWeight: "normal" }}>
+              </p>
+              <p style={{ fontSize: 18, fontWeight: "normal" }}>
                 where creators like you connect with brands that understand and
                 appreciate your creative vision
-              </span>
+              </p>
             </div>
           </div>
           {success && (
@@ -874,7 +875,7 @@ const SignUp = () => {
                           <button
                             onClick={handleSubmit}
                             style={{
-                              fontSize: 24,
+                              fontSize: 24, 
                               fontWeight: "600",
                               position: "absolute",
                               paddingTop: 0,
