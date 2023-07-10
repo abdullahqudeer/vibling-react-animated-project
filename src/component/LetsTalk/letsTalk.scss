@@ -1,0 +1,72 @@
+.talk-main-div {
+  background-image: url(../../assets/Images/brandbgImg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .talk-content {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 323px;
+      height: 360px;
+    }
+    h2 {
+      margin-top: 10px;
+      width: 800px;
+      text-align: center;
+      font-size: 64px;
+      font-weight: 700;
+      background: transparent
+        linear-gradient(
+          90deg,
+          #b827dc 0%,
+          #a322de 26%,
+          #4190f5 86%,
+          #6bdef8 100%
+        )
+        0% 0% no-repeat padding-box;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .btn-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent
+        linear-gradient(
+          90deg,
+          #b827dc 0%,
+          #a322de 26%,
+          #4190f5 86%,
+          #6bdef8 100%
+        )
+        0% 0% no-repeat padding-box;
+      border-radius: 50em;
+      cursor: pointer;
+
+      width: 260px;
+      height: 70px;
+
+      .gt-demo {
+        background: black;
+        border: none;
+        border-radius: 50em;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 60px;
+      }
+    }
+  }
+}

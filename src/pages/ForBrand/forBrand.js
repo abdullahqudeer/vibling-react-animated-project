@@ -1,20 +1,24 @@
-import React from 'react'
-import BrandSuccess from '../../component/BrandSuccess/BrandSuccess'
-import BestBrand from '../../component/BestBrand/BestBrand'
-import Branding from '../../component/Branding/Branding'
-import Webs from '../../component/Webs/Webs'
+import React from "react";
+import BrandSuccess from "../../component/BrandSuccess/BrandSuccess";
+import BestBrand from "../../component/BestBrand/BestBrand";
+import Branding from "../../component/Branding/Branding";
+import Webs from "../../component/Webs/Webs";
+import LetsTalk from "../../component/LetsTalk/letsTalk";
+import OurEnvironment from "../../component/OurEnvironment/ourEnvironment";
 
 const ForBrand = () => {
   return (
-   <React.Fragment>
+    <React.Fragment>
       <div className="brand-main-div">
-     <BrandSuccess/>
-     <BestBrand />
-     <Branding/>
-    <Webs/>
+        <BrandSuccess />
+        <BestBrand />
+        <Branding />
+        <Webs />
+        <OurEnvironment/>
+        <LetsTalk/>
       </div>
-   </React.Fragment>
-  )
-}
+    </React.Fragment>
+  );
+};
 
-export default ForBrand
+export default ForBrand;
