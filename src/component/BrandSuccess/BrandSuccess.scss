@@ -36,8 +36,11 @@
     .right-part {
       .images-div {
         img {
-          // width: 382px;
           height: 225px;
+        }
+        .polygon-img {
+          position: absolute;
+          bottom: -220px;
         }
       }
       .iphone-div {
@@ -50,8 +53,8 @@
             z-index: 9;
             margin-left: 28px;
             img {
-              width: 215px;
-              height: 450px;
+              width: 175px;
+              height: 410px;
               border-radius: 32px;
             }
           }
@@ -59,8 +62,8 @@
             position: absolute;
             z-index: 999;
             img {
-              width: 270px;
-              height: 450px;
+              width: 230px;
+              height: 410px;
             }
           }
         }
@@ -73,8 +76,8 @@
             z-index: 9;
             margin-left: 28px;
             img {
-              width: 215px;
-              height: 450px;
+              width: 185px;
+              height: 400px;
               border-radius: 32px;
             }
           }
@@ -82,9 +85,13 @@
             position: absolute;
             z-index: 999;
             img {
-              width: 270px;
-              height: 450px;
+              width: 240px;
+              height: 400px;
             }
+          }
+          .poly-img {
+            margin-top: 50px;
+            margin-left: 20px;
           }
         }
       }

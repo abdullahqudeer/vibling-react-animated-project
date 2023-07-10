@@ -5,6 +5,9 @@ import Branding from "../../component/Branding/Branding";
 import Webs from "../../component/Webs/Webs";
 import LetsTalk from "../../component/LetsTalk/letsTalk";
 import OurEnvironment from "../../component/OurEnvironment/ourEnvironment";
+import Explode from "../../component/Explode/Explode";
+import Brilliance from "../../component/Brilliance/Brilliance";
+import Services from "../../component/Services/Services";
 
 const ForBrand = () => {
   return (
@@ -16,6 +19,9 @@ const ForBrand = () => {
         <Webs />
         <OurEnvironment/>
         <LetsTalk/>
+        <Explode />
+        <Brilliance/>
+        <Services/>
       </div>
     </React.Fragment>
   );
