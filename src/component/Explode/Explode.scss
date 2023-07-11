@@ -53,32 +53,33 @@
     height: 100vh;
     position: relative;
 
-    .rocket-img {
-      position: absolute;
-      left: 110px;
-      top: -122px;
-      z-index: 0;
+ 
 
-      img {
-        height: 450px;
-      }
-    }
-
-    .fire-img {
-      position: absolute;
-      right: 100px;
-      bottom: 70px;
-      z-index: 0;
-      img {
-        height: 390px;
-      }
-    }
+   
     .iphone-div {
-      // position: absolute;
-      
-      img {
+      position: relative;
+      .rocket-img {
+        position: absolute;
+        left: 110px;
+        top: -122px;
+        z-index: 0;
+  
+        img {
+          height: 450px;
+        }
+      }
+      .mobile {
         z-index: 1;
         width: 660px;
+      }
+      .fire-img {
+        position: absolute;
+        right: 100px;
+        bottom: -85px;
+        z-index: 0;
+        img {
+          height: 390px;
+        }
       }
     }
   }
@@ -92,14 +93,22 @@
   }
 }
 @keyframes rockerMove {
-  from {left: 110px;
-    top: -122px;}
-  to {left: -60px;
-    top: -220px;}
+  from {
+    left: 110px;
+    top: -122px;
+  }
+  to {
+    left: -60px;
+    top: -220px;
+  }
 }
 @keyframes fireMove {
-  from { right: 100px;
-    bottom: 70px;}
-  to {    right: -10px;
-    bottom: -25px;}
+  from {
+    right: 100px;
+    bottom: -85px;
+  }
+  to {
+    right: 55px;
+    bottom: -130px;
+  }
 }
