@@ -9,15 +9,11 @@
   .phone-pic {
     height: 520px;
     position: absolute;
-
-    // width: 100%;
     z-index: 999;
   }
   .phone-pic1 {
     height: 520px;
     position: absolute;
-
-    // width: 100%;
     z-index: 999;
     video {
       width: 245px;
@@ -28,7 +24,6 @@
     }
   }
   .swiper-wrapper {
-    // display: flex;
     padding: 0 10px 0 10px;
     margin: 0 !important;
   }
@@ -40,7 +35,6 @@
   }
   .back-div {
     position: absolute;
-    // width: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -55,7 +49,6 @@
         rgba(0, 0, 0, 0.7)
       );
       width: 260px;
-      // margin-left: 1;
       padding-left: 10px;
       padding-right: 10px;
 

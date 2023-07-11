@@ -38,10 +38,7 @@ const EasyPay = () => {
   return (
     <>
       <div className="d-flex justify-content-center ">
-        {/* <div data-aos="fade-up" className="money-div">$2000</div>
-        <div data-aos="fade-down" className="money-div">00.00</div> */}
         <div className="money-div">${count}.</div>
-
         <div style={{ width: 150 }} className="money-div">
           {count1}
         </div>

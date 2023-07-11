@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./Subscription.scss";
 import secondPhone from "../../assets/Images/secondPhone.png";
-
 import subvideo0 from "../../assets/videos/Untitled design_4.mp4";
 import subvideo1 from "../../assets/videos/Untitled design.mp4";
 import subvideo2 from "../../assets/videos/Untitled design_3.mp4";

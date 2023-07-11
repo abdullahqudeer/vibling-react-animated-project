@@ -1,6 +1,6 @@
 import React from "react";
 import "./letsTalk.scss";
-import starImg from "../../assets/Images/logo.svg";
+import starImg from "../../assets/videos/Vidbling.gif";
 
 const LetsTalk = () => {
   return (

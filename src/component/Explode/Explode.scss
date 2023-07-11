@@ -52,10 +52,7 @@
   .images-div {
     height: 100vh;
     position: relative;
-
     text-align: center;
-
-   
     .iphone-div {
       position: relative;
       .rocket-img {
@@ -63,7 +60,7 @@
         left: 110px;
         top: -122px;
         z-index: 0;
-  
+
         img {
           height: 450px;
         }
@@ -109,6 +106,6 @@
   }
   to {
     right: 180px;
-    bottom: -140px
+    bottom: -140px;
   }
 }

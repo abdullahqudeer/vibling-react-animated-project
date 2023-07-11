@@ -13,7 +13,6 @@ import loadingimg from "../../assets/videos/Loading.gif";
 const SignUp = () => {
   const [Info, setInfo] = useState();
   const [error, setError] = useState(false);
-  console.log(error);
   const [previewSource, setPreviewSource] = useState([]);
   const [mediafiles, setMediaFiles] = useState([]);
   const [success, setSuccess] = useState(false);
@@ -59,7 +58,6 @@ const SignUp = () => {
               },
             }
           );
-          console.log(res);
           temp.push(res.data.url);
         }
         setPreviewSource(temp);
@@ -125,13 +123,11 @@ const SignUp = () => {
         },
       ],
     };
-    console.log(payload);
 
     axios
       .post(`${BASE_URL}/influencer/signup`, payload)
       .then((res) => {
         setSuccess(true);
-        console.log(res)
         if(res && res.data.code === 200)
         navigate("/successSignUp/" + res.data.data.referral_code);
         setInfo({
@@ -821,7 +817,6 @@ const SignUp = () => {
                                         borderRadius: 50,
                                       }}
                                       onClick={() => {
-                                        console.log(index);
                                         handleDelete(index);
                                       }}
                                     >

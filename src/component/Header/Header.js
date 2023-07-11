@@ -15,7 +15,9 @@ const Header = () => {
     <React.Fragment>
       <div className="header-main-div">
         <nav className="navbar">
-          <h1 className="navbar-logo">
+          <h1 className="navbar-logo" onClick={()=>{
+            navigate("/")
+          }}>
             <img src={headerLogo} />
           </h1>
           <div className="menu-icon" onClick={handleClick}>

@@ -6,8 +6,6 @@ import target from "../../assets/Images/target.svg";
 import jockey from "../../assets/Images/jockey.svg";
 import marks from "../../assets/Images/marks.svg";
 import "./Branding.scss";
-import { Autoplay, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Marquee from "react-fast-marquee";
 
 const Branding = () => {
@@ -53,12 +51,6 @@ const Branding = () => {
           <img src={marks} />
         </div>
       </Marquee>
-      {/* <div
-          ref={navigationNextRef}
-          className={"swiper-button-next text-3xl"}
-        />
-        <div ref={navigationPrevRef} className={"swiper-button-prev"} /> */}
-      {/* </Swiper> */}
     </div>
   );
 };
