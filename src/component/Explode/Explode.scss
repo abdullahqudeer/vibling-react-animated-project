@@ -53,7 +53,7 @@
     height: 100vh;
     position: relative;
 
- 
+    text-align: center;
 
    
     .iphone-div {
@@ -70,11 +70,11 @@
       }
       .mobile {
         z-index: 1;
-        width: 660px;
+        position: inherit;
       }
       .fire-img {
         position: absolute;
-        right: 100px;
+        right: 260px;
         bottom: -85px;
         z-index: 0;
         img {
@@ -98,17 +98,17 @@
     top: -122px;
   }
   to {
-    left: -60px;
-    top: -220px;
+    left: -10px;
+    top: -200px;
   }
 }
 @keyframes fireMove {
   from {
-    right: 100px;
+    right: 260px;
     bottom: -85px;
   }
   to {
-    right: 55px;
-    bottom: -130px;
+    right: 180px;
+    bottom: -140px
   }
 }

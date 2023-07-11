@@ -4,8 +4,8 @@ import starImg from "../../assets/Images/logo.svg";
 
 const LetsTalk = () => {
   return (
-    <div className="talk-main-div container">
-      <div className="talk-content d-flex j ustify-content-center align-items-center">
+    <div className="talk-main-div">
+      <div className="talk-content container d-flex j ustify-content-center align-items-center">
         <img src={starImg} />
         <h2>Want to see it in action? Let's Talk</h2>
         <p className="desc pt-3">

@@ -29,7 +29,7 @@ const Explode = () => {
         <div className="images-div my-5">
         
 
-          <div className="iphone-div d-flex justify-content-center">
+          <div className="iphone-div">
           <div className="rocket-img">
             <img src={Rocket} alt="Rocket" />
           </div>
