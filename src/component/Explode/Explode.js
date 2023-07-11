@@ -3,9 +3,8 @@ import "./Explode.scss";
 import Rocket from "../../assets/Images/rocket.png";
 import Fire from "../../assets/Images/fire.png";
 import secondPhone from "../../assets/Images/secondPhone.png";
-import image1 from "../../assets/Images/image1.png";
-import image2 from "../../assets/Images/image2.png";
-import image3 from "../../assets/Images/image3.png";
+
+import ArtWork from "../../assets/Images/Artwork.png"
 
 const Explode = () => {
   return (
@@ -27,42 +26,13 @@ const Explode = () => {
             <button className="top-btn">Learn More</button>
           </div>
         </div>
-        <div className="images-div d-flex justify-content-start my-5">
-          <div className="rocket-img d-flex justify-content-start align-items-start">
+        <div className="images-div my-5">
+          <div className="rocket-img">
             <img src={Rocket} alt="Rocket" />
           </div>
 
           <div className="iphone-div d-flex justify-content-center">
-            <div className="first-div">
-              <div className="phone-div">
-                <div className="align-self-center phone-pic1">
-                  <img src={image1} alt="iphoneImg" />
-                </div>
-              </div>
-              <div className="align-self-center phone-pic position-relative">
-                <img src={secondPhone} alt="img" className="top-0 px-3 img" />
-              </div>
-            </div>
-            <div className="second-div">
-              <div className="phone-div">
-                <div className="align-self-center phone-pic2 d-flex justify-content-center">
-                  <img src={image2} />
-                </div>
-              </div>
-              <div className="align-self-center phone-picc position-relative">
-                <img src={secondPhone} alt="img" className="top-0 px-3 img" />
-              </div>
-            </div>
-            <div className="third-div">
-              <div className="phone-div">
-                <div className="align-self-center phone-pic1 d-flex justify-content-center">
-                  <img src={image3} />
-                </div>
-              </div>
-              <div className="align-self-center phone-pic position-absolute">
-                <img src={secondPhone} alt="img" className="top-0 px-3 img" />
-              </div>
-            </div>
+            <img src={ArtWork}/>
           </div>
 
           <div className="fire-img d-flex align-items-end justify-content-end">

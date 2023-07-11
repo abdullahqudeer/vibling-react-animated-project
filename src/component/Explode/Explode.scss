@@ -33,10 +33,8 @@
       0% 0% no-repeat padding-box;
     border-radius: 50em;
     cursor: pointer;
-
     width: 260px;
     height: 70px;
-
     .top-btn {
       background: black;
       border: none;
@@ -52,71 +50,56 @@
     }
   }
   .images-div {
+    height: 100vh;
+    position: relative;
+
     .rocket-img {
-      top: -220px;
-      position: relative;
+      position: absolute;
+      left: 110px;
+      top: -122px;
+      z-index: 0;
+
       img {
         height: 450px;
       }
     }
+
     .fire-img {
-      position: relative;
-      bottom: -130px;
+      position: absolute;
+      right: 100px;
+      bottom: 70px;
+      z-index: 0;
       img {
         height: 390px;
       }
     }
- 
-  .iphone-div {
-    .phone-pic1 {
-      position: absolute;
-      z-index: 9;
-      margin-left: 28px;
+    .iphone-div {
+      // position: absolute;
+      
       img {
-        width: 180px;
-        height: 380px;
-        border-radius: 32px;
+        z-index: 1;
+        width: 660px;
       }
     }
-    .phone-pic {
-      position: absolute;
-      z-index: 999;
-      img {
-        width: 230px;
-        height: 380px;
-      }
+  }
+  .images-div:hover {
+    .rocket-img {
+      animation: rockerMove 1s 1;
     }
-    .first-div {
-      margin-left: -210px;
-      margin-top: 60px;
-    }
-    .second-div {
-      margin-left: -95px;
-      z-index: 9999999;
-      margin-top: 25px;
-      .phone-pic2 {
-        position: absolute;
-        z-index: 9;
-        margin-left: 28px;
-        img {
-          width: 215px;
-          height: 440px;
-          border-radius: 32px;
-        }
-      }
-      .phone-picc {
-        position: absolute;
-        z-index: 999;
-        img {
-          width: 270px;
-          height: 440px;
-        }
-      }
-    }
-    .third-div {
-      margin-left: -97px;
-      margin-top: 60px;
+    .fire-img {
+      animation: fireMove 1s 1;
     }
   }
 }
+@keyframes rockerMove {
+  from {left: 110px;
+    top: -122px;}
+  to {left: -60px;
+    top: -220px;}
+}
+@keyframes fireMove {
+  from { right: 100px;
+    bottom: 70px;}
+  to {    right: -10px;
+    bottom: -25px;}
 }

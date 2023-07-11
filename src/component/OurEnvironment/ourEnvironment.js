@@ -4,7 +4,7 @@ import "./ourEnvironment.scss";
 
 const OurEnvironment = () => {
   return (
-    <div className="environment-main-div container mb-5">
+    <div className="environment-main-div container my-5 py-5">
       <div className="first-div d-flex">
         <div className="left-part">
           <span>Customized Campaigns</span>

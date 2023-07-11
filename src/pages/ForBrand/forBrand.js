@@ -17,11 +17,11 @@ const ForBrand = () => {
         <BestBrand />
         <Branding />
         <Webs />
-        <OurEnvironment/>
-        <LetsTalk/>
         <Explode />
-        <Brilliance/>
-        <Services/>
+        <Brilliance />
+        <Services />
+        <OurEnvironment />
+        <LetsTalk />
       </div>
     </React.Fragment>
   );

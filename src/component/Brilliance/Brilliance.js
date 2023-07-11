@@ -11,7 +11,7 @@ const Brilliance = () => {
   return (
 <React.Fragment>
     <div className='brilliance-main-div container my-5 py-5'>
-    <div className="title-div d-flex justify-content-center mt-5 pt-5">
+    <div className="title-div d-flex justify-content-center">
           <h2 className="title">Targeted Brilliance</h2>
         </div>
         <div className="desc-div mt-3">
