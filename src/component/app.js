@@ -8,12 +8,11 @@ const App = () => {
       <div className="horizontalMenucontainer">
         <div className="page">
           <div className="page-main">
-            <Header />
 
             <div className="jumps-prevent d-md-block d-none"></div>
             <div
               className="main-content app-content mt-0"
-              style={{ paddingTop: "65px" }}
+              // style={{ paddingTop: "65px" }}
               onClick={() => {}}
             >
               <div className="side-app">

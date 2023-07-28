@@ -1,8 +1,10 @@
 import React from "react";
 import "./Brilliance.scss";
 import Analytics from "../../assets/Images/Analytics.png";
-import ArtWork from "../../assets/Images/Artwork.png";
 import Target from "../../assets/Images/Target.png";
+import rightPhone from "../../assets/Images/Right Phone.png";
+import midlePhone from "../../assets/Images/Middle Phone.png";
+import leftPhone from "../../assets/Images/Left Phone.png";
 
 const Brilliance = () => {
   return (
@@ -25,17 +27,22 @@ const Brilliance = () => {
             <button className="top-btn">Learn More</button>
           </div>
         </div>
-        <div className="images-div my-5 py-5">
+        <div className="images-div my-5">
           <div className="iphone-div">
             <div className="analytics-img">
-              <img src={Analytics} alt="Analytics" />
+              <img src={Analytics} alt="Rocket" width={390} />
             </div>
-            <img src={ArtWork} className="work" />
-            <div className="target-img d-flex align-items-start justify-content-end">
-              <img src={Target} alt="Target" />
+            <div className="mobil-div d-flex justify-content-center">
+            <img src={leftPhone} className="left-mobile mb-4" height={563} />
+            <img src={midlePhone} className="mobile" height={659} />
+            <img src={rightPhone} className="right-mobile mb-4" height={563} />
+            </div>
+            <div className="target-img d-flex align-items-end justify-content-end">
+              <img src={Target} alt="Fire" width={339} />
             </div>
           </div>
         </div>
+
       </div>
     </React.Fragment>
   );

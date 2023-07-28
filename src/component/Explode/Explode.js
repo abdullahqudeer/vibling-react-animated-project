@@ -2,9 +2,11 @@ import React from "react";
 import "./Explode.scss";
 import Rocket from "../../assets/Images/rocket.png";
 import Fire from "../../assets/Images/fire.png";
-import secondPhone from "../../assets/Images/secondPhone.png";
+import rightPhone from "../../assets/Images/Right Phone (1).png";
+import midlePhone from "../../assets/Images/Middle Phone (1).png";
+import leftPhone from "../../assets/Images/Left Phone (1).png";
 
-import ArtWork from "../../assets/Images/Artwork.png"
+import ArtWork from "../../assets/Images/Artwork.png";
 
 const Explode = () => {
   return (
@@ -28,16 +30,18 @@ const Explode = () => {
         </div>
         <div className="images-div my-5">
           <div className="iphone-div">
-          <div className="rocket-img">
-            <img src={Rocket} alt="Rocket" />
-          </div>
-            <img src={ArtWork} className="mobile"/>
+            <div className="rocket-img">
+              <img src={Rocket} alt="Rocket" width={677} />
+            </div>
+            <div className="mobil-div d-flex justify-content-center align-items-end">
+            <img src={leftPhone} className="left-mobile mb-4" height={563} />
+            <img src={midlePhone} className="mobile" height={659} />
+            <img src={rightPhone} className="right-mobile mb-4" height={563} />
+            </div>
             <div className="fire-img d-flex align-items-end justify-content-end">
-            <img src={Fire} alt="Fire" />
+              <img src={Fire} alt="Fire" width={500} />
+            </div>
           </div>
-          </div>
-
-         
         </div>
       </div>
     </React.Fragment>

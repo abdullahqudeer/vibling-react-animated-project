@@ -7,12 +7,14 @@ import LetsTalk from "../../component/LetsTalk/letsTalk";
 import OurEnvironment from "../../component/OurEnvironment/ourEnvironment";
 import Explode from "../../component/Explode/Explode";
 import Brilliance from "../../component/Brilliance/Brilliance";
-import Services from "../../component/Services/Services";
+import Services from "../../component/Services/Services1";
+import Header from "../../component/Header/Header";
 
 const ForBrand = () => {
   return (
     <React.Fragment>
       <div className="brand-main-div">
+        <Header/>
         <BrandSuccess />
         <BestBrand />
         <Branding />

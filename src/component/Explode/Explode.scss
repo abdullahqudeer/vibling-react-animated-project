@@ -53,17 +53,24 @@
     height: 100vh;
     position: relative;
     text-align: center;
+    transition: transform 0.3s ease;
     .iphone-div {
       position: relative;
+
       .rocket-img {
         position: absolute;
-        left: 110px;
-        top: -122px;
-        z-index: 0;
-
-        img {
-          height: 450px;
-        }
+        left: 140px;
+        top: -110px;
+        z-index: -999;
+        transition: transform 0.3s ease;
+      }
+      .left-mobile {
+        margin-right: -390px;
+        transition: transform 0.3s ease;
+      }
+      .right-mobile {
+        margin-left: -390px;
+        transition: transform 0.3s ease;
       }
       .mobile {
         z-index: 1;
@@ -71,21 +78,26 @@
       }
       .fire-img {
         position: absolute;
-        right: 260px;
-        bottom: -85px;
-        z-index: 0;
-        img {
-          height: 390px;
-        }
+        right: 350px;
+        bottom: -10px;
+        z-index: -999;
+        transition: transform 0.3s ease;
+     
       }
     }
   }
-  .images-div:hover {
+  .iphone-div:hover {
     .rocket-img {
-      animation: rockerMove 1s 1;
+      transform: translate(-170px, -200px);
     }
     .fire-img {
-      animation: fireMove 1s 1;
+      transform: translate(220px, 105px);
+    }
+    .left-mobile {
+      transform: translateX(50px);
+    }
+    .right-mobile {
+      transform: translateX(-50px);
     }
   }
 }

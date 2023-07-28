@@ -14,17 +14,19 @@ import EasyPay from "../../component/EasyPay/EasyPay";
 import Subscription from "../../component/Subscription/Subscription";
 import InfluencerShop from "../../component/InfluencerShop/InfluencerShop";
 import Features from "../../component/Features/Features";
+import GetStartedStep from "../../component/GetStartedStep/GetStartedStep";
+import Header from "../../component/Header/Header";
 
 const Home = () => {
   return (
-    <>
+    <div>
+      <Header isname={true} />
       <div className="home-main-div container">
         <Unleash />
       </div>
-<div className="brand-div">
-
-      <Branding />
-</div>
+      <div className="brand-div">
+        <Branding />
+      </div>
       <InfluencerShop />
       <div className="home-main-div container">
         <Passion />
@@ -33,18 +35,20 @@ const Home = () => {
       <Creativity />
       <div className="home-main-div container">
         <EasyPay />
-
         <Subscription />
       </div>
       <Features />
       <div className="home-main-div container">
         <Thrive />
         <StarsImage />
-        <Charlie />
-        <JoinNow />
-        <Footer />
       </div>
-    </>
+      <GetStartedStep />
+      <div className="home-main-div container">
+        <Charlie />
+        <JoinNow /> 
+        <Footer /> 
+      </div>
+    </div>
   );
 };
 

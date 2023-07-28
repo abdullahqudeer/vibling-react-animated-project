@@ -5,9 +5,11 @@
   .talk-content {
     display: flex;
     flex-direction: column;
-    img {
-    height: 500px;
-    }
+    transition: transform 0.6s ease;
+
+    // .logo {
+    // height: 500px;
+    // }
     h2 {
       margin-top: 10px;
       width: 800px;
@@ -67,5 +69,39 @@
         height: 60px;
       }
     }
+   
+    .polygon-left{
+      position: absolute;
+      top: 136px;
+      left: 338px;
+    transition: transform 0.6s ease;
+
+    }
+    .logo{
+      position: absolute;
+      bottom: 363px;
+    transition: transform 0.6s ease;
+
+    }
+    .polygon-right{
+      position: absolute;
+      top: 90px;
+      right: 317px;
+    transition: transform 0.6s ease;
+
+    }
+
+    &:hover{
+     .polygon-left{
+        transform: translate(-500px,170px);
+     }
+     .logo{
+      transform: rotate(-135deg);
+     }
+     .polygon-right{
+      transform: translate(420px,60px);
+     }
+    }
+
   }
 }

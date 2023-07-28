@@ -9,46 +9,44 @@ import "./Branding.scss";
 import Marquee from "react-fast-marquee";
 
 const Branding = () => {
-  const navigationPrevRef = React.useRef(null);
-  const navigationNextRef = React.useRef(null);
   return (
     <div className="marquee-div">
-      <Marquee speed={250}>
+      <Marquee speed={400} pauseOnHover>
         <div>
-          <img src={zara} />
+          <img src={zara} alt="brands" />
         </div>
         <div>
-          <img src={esprit} />
+          <img src={esprit} alt="brands" />
         </div>
         <div>
-          <img src={mango} />
+          <img src={mango} alt="brands" />
         </div>
         <div>
-          <img src={target} />
+          <img src={target} alt="brands" />
         </div>
         <div>
-          <img src={jockey} />
+          <img src={jockey} alt="brands" />
         </div>
         <div>
-          <img src={marks} />
+          <img src={marks} alt="brands" />
         </div>
         <div>
-          <img src={zara} />
+          <img src={zara} alt="brands" />
         </div>
         <div>
-          <img src={esprit} />
+          <img src={esprit} alt="brands" />
         </div>
         <div>
-          <img src={mango} />
+          <img src={mango} alt="brands" />
         </div>
         <div>
-          <img src={target} />
+          <img src={target} alt="brands" />
         </div>
         <div>
-          <img src={jockey} />
+          <img src={jockey} alt="brands" />
         </div>
         <div>
-          <img src={marks} />
+          <img src={marks} alt="brands" />
         </div>
       </Marquee>
     </div>
