@@ -82,8 +82,9 @@ const GetStartedStep = () => {
                     style={{
                       position: "absolute",
                       height: 575,
-                      left: "-160px",
+                      left: "-0px",
                       top: y1,
+                      width: "100%",
                       opacity: o2,
                     }}
                     src={pic2}
@@ -122,8 +123,9 @@ const GetStartedStep = () => {
                     style={{
                       position: "absolute",
                       height: 575,
-                      left: "-160px",
+                      left: "0px",
                       top: y4,
+                      width: "100%",
                     }}
                     src={pic5}
                     alt=""

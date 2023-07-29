@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./JoinNow.scss";
 import { useNavigate } from "react-router-dom";
 import Aos from "aos";
+import mac from "../../assets/Images/mac_img.png";
 
 const JoinNow = () => {
   const navigate = useNavigate();
@@ -35,6 +36,9 @@ const JoinNow = () => {
         >
           Vidbling: Empowering Creators, Inspiring Success!
         </p>
+        <div data-aos="fade-up" className="d-flex justify-content-center">
+          <img style={{ width: "100%" }} src={mac} />
+        </div>
         <div data-aos="fade-up" className="mt-4">
           <div className="box position-relative"></div>
           <div

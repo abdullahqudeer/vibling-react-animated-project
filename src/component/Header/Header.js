@@ -36,7 +36,13 @@ const Header = (props) => {
               </>
             ) : (
               <>
-                <p className="mx-3 mt-1">For Creator</p>
+                <p
+                  className="mx-3 mt-1"
+                  style={{ zIndex: 9999999 }}
+                  onClick={() => navigate("/")}
+                >
+                  For Creator
+                </p>
               </>
             )}
             <p className="mx-3 mt-1">About Us</p>
