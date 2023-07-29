@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import phoneFrame from "../../assets/Images/secondPhone.png";
-import pic1 from "../../assets/Images/environment1.png";
-import pic2 from "../../assets/Images/environment2.png";
-import pic3 from "../../assets/Images/environment3.png";
+import pic1 from "../../assets/Images/OurEnvironment1.png";
+import pic3 from "../../assets/Images/OurEnvironment2.png";
 
 import "./ourEnvironment.scss";
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -16,26 +15,20 @@ const OurEnvironment = () => {
 
   const y1 = useTransform(
     scrollYProgress,
-    [0.5, 0.6, 1],
-    ["70vh", "0vh", "0vh"]
-  );
-  const y2 = useTransform(
-    scrollYProgress,
-    [0.8, 0.9, 1],
-    ["70vh", "0vh", "0vh"]
+    [0.6, 0.9, 1],
+    ["100vh", "0vh", "0vh"]
   );
 
-  const o1 = useTransform(scrollYProgress, [0.0, 0.45, 0.52, 1], [1, 1, 0, 0]);
-  const o2 = useTransform(scrollYProgress, [0.0, 0.75, 0.82, 1], [1, 1, 0, 0]);
+  const o1 = useTransform(scrollYProgress, [0.0, 0.6, 0.9, 1], [1, 1, 0, 0]);
 
   return (
     <div
       ref={targetRef}
-      style={{ height: "300vh", paddingTop: 100, position: "relative" }}
+      style={{ height: "200vh", position: "relative" }}
       className="bg-environment"
     >
       <div
-        style={{ height: "100vh", position: "sticky", top: 0 }}
+        style={{ height: "100vh", paddingTop: 200, position: "sticky", top: 0 }}
         className="d-flex justify-content-center align-items-center stick "
       >
         <div
@@ -64,20 +57,7 @@ const OurEnvironment = () => {
             </div>
             <div>
               <motion.img
-                style={{
-                  position: "absolute",
-                  height: 540,
-                  left: 2,
-                  top: y1,
-                  opacity: o2,
-                }}
-                src={pic2}
-                alt=""
-              />
-            </div>
-            <div>
-              <motion.img
-                style={{ position: "absolute", height: 540, left: 2, top: y2 }}
+                style={{ position: "absolute", height: 540, left: 2, top: y1 }}
                 src={pic3}
                 alt=""
               />
@@ -89,27 +69,20 @@ const OurEnvironment = () => {
             className="left-part"
           >
             <span>Customized Campaigns</span>
-            <p>
+            <p className="mt-4">
               Tailor your influencer campaigns to align with your specific goals
               and resonate with your audience.
             </p>
           </motion.div>
           <motion.div
-            style={{ position: "absolute", opacity: o2, top: y1 }}
-            className="second-right-part"
-          >
-            <span>Seamless Integration</span>
-            <p>
-              Effortlessly integrate Vidbling with your existing marketing stack
-              for streamlined workflows.
-            </p>
-          </motion.div>
-          <motion.div
-            style={{ position: "absolute", top: y2 }}
+            style={{ position: "absolute", top: y1 }}
             className="third-left-part"
           >
-            <span>Targeted Audience Segmentation</span>
-            <p>
+            <span>
+              Targeted <br />
+              Audience Segmentation
+            </span>
+            <p className="mt-4">
               Identify and connect with niche audiences that align with your
               brand for enhanced campaign effectiveness.
             </p>

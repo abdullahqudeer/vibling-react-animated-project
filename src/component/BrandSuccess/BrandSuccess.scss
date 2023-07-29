@@ -75,7 +75,15 @@
           transition: transform 0.4s ease;
         }
       }
-     
+    }
+  }
+  .top-btn-div {
+    font-size: 25px;
+  }
+  .social-media-icons {
+    gap: 30px;
+    img {
+      cursor: pointer;
     }
   }
 }

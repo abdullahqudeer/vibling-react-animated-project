@@ -25,6 +25,8 @@
       text-align: center;
       font-size: 20px;
       font-weight: 500;
+      max-width: 78%;
+      margin: 0 auto;
     }
   }
   .top-btn-div {
@@ -47,10 +49,12 @@
       align-items: center;
       width: 250px;
       height: 60px;
+      height: 60px;
     }
   }
   .images-div {
-    height: 100vh;
+    background-image: url(../../assets/Images/brandbgImg.png);
+    z-index: 0;
     position: relative;
     text-align: center;
     transition: transform 0.3s ease;
@@ -59,39 +63,49 @@
 
       .rocket-img {
         position: absolute;
-        left: 140px;
+        left: 100px;
         top: -110px;
         z-index: -999;
         transition: transform 0.3s ease;
+        visibility: hidden;
       }
       .left-mobile {
-        margin-right: -390px;
+        margin-right: -230px;
         transition: transform 0.3s ease;
+        max-height: 500px;
+        max-width: 60%;
       }
       .right-mobile {
-        margin-left: -390px;
+        margin-left: -220px;
         transition: transform 0.3s ease;
+        max-height: 444px;
+        max-width: 55%;
+        margin-bottom: 0 !important;
       }
       .mobile {
         z-index: 1;
         position: inherit;
+        margin-bottom: -22px;
+        max-height: 380px;
       }
       .fire-img {
         position: absolute;
         right: 350px;
-        bottom: -10px;
-        z-index: -999;
+        bottom: 85px !important;
+        z-index: -2;
         transition: transform 0.3s ease;
-     
+        visibility: hidden;
       }
     }
   }
   .iphone-div:hover {
     .rocket-img {
-      transform: translate(-170px, -200px);
+      transform: translate(-260px, -310px);
+      visibility: visible;
     }
     .fire-img {
-      transform: translate(220px, 105px);
+      transform: translate(270px, 135px);
+      visibility: visible;
     }
     .left-mobile {
       transform: translateX(50px);

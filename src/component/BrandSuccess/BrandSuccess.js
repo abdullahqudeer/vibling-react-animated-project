@@ -1,22 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
+
 import "./BrandSuccess.scss";
 import LogoImg from "../../assets/Images/image 1.png";
 import secondPhone from "../../assets/Images/secondPhone.png";
-import iphoneImg1 from "../../assets/Images/Phone 1.png";
-import iphoneImg2 from "../../assets/Images/Phone 2.png";
+import iphoneImg1 from "../../assets/Images/Phone 1.svg";
+import iphoneImg2 from "../../assets/Images/Phone 2.svg";
 import PolygonImg1 from "../../assets/Images/Polygon6.png";
 import PolygonImg2 from "../../assets/Images/Polygon5.png";
-import { useScroll, useTransform, motion } from "framer-motion";
 
+import TwitterIcon from "../../assets/Images/ico-twitter.png";
+import FacebookIcon from "../../assets/Images/ico-facebook.png";
+import InstagramIcon from "../../assets/Images/ico-instagram.png";
+import AmazonIcon from "../../assets/Images/ico-amazon.png";
+
+import { useScroll, useTransform, motion } from "framer-motion";
+import Aos from "aos";
 const BrandSuccess = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["end center", "end end"],
   });
-
-  console.log(scrollYProgress);
-
   const first = useTransform(
     scrollYProgress,
     [0, 0.6, 0.8],
@@ -46,7 +50,9 @@ const BrandSuccess = () => {
     ["0px", "0px", "-350px"]
   );
   const poly2R = useTransform(scrollYProgress, [0, 1], ["70deg", "-10deg"]);
-
+  useEffect(() => {
+    Aos.init({ duration: 0 });
+  }, []);
   return (
     <div
       ref={targetRef}
@@ -58,10 +64,26 @@ const BrandSuccess = () => {
           <div className="row">
             <div className="left-part col-lg-6 col-md-12 col-sm-12 px-2 my-5">
               <h3 className="content">
-                Go Viral With <span>Vidbling</span>: Elevate Your Brand's{" "}
+                Go Viral With <span>Vidbling</span>: <br /> Elevate Your Brand's{" "}
                 <span>Success!</span>
               </h3>
+              <div data-aos="fade-up" className="mt-4">
+                <div className="box position-relative"></div>
+                <div
+                  className="gradient-border1 joinnow-div position-absolute top-btn-div"
+                  style={{ marginTop: "-71px", marginLeft: "6px" }}
+                >
+                  <div className="fon">Get a demo</div>
+                </div>
+              </div>
+              <div class="mt-4 d-flex  align-items-center social-media-icons">
+                <img src={TwitterIcon} alt="twitter" />
+                <img src={FacebookIcon} alt="facebook" />
+                <img src={InstagramIcon} alt="instagram" />
+                <img src={AmazonIcon} alt="amazon" />
+              </div>
             </div>
+
             <div className="right-part col-lg-6 col-md-12 col-sm-12 d-flex">
               <div className="images-div">
                 <motion.div
