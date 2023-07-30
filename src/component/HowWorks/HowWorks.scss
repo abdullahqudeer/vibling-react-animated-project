@@ -1,0 +1,74 @@
+.how-works-main {
+  .how-works-header {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      text-align: center;
+      font-size: 84px;
+      font-style: normal;
+      font-weight: 700;
+      background: transparent
+        linear-gradient(
+          90deg,
+          #b827dc 0%,
+          #a322de 26%,
+          #4190f5 86%,
+          #6bdef8 100%
+        )
+        0% 0% no-repeat padding-box;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h6 {
+      color: #fff;
+      font-size: 43px;
+      margin: 0 auto;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    span {
+      color: #b626dd;
+      // font-size: 48px;
+    }
+    img {
+      width: 100px;
+
+      position: absolute;
+    }
+    .img1 {
+      left: 0;
+      top: 20px;
+    }
+    .ploygon {
+      right: -100px;
+      top: 30px;
+      height: 150px;
+      width: auto;
+      z-index: -1;
+    }
+    .img2 {
+      right: 0;
+      top: 20px;
+    }
+    .img3 {
+      left: 0;
+      bottom: -70px;
+    }
+    .img4 {
+      right: 0;
+      bottom: -70px;
+    }
+    .second-right-part {
+      span {
+        width: 100%;
+      }
+    }
+  }
+  p {
+    margin-top: 30px;
+  }
+}

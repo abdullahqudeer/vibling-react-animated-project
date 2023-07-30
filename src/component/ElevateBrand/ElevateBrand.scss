@@ -1,0 +1,58 @@
+.elevate-main {
+  background-image: url(../../assets/Images/brandbgImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    background: transparent
+      linear-gradient(90deg, #b827dc 0%, #a322de 26%, #4190f5 86%, #6bdef8 100%)
+      0% 0% no-repeat padding-box;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h4 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  span {
+    background: transparent
+      linear-gradient(90deg, #b827dc 0%, #a322de 26%, #4190f5 86%, #6bdef8 100%)
+      0% 0% no-repeat padding-box;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  img {
+    width: 60%;
+  }
+  .top-btn-div {
+    background: transparent
+      linear-gradient(90deg, #b827dc 0%, #a322de 26%, #4190f5 86%, #6bdef8 100%)
+      0% 0% no-repeat padding-box;
+    border-radius: 50em;
+    cursor: pointer;
+    width: 260px;
+    height: 70px;
+    .top-btn {
+      background: black;
+      border: none;
+      border-radius: 50em;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 60px;
+    }
+  }
+}

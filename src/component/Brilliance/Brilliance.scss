@@ -1,5 +1,10 @@
 .brilliance-main-div {
-  .title-div {
+  background-image: url(../../assets/Images/brandbgImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .title-div,
+  .desc-div {
     .title {
       text-align: center;
       font-size: 64px;
@@ -24,6 +29,11 @@
       text-align: center;
       font-size: 20px;
       font-weight: 500;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .title {
+      font-size: 38px;
     }
   }
   .top-btn-div {
@@ -65,7 +75,7 @@
         position: absolute;
         left: -60px;
         z-index: 99;
-    transition: transform 0.4s ease;
+        transition: transform 0.4s ease;
       }
 
       .left-mobile {
@@ -90,20 +100,20 @@
         right: 0px;
         bottom: 350px;
         top: 0;
-    transition: transform 0.4s ease;
+        transition: transform 0.4s ease;
       }
       .work {
         z-index: 9;
         position: relative;
       }
-      &:hover{
+      &:hover {
         .analytics-img {
-          transform: translateX(70px)
+          transform: translateX(70px);
         }
         .target-img {
           transform: translate(-150px, 50px);
         }
-        .mobile{
+        .mobile {
           transform: translateY(120px);
         }
         .left-mobile {
