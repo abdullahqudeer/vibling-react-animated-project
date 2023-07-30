@@ -22,7 +22,7 @@ const ForBrand = () => {
         <Header />
         <BrandSuccess />
         <BestBrand />
-        <Branding />
+        <Branding isShowNews={true} />
         {/* <Webs />*/}
         <Explode />
         <Brilliance />

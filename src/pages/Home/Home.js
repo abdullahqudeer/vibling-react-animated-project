@@ -25,7 +25,7 @@ const Home = () => {
         <Unleash />
       </div>
       <div className="brand-div">
-        <Branding />
+        <Branding isShowNews={false} />
       </div>
       <InfluencerShop />
       <div className="home-main-div container">
@@ -45,8 +45,8 @@ const Home = () => {
       <GetStartedStep />
       <div className="home-main-div container">
         <Charlie />
-        <JoinNow /> 
-        <Footer /> 
+        <JoinNow />
+        <Footer />
       </div>
     </div>
   );
