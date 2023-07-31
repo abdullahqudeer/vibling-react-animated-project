@@ -1,10 +1,7 @@
 import React, { useRef } from "react";
 import phoneFrame from "../../assets/Images/secondPhone.png";
-import pic1 from "../../assets/Images/works1.png";
 import pic2 from "../../assets/Images/works2.png";
 import pic3 from "../../assets/Images/works3.png";
-import pic4 from "../../assets/Images/works4.png";
-import pic5 from "../../assets/Images/works5.png";
 import pic6 from "../../assets/Images/works6.png";
 import pic7 from "../../assets/Images/dashboad-mobile.png";
 import pic8 from "../../assets/Images/works8.png";
@@ -14,6 +11,10 @@ import pic12 from "../../assets/Images/3dicons (3).png";
 import pic13 from "../../assets/Images/3dicons (1).png";
 import pic14 from "../../assets/Images/3dicons (2).png";
 import polygonRight from "../../assets/Images/Polygon5.png";
+import ReactPlayer from "react-player/lazy";
+import vid1 from "../../assets/videos/video1.mp4";
+import vid2 from "../../assets/videos/video5.mp4";
+import vid3 from "../../assets/videos/vid2.mp4";
 
 import "./HowWorks.scss";
 
@@ -122,11 +123,16 @@ export default function HowWorksCom() {
               style={{ width: 260, position: "relative" }}
             >
               <div>
-                <motion.img
-                  style={{ position: "relative", height: 540, opacity: o1 }}
-                  src={pic1}
-                  alt=""
-                />
+                <motion.div style={{ position: "relative", opacity: o1 }}>
+                  <ReactPlayer
+                    muted
+                    loop={true}
+                    width={"100%"}
+                    height={540}
+                    playing={true}
+                    url={vid1}
+                  />
+                </motion.div>
               </div>
               <div>
                 <motion.img
@@ -155,30 +161,42 @@ export default function HowWorksCom() {
                 />
               </div>
               <div>
-                <motion.img
+                <motion.div
                   style={{
                     position: "absolute",
-                    height: 540,
                     left: 2,
                     top: y3,
                     opacity: o4,
                   }}
-                  src={pic4}
-                  alt=""
-                />
+                >
+                  <ReactPlayer
+                    muted
+                    loop={true}
+                    width={"100%"}
+                    height={540}
+                    playing={true}
+                    url={vid2}
+                  />
+                </motion.div>
               </div>
               <div>
-                <motion.img
+                <motion.div
                   style={{
                     position: "absolute",
-                    height: 540,
                     left: 2,
                     top: y4,
                     opacity: o5,
                   }}
-                  src={pic5}
-                  alt=""
-                />
+                >
+                  <ReactPlayer
+                    muted
+                    loop={true}
+                    width={"100%"}
+                    height={540}
+                    playing={true}
+                    url={vid3}
+                  />
+                </motion.div>
               </div>
               <div>
                 <motion.img

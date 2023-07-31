@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import phoneFrame from "../../assets/Images/secondPhone.png";
 import pic1 from "../../assets/Images/OurEnvironment1.png";
 import pic3 from "../../assets/Images/OurEnvironment2.png";
+import ReactPlayer from "react-player/lazy";
+import vid1 from "../../assets/videos/video6.mp4";
+import vid2 from "../../assets/videos/video3.mp4";
 
 import "./ourEnvironment.scss";
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -28,7 +31,7 @@ const OurEnvironment = () => {
       className="bg-environment"
     >
       <div
-        style={{ height: "100vh", paddingTop: 200, position: "sticky", top: 0 }}
+        style={{ height: "100vh", paddingTop: 60, position: "sticky", top: 0 }}
         className="d-flex justify-content-center align-items-center stick "
       >
         <div
@@ -45,22 +48,36 @@ const OurEnvironment = () => {
             style={{ position: "absolute", zIndex: 999 }}
           />
           <div
-            className="d-flex flex-column justify-content-center align-items-center"
+            className="video-wrapper d-flex flex-column justify-content-center align-items-center"
             style={{ width: 260, position: "relative" }}
           >
             <div>
-              <motion.img
-                style={{ position: "relative", height: 540, opacity: o1 }}
-                src={pic1}
-                alt=""
-              />
+              <motion.div
+                style={{ position: "relative", opacity: o1 }}
+              >
+                <ReactPlayer
+                    muted
+                    loop={true}
+                    width={"100%"}
+                    height={540}
+                    playing={true}
+                    url={vid1}
+                  />
+              </motion.div>
             </div>
             <div>
-              <motion.img
-                style={{ position: "absolute", height: 540, left: 2, top: y1 }}
-                src={pic3}
-                alt=""
-              />
+              <motion.div
+                style={{ position: "absolute", left: 2, top: y1 }}
+              >
+                 <ReactPlayer
+                    muted
+                    loop={true}
+                    width={"100%"}
+                    height={540}
+                    playing={true}
+                    url={vid2}
+                  />
+              </motion.div>
             </div>
           </div>
 
