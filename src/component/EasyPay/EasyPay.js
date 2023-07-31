@@ -49,7 +49,7 @@ const EasyPay = () => {
           <div
             data-aos="fade-right"
             data-aos-delay="700"
-            className="d-flex justify-content-end easy-div mt-4"
+            className="d-flex justify-content-end easy-div mt-5 pt-4"
           >
             <p>Easy</p>
           </div>

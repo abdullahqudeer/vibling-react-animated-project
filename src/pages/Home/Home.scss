@@ -31,7 +31,6 @@
   }
   .phone-main-div {
     top: 0;
-    // background-image: url('../assets/Images/iphone.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 520px;
@@ -54,8 +53,9 @@
   }
 }
 .brand-div{
-  height: 300px;
+  height: 200px;
+  // width: 100%;
   align-items: center;
   display: flex;
-  margin-top: 150px;
+  // margin-top: 150px;
 }

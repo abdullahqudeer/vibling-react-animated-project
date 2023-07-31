@@ -15,7 +15,7 @@
     opacity: 1;
   }
   .video-overlay {
-    opacity: 0;
+    opacity: 0.6;
     background: linear-gradient(rgb(0, 0, 0), #0000007a, rgb(0, 0, 0));
   }
 
@@ -30,8 +30,8 @@
     h1 {
       background-color: transparent;
       color: #ffffff;
-      font-size: 60px;
-      line-height: 70px;
+      font-size: 70px;
+      line-height: 85px;
       font-family: "Inter-bold";
 
       @media (max-width: 600px) {
@@ -57,6 +57,10 @@
     color: white;
     padding: 1rem 3rem;
     cursor: pointer;
+    @media (max-width:700px) {
+      margin-top: 15px !important;
+      
+    }
   }
 }
 
@@ -94,7 +98,7 @@
 
 @media screen and (max-width: 600px) {
   .creativity-main-div {
-    height: 700px;
+    height: 560px;
     margin-top: -9rem !important;
     margin-bottom: -3rem !important;
   }

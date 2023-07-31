@@ -8,7 +8,7 @@
     #6bdef8 100%
   )
   0% 0% no-repeat padding-box !important;
-  font-size: 32px !important;
+  font-size: 53px !important;
   font-weight: bold !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -21,7 +21,7 @@
 }
 .home-div {
   display: flex;
-  max-height: 386px;
+  // max-height: 386px;
   .leftpart-top {
     overflow: hidden;
     .text-div {
@@ -206,12 +206,14 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .arrows {
     position:static;
   }
   .text-grad{
-    font-size: 25px !important;
+    font-size: 38px !important;
+    margin-top: 0 !important;
+
   }
   .infleunce-tex{
     font-size: 20px !important;
@@ -224,18 +226,18 @@
     .leftpart-top {
       .text-div {
         font-size: 60px;
-        height: 60px;
+        height: 85px;
       }
       .influence-div {
         font-size: 60px;
       }
     }
-   
+ 
   }
-  .tsize {
-    font-size: 2.8rem !important;
-    // margin-top: ;
-  }
+  // .tsize {
+  //   font-size: 2.8rem !important;
+  //   // margin-top: ;
+  // }
   .tsizeh1 {
     font-size: 1.5rem !important;
   }

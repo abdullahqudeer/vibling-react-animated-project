@@ -5,7 +5,7 @@ import "../Unleash/Unleash.scss";
 // import Influencer1 from "../../assets/Images/Influencer1.jpeg";
 // import Influencer2 from "../../assets/Images/Influencer3.jpeg";
 // import Influencer3 from "../../assets/Images/Influencer4.jpeg";
-import Influencers from "../../assets/Images/influencers.png";
+import Influencers from "../../assets/Images/Group30.png";
 
 const InfluencerShop = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const InfluencerShop = () => {
           className="fw-normal mb-4 mt-4 text-grad"
           // style={{ lineHeight: "1.4" }}
         >
-          Vidbling Influencer Shop & <br /> Subscription Platform for Creators
+       The world’s best brands trust Vidbling
         </div>
         <p className="mb-5 infleunce-tex">
           Welcome to Vidbling, the ultimate platform for creators and
@@ -29,9 +29,9 @@ const InfluencerShop = () => {
             className="d-flex justify-content-center mb-5"
             data-aos="fade-up"
           >
-            <div className="box position-relative me-0"></div>
+            <div className="box position-relative me-0 mb-4"></div>
             <div
-              className="gradient-border1  fw-bold joinnow-div position-absolute"
+              className="gradient-border1 fw-bold joinnow-div position-absolute"
               id="gradient-btn"
               style={{ marginTop: "4px", marginLeft: 0, fontSize: 22 }}
             >
@@ -74,7 +74,7 @@ const InfluencerShop = () => {
           style={{ borderRadius: 14, width: "30%", height: "fit-content" }}
         />
       </div> */}
-      <div className="col-lg-5  row">
+      <div className="col-lg-5  row mx-0">
         <img src={Influencers} height={"auto"} className="img-fluid" alt="" />
       </div>
       <div className="col-lg-6 d-lg-block d-none px-5 ms-4">
@@ -82,7 +82,7 @@ const InfluencerShop = () => {
           className="fw-normal mb-4 mt-4 text-grad"
           style={{ lineHeight: "1.4" }}
         >
-          Vidbling Influencer Shop & <br /> Subscription Platform for Creators
+        The world’s best brand trust Vidbling
         </h3>
         <p style={{ lineHeight: "2" }} className="mb-5  infleunce-tex">
           Welcome to Vidbling, the ultimate platform for creators and

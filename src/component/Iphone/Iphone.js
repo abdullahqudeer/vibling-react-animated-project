@@ -18,7 +18,7 @@ const Iphone = () => {
 
   return (
     <div>
-      <div className=" mt-7 phone-main-div row justify-content-between">
+      <div className=" mt-7 phone-main-div row justify-content-between mx-0">
         <div className=" col-5 ">
           <div className="d-flex">
             <div className=" col-xl-4 col-md-5 col-8 d-flex  pe-xxl-4 px-sm-3 px-2 justify-content-end flex-column">

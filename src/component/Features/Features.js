@@ -70,10 +70,10 @@ export default class Features extends Component {
     };
     return (
       <div>
-        <div className="my-5 d-flex justify-content-center align-items-center">
-          <h3 className="features">Features</h3>
+        <div className="my-4 d-flex justify-content-center align-items-center">
+          <h3 className="features mt-5">How It Works?</h3>
         </div>
-        <div style={{ padding: "30px 0px" }}>
+        <div style={{ padding: "25px 0px" }}>
           <Slider {...settings}>
             {featuresData.map((data) => (
               <div className="d-flex justify-content-center align-items-center">

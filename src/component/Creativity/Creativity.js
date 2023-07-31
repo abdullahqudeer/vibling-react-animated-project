@@ -36,7 +36,7 @@ const Creativity = () => {
         <div data-aos="fade-up" className="d-flex justify-content-center part">
           <h1 className="lines">Unleash Your Creativity</h1>
         </div>
-        <div data-aos="fade-up">
+        {/* <div data-aos="fade-up">
           <p
             className="d-flex justify-content-center p-4 opacity-p"
             style={{ maxWidth: 800 }}
@@ -45,10 +45,10 @@ const Creativity = () => {
             connect with brands that understand and appreciate your creative
             vision.
           </p>
-        </div>
+        </div> */}
         <button
           data-aos="fade-up"
-          className="join-btn mt-3"
+          className="join-btn mt-5"
           onClick={() => navigate("/signup")}
         >
           Join Now

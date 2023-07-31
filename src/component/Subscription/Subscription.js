@@ -43,26 +43,20 @@ const Subscription = () => {
         style={{ position: "sticky" }}
       >
         <div className="text-div">
-          <motion.div
+          {/* <motion.div
             transition={{ ease: "easeInOut" }}
             style={{ y: texty, position: "relative", opacity: texto }}
             className="mt-2"
           >
             Embrace the{" "}
-          </motion.div>
-          <motion.div
-            transition={{ ease: "easeInOut" }}
-            style={{ y: texty, position: "relative", opacity: texto }}
-            className="mt-2"
-          >
-            power of
-          </motion.div>
+       
+          </motion.div> */}
           <motion.div
             transition={{ ease: "easeInOut" }}
             style={{ y: texty, position: "relative", opacity: texto }}
             className="subs-div mt-2"
           >
-            subscription $
+           The World’s Best Brands Trust Vidbling
           </motion.div>
           <div
             className="startearning-div mt-4 mb-5 mb-lg-0"

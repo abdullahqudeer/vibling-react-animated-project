@@ -10,7 +10,7 @@ const Unleash = () => {
     Aos.init({ duration: 3000 });
   }, []);
   return (
-    <div className="home-div container row">
+    <div className="home-div container row mt-5">
       <div className="leftpart-top col-md-8 col-lg-7 col-xl-6 my-4 my-sm-0">
         <div className="text-div tsize unleash">Unleash</div>
         <div className="text-div your tsize">Your</div>

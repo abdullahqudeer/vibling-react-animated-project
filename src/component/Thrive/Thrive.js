@@ -13,16 +13,16 @@ const Thrive = () => {
       <div className="thrive-main-div mt-5 pt-sm-5 mb-4">
         <div
           data-aos="fade-up"
-          className="d-flex justify-content-center mt-5 part"
+          className="d-flex justify-content-center mt-4 Apart"
         >
-          <h1 className="tsizeh1">
-            Enjoy a reliable income stream, Monetize Your Passion and
+          <h1 className="sizeh1">
+            Enjoy a reliable income stream, Monetize Your Passion and <span className="thrive sizeh1">Thrive</span>
           </h1>
         </div>
-        <div data-aos="fade-up" className="d-flex justify-content-center part">
-          <h1 className="thrive tsizeh1">Thrive</h1>
-        </div>
-        <div data-aos="fade-up" className="mt-4">
+        {/* <div data-aos="fade-up" className="d-flex justify-content-center part">
+          <h1 className="thrive sizeh1">Thrive</h1>
+        </div> */}
+        <div data-aos="fade-up" className="mt-5">
           <div className="box position-relative"></div>
           <div
             className="gradient-border1 joinnow-div position-absolute"

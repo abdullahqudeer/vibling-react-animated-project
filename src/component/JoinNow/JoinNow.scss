@@ -6,10 +6,13 @@
   text-align: center;
   flex-direction: column;
   height: 1175px;
-  @media (max-width: 400px) {
-    height: 550px;
-    h1 {
-      font-size: 25px !important;
+  @media (max-width: 600px) {
+    height: unset;
+    .title-div {
+      margin-top: 70px;
+      h1 {
+        font-size: 31px !important;
+      }
     }
   }
 
@@ -22,7 +25,7 @@
     }
   }
 
-  .part {
+  .Apart {
     background-color: transparent;
     width: 700px;
 

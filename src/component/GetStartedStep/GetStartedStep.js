@@ -43,20 +43,22 @@ const GetStartedStep = () => {
     <React.Fragment>
       <div className="get-started-step-div">
         <div className="title-div mt-5 pt-4">
-          <h4>5 Steps To Get Started</h4>
+          <h4 className="my-4">5 Steps To Get Started</h4>
         </div>
         <div
           ref={targetRef}
           style={{ height: "400vh", paddingTop: 60, position: "relative" }}
+          className="get-started"
         >
           <div
             style={{ height: "100vh", position: "sticky", top: 0 }}
-            className="d-flex justify-content-center align-items-center stick "
+            className="d-flex justify-content-center align-items-center stick"
           >
             <img
               src={phoneFrame}
               alt="phone"
               style={{ position: "absolute", zIndex: 999 }}
+              className="phone-frame-img"
             />
             <div
               style={{
@@ -64,10 +66,10 @@ const GetStartedStep = () => {
                 position: "relative",
                 overflow: "hidden",
               }}
-              className="d-flex justify-content-center align-items-center  container px-4"
+              className="d-flex justify-content-center align-items-center container px-4 phone-inner-div"
             >
               <div
-                className="d-flex flex-column justify-content-center align-items-center"
+                className="d-flex flex-column justify-content-center align-items-center photo1"
                 style={{ width: 260, height: 520, position: "relative" }}
               >
                 <div>
@@ -75,6 +77,7 @@ const GetStartedStep = () => {
                     style={{ position: "relative", height: 540, opacity: o1 }}
                     src={pic1}
                     alt=""
+                    className="photo1"
                   />
                 </div>
                 <div>
@@ -89,6 +92,7 @@ const GetStartedStep = () => {
                     }}
                     src={pic2}
                     alt=""
+                    className="photo2"
                   />
                 </div>
                 <div>
@@ -103,6 +107,7 @@ const GetStartedStep = () => {
                     }}
                     src={pic3}
                     alt=""
+                    className="photo3"
                   />
                 </div>
                 <div>
@@ -116,6 +121,7 @@ const GetStartedStep = () => {
                     }}
                     src={pic4}
                     alt=""
+                    className="photo4"
                   />
                 </div>
                 <div>
@@ -129,6 +135,7 @@ const GetStartedStep = () => {
                     }}
                     src={pic5}
                     alt=""
+                    className="photo5"
                   />
                 </div>
               </div>

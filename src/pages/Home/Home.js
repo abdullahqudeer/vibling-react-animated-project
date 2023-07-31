@@ -44,7 +44,7 @@ const Home = () => {
       </div>
       <GetStartedStep />
       <div className="home-main-div container">
-        <Charlie />
+        {/* <Charlie /> */}
         <JoinNow />
         <Footer />
       </div>

@@ -6,7 +6,7 @@
   text-align: center;
   flex-direction: column;
 
-  .part {
+  .Apart {
     background-color: transparent;
     width: 80%;
 
@@ -41,6 +41,7 @@
           #6bdef8 100%
         )
         0% 0% no-repeat padding-box;
+        font-weight: bold;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

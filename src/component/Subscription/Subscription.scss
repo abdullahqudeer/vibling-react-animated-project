@@ -13,7 +13,7 @@
     justify-content: center;
     width: 50%;
     .subs-div {
-      font-size: 80px;
+      font-size: 50px;
       background: transparent
         linear-gradient(
           90deg,
@@ -24,7 +24,7 @@
         );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      line-height: 1;
+      line-height: 1.5;
     }
     .startearning-div button {
       background: linear-gradient(black, black) padding-box,
@@ -315,7 +315,10 @@
       font-size: 40px;
       width: 100%;
       .subs-div {
-        font-size: 40px;
+        font-size: 45px;
+        line-height: 56px;
+        margin-top: 30px !important;
+        font-weight: bold;
       }
     }
   }
@@ -364,7 +367,7 @@
   //   height: 350px !important;
   // }
   .phone-rightside {
-    padding-left: 0px !important;
+    // padding-left: 0px !important;
     width: 200px !important;
 
     h1{
@@ -387,9 +390,9 @@ font-size: 18px !important;
     .text-div {
       font-size: 31px;
       width: 100%;
-      .subs-div {
-        font-size: 31px;
-      }
+      // .subs-div {
+      //   font-size: 31px;
+      // }
     }
   }
 }
