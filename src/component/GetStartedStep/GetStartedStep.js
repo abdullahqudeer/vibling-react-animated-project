@@ -2,11 +2,12 @@ import React, { useRef } from "react";
 import "./GetStartedStep.scss";
 import { useScroll, useTransform, motion } from "framer-motion";
 import phoneFrame from "../../assets/Images/secondPhone.png";
-import pic1 from "../../assets/Images/images1.png";
+import pic1 from "../../assets/videos/video-1.mp4";
 import pic2 from "../../assets/Images/images2.png";
 import pic3 from "../../assets/Images/images3.png";
 import pic4 from "../../assets/Images/images4.png";
 import pic5 from "../../assets/Images/images5.png";
+import ReactPlayer from "react-player/lazy";
 
 const GetStartedStep = () => {
   const targetRef = useRef(null);
@@ -73,12 +74,25 @@ const GetStartedStep = () => {
                 style={{ width: 260, height: 520, position: "relative" }}
               >
                 <div>
-                  <motion.img
+                  <ReactPlayer
                     style={{ position: "relative", height: 540, opacity: o1 }}
-                    src={pic1}
-                    alt=""
+                    muted
+                    loop={true}
+                    width={"100%"}
+                    height={"100%"}
+                    playing={true}
+                    url={pic1}
                     className="photo1"
                   />
+
+                  {/* <motion.img
+                    style={{ position: "relative", height: 540, opacity: o1 }}
+                    url={pic1}
+                    playing={true}
+                    muted loop={true}
+                    alt=""
+                    className="photo1"
+                  /> */}
                 </div>
                 <div>
                   <motion.img

@@ -2,13 +2,9 @@ import React, { useRef, useEffect } from "react";
 import ReactPlayer from 'react-player/lazy';
 import "./BrandSuccess.scss";
 import LogoImg from "../../assets/Images/image 1.png";
-import secondPhone from "../../assets/Images/secondPhone.png";
-import iphoneImg1 from "../../assets/Images/Phone 1.svg";
-import iphoneImg2 from "../../assets/Images/Phone 2.svg";
 import PolygonImg1 from "../../assets/Images/Polygon6.png";
 import PolygonImg2 from "../../assets/Images/Polygon5.png";
 import phoneFrame from "../../assets/Images/secondPhone.png";
-
 import TwitterIcon from "../../assets/Images/ico-twitter.png";
 import FacebookIcon from "../../assets/Images/ico-facebook.png";
 import InstagramIcon from "../../assets/Images/ico-instagram.png";

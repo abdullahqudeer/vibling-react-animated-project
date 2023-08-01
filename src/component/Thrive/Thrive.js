@@ -16,7 +16,8 @@ const Thrive = () => {
           className="d-flex justify-content-center mt-4 Apart"
         >
           <h1 className="sizeh1">
-            Enjoy a reliable income stream, Monetize Your Passion and <span className="thrive sizeh1">Thrive</span>
+            Enjoy a reliable income stream, Monetize Your Passion and{" "}
+            <span className="thrive sizeh1">Thrive</span>
           </h1>
         </div>
         <div data-aos="fade-up" className="mt-5">
