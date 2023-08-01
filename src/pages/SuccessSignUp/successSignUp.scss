@@ -1,14 +1,19 @@
 .success-sign-up-div {
-  // height: 100vh;
+  background-image: url(../../assets/Images/brandbgImg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   @media (max-width: 600px) {
    margin: 25px;
   }
   .content-div {
     text-align: center;
+    position: relative;
+    z-index: 9;
     .thanks-div {
-      h1 {
-        font-size: 70px;
-        height: 100px;
+      .joining-span {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 0 !important;
         background: transparent
           linear-gradient(
             90deg,
@@ -29,34 +34,71 @@
         }
       }
     }
+    .image-div{
+      text-align: center;
+      @media (max-width: 600px) {
+       margin-left: 0 !important;
+       padding-left: 0 !important;
+      }
+      .polygon-left{
+        position: absolute;
+        margin-left: -40px;
+        margin-top: 120px;
+        @media (max-width:600px) {
+          display: none;
+          
+        }
+      }
+      .desk-img{
+        position: relative;
+        z-index: 9;
+        @media (max-width:600px) {
+         position: unset;
+          width: 100%;
+        }
+      }
+
+      .polygon-right{
+        position: absolute;
+        right: 0;
+        margin-right: 105px;
+        @media (max-width:600px) {
+          display: none;
+          
+        }
+      }
+ 
+
+    }
     .congrets-div {
       text-align: center;
       h5 {
-        font-weight: 400;
-        font-size: 17px;
-        @media (max-width: 600px) {
-          font-size: 15px;
-        }
+        font-weight: 600;
+        font-size: 20px;
+   
       }
       .unlocked {
-        line-height: 26px;
-        width: 75%;
+        line-height: 27px;
+        font-size: 20px;
+        width: 90%;
         @media (max-width: 600px) {
           width: unset;
+          margin-top: 20px;
         }
       }
-      .team {
-        font-weight: 500;
-      }
+      // .team {
+      //   font-weight: 500;
+      // }
     }
     .invite-div {
       .friends {
-        font-size: 48px;
+        font-size: 44px;
         font-weight: 600;
         @media (max-width: 600px) {
           font-size: 32px;
         }
         .invite {
+          font-weight: bold;
           background: transparent
             linear-gradient(
               90deg,
@@ -98,10 +140,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 5px;
-        padding: 15px;
+        margin: 4px;
+        padding: 13px;
         h6 {
-          font-size: 18px;
+          font-size: 20px;
         }
       }
       h6 {
@@ -109,20 +151,20 @@
       }
     }
     .earn-div {
-      width: 55%;
+      width: 70%;
       @media (max-width: 800px) {
         width: unset;
       }
       h5 {
         text-align: center;
-        font-size: 17px;
+        font-size: 25px;
         font-weight: 600;
-        line-height: 30px;
+        line-height: 35px;
         @media (max-width: 600px) {
-          font-size: 15px;
+          font-size: 20px;
         }
         span {
-
+          font-weight: bold;
           background: transparent
             linear-gradient(
               90deg,
@@ -139,22 +181,27 @@
       }
     }
   }
-  .img-div {
-    img {
-      width: 430px;
-      height: 460px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-    .like-img {
-      height: 60px;
-      width: 57px;
-      left: 225px;
-      bottom: 117px;
-    }
-    @media (max-width: 900px) {
-      display: none;
-    }
-  }
+  // .img-div {
+  //   .girl-img{
+
+  //     position: absolute;
+  //     left: 0;
+  //     bottom: 0;
+  //   }
+  //   img {
+  //     width: 430px;
+  //     height: 460px;
+  //   }
+  //   .like-img {
+  //     img{
+  //       height: 60px;
+  //       width: 57px;
+  //     }
+   
+    
+  //   }
+  //   @media (max-width: 900px) {
+  //     display: none;
+  //   }
+  // }
 }

@@ -19,9 +19,6 @@ const Thrive = () => {
             Enjoy a reliable income stream, Monetize Your Passion and <span className="thrive sizeh1">Thrive</span>
           </h1>
         </div>
-        {/* <div data-aos="fade-up" className="d-flex justify-content-center part">
-          <h1 className="thrive sizeh1">Thrive</h1>
-        </div> */}
         <div data-aos="fade-up" className="mt-5">
           <div className="box position-relative"></div>
           <div

@@ -1,22 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../Unleash/Unleash.scss";
-// import "./influence.scss";
-// import Influencer1 from "../../assets/Images/Influencer1.jpeg";
-// import Influencer2 from "../../assets/Images/Influencer3.jpeg";
-// import Influencer3 from "../../assets/Images/Influencer4.jpeg";
 import Influencers from "../../assets/Images/Group30.png";
 
 const InfluencerShop = () => {
   const navigate = useNavigate();
   return (
-    <div className="d-lg-flex mb-5 my-5">
+    <div className="d-lg-flex my-5 influencer-shop-main-div">
       <div className="col-lg-6 text-center d-lg-none d-flex justify-content-center flex-column px-5 ms-md-4">
-        <div
-          className="fw-normal mb-4 mt-4 text-grad"
-          // style={{ lineHeight: "1.4" }}
-        >
-       The world’s best brands trust Vidbling
+        <div className="fw-normal mb-4 mt-4 text-grad">
+          The world’s best brands trust Vidbling
         </div>
         <p className="mb-5 infleunce-tex">
           Welcome to Vidbling, the ultimate platform for creators and
@@ -82,7 +75,7 @@ const InfluencerShop = () => {
           className="fw-normal mb-4 mt-4 text-grad"
           style={{ lineHeight: "1.4" }}
         >
-        The world’s best brand trust Vidbling
+          The world’s best brand trust Vidbling
         </h3>
         <p style={{ lineHeight: "2" }} className="mb-5  infleunce-tex">
           Welcome to Vidbling, the ultimate platform for creators and

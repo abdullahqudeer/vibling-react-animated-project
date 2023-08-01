@@ -16,7 +16,7 @@ const Footer = () => {
             style={{ width: "60px" }}
           />
           <div className="content mx-3 text-center text-sm-left my-sm-0 my-4">
-            <h6 className="mx-2">© 2022 Vidbling. All right reserved.</h6>
+            <h6 className="mx-2">© 2023 Vidbling. All right reserved.</h6>
             <div className="con-1 d-sm-flex pt-1">
               <div className="d-sm-flex">
                 <h6 className="mx-2">FAQ</h6>

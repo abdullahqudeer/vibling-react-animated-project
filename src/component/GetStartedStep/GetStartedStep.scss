@@ -110,7 +110,8 @@
   @media (max-width: 650px) {
     .title-div {
       h4 {
-        font-size: 50px;
+        font-size: 48px;
+        margin: 0 !important;
       }
     }
     .get-started {
@@ -153,11 +154,12 @@
         width: 50%;
         left: unset;
         text-align: left;
+        margin-top: 0 !important;
         .number-span {
           font-size: 40px;
         }
         p {
-          font-size: 20px !important;
+          font-size: 25px !important;
           padding-left: 0 !important;
           width: 140px !important;
           margin-left: 0 !important;
@@ -182,7 +184,8 @@
         }
         h6 {
           width: 150px !important;
-          font-size: 15px !important;
+          font-size: 17px !important;
+          padding-right: 5px !important;
         }
       }
     }

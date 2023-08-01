@@ -147,9 +147,9 @@ const GetStartedStep = () => {
                   height: 540,
                   opacity: o1,
                 }}
-                className="leftpart mt-5 pt-5"
+                className="leftpart pt-5"
               >
-                <span className="number-span">1.</span>
+                <span className="number-span mt-5 pt-5 ">1.</span>
                 <p className="ps-5">Create Your Vidbling Account</p>
               </motion.div>
               <motion.div
@@ -160,7 +160,7 @@ const GetStartedStep = () => {
                   opacity: o2,
                   top: y1,
                 }}
-                className="second-rightpart  mt-5"
+                className="second-rightpart mt-5"
               >
                 <span className="number-span">2.</span>
                 <p>Choose Your Channels</p>

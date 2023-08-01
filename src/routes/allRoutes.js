@@ -16,7 +16,9 @@ const AllRoutes = () => {
             <Route>
               <Route index path="/" element={<Dashboard />} />
               <Route index path="/signup" element={<SignUp />} />
-              <Route index path="/successSignUp/:rcode" element={<SuccessSignUp/>}/>
+              {/* <Route index path="/successSignUp/:rcode" element={<SuccessSignUp/>}/> */}
+              <Route index path="/successSignUp" element={<SuccessSignUp/>}/>
+
               <Route index path="forbrand" element={<ForBrand/>} />
             </Route>
           </Route>
