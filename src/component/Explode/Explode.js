@@ -4,8 +4,13 @@ import Rocket from "../../assets/Images/rocket.png";
 import Fire from "../../assets/Images/fire.png";
 import rightPhone from "../../assets/Images/Group 35.png";
 import midlePhone from "../../assets/Images/Middle Phone.png";
+import phoneFrame from "../../assets/Images/secondPhone.png";
 import leftPhone from "../../assets/Images/Group 34.png";
 import Aos from "aos";
+import ReactPlayer from 'react-player/lazy';
+
+import vid1 from  "../../assets/videos/video9.mp4"
+
 
 import ArtWork from "../../assets/Images/Artwork.png";
 
@@ -17,7 +22,7 @@ const Explode = () => {
     <React.Fragment>
       <div className="explode-main-div ">
         <div className="container">
-          <div className="py-5 my-3"></div>
+          <div className="py-4"></div>
 
           <div className="title-div d-flex justify-content-center">
             <h2 className="title">Explode Your Growth</h2>
@@ -52,7 +57,11 @@ const Explode = () => {
               </div>
               <div className="mobil-div d-flex justify-content-center align-items-end">
                 <img src={leftPhone} className="left-mobile mb-4" />
-                <img src={midlePhone} className="mobile" />
+                <div className="phone-wrapper mb-4">
+                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
+                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1,overflow:"hidden" }} muted loop={true} width={140}  height={"100%"} playing={true} url={vid1} />
+                </div>
+                {/* <img src={midlePhone} className="mobile" /> */}
                 <img src={rightPhone} className="right-mobile mb-4" />
               </div>
               <div className="fire-img d-flex align-items-end justify-content-end">

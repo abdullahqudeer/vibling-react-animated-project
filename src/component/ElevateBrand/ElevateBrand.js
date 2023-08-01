@@ -23,7 +23,7 @@ export default function ElevateBrand() {
           <h4>
             only <span>$299</span>
           </h4>
-          <p>(originally 499)</p>
+          <p>(originally $499)</p>
           <h4>
             to access our platform packed with <span>cutting-edge</span>
             <br />
@@ -46,6 +46,7 @@ export default function ElevateBrand() {
           </div>
         </div>
       </div>
+      <div className="py-3"></div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-
+import ReactPlayer from 'react-player/lazy';
 import "./BrandSuccess.scss";
 import LogoImg from "../../assets/Images/image 1.png";
 import secondPhone from "../../assets/Images/secondPhone.png";
@@ -7,11 +7,15 @@ import iphoneImg1 from "../../assets/Images/Phone 1.svg";
 import iphoneImg2 from "../../assets/Images/Phone 2.svg";
 import PolygonImg1 from "../../assets/Images/Polygon6.png";
 import PolygonImg2 from "../../assets/Images/Polygon5.png";
+import phoneFrame from "../../assets/Images/secondPhone.png";
 
 import TwitterIcon from "../../assets/Images/ico-twitter.png";
 import FacebookIcon from "../../assets/Images/ico-facebook.png";
 import InstagramIcon from "../../assets/Images/ico-instagram.png";
 import AmazonIcon from "../../assets/Images/ico-amazon.png";
+
+import vid1 from  "../../assets/videos/video7.mp4"
+import vid2 from  "../../assets/videos/video8.mp4"
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import Aos from "aos";
@@ -57,7 +61,7 @@ const BrandSuccess = () => {
     <div
       ref={targetRef}
       style={{ height: "100vh" }}
-      className="brand-success-main-div"
+      className="brand-success-main-div mt-5 pt-5"
     >
       <div className="brand-inner-div  py-5 ">
         <div className="container mb-5 pb-3">
@@ -127,7 +131,11 @@ const BrandSuccess = () => {
                   style={{ y: first, x: firstx }}
                   className="first-div"
                 >
-                  <img src={iphoneImg1} alt="iphoneImg" width={659} />
+                <div className="phone-wrapper">
+                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
+                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1 }} muted loop={true} width={"100%"}  height={"100%"} playing={true} url={vid1} />
+
+                </div>
                 </motion.div>
 
                 <motion.div
@@ -135,7 +143,11 @@ const BrandSuccess = () => {
                   style={{ y: scnd }}
                   className="second-div"
                 >
-                  <img src={iphoneImg2} alt="iphoneImg" width={639} />
+                <div className="phone-wrapper">
+                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
+                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1 }} muted loop={true} width={"100%"}  height={"100%"} playing={true} url={vid2} />
+
+                </div>
                 </motion.div>
               </div>
             </div>

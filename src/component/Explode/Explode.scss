@@ -60,7 +60,6 @@
     transition: transform 0.3s ease;
     .iphone-div {
       position: relative;
-
       .rocket-img {
         position: absolute;
         left: 100px;
@@ -69,17 +68,23 @@
         transition: transform 0.3s ease;
         visibility: hidden;
       }
+      .mobil-div{
+       height:400px;
+      }
       .left-mobile {
-        margin-right: -230px;
+        margin-right: -130px;
         transition: transform 0.3s ease;
-        max-height: 500px;
-        max-width: 60%;
+        height: 100%;
+        transform: translateY(0);
+        // max-height: 500px;
+        // max-width: 60%;
       }
       .right-mobile {
-        margin-left: -220px;
+        margin-left: -120px;
         transition: transform 0.3s ease;
-        max-height: 444px;
-        max-width: 55%;
+        height: 100%;
+        // max-height: 444px;
+        // max-width: 55%;
         margin-bottom: 0 !important;
       }
       .mobile {
@@ -95,6 +100,19 @@
         z-index: -2;
         transition: transform 0.3s ease;
         visibility: hidden;
+      }
+      .phone-wrapper{
+        height: 70%;
+        position: relative;
+        z-index: 1;
+        img{
+        height: 100%;
+        width: 148px;
+        }
+        video{
+       object-fit: cover;
+       border-radius: 25px;
+        }
       }
     }
   }
