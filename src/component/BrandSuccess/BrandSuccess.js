@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import ReactPlayer from 'react-player/lazy';
+import ReactPlayer from "react-player/lazy";
 import "./BrandSuccess.scss";
 import LogoImg from "../../assets/Images/image 1.png";
 import PolygonImg1 from "../../assets/Images/Polygon6.png";
@@ -10,8 +10,8 @@ import FacebookIcon from "../../assets/Images/ico-facebook.png";
 import InstagramIcon from "../../assets/Images/ico-instagram.png";
 import AmazonIcon from "../../assets/Images/ico-amazon.png";
 
-import vid1 from  "../../assets/videos/video7.mp4"
-import vid2 from  "../../assets/videos/video8.mp4"
+import vid1 from "../../assets/videos/video7.mp4";
+import vid2 from "../../assets/videos/video8.mp4";
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import Aos from "aos";
@@ -68,15 +68,15 @@ const BrandSuccess = () => {
                 <span>Success!</span>
               </h3>
               <div className="d-flex justify-content-center justify-content-md-start">
-              <div data-aos="fade-up" className="mt-4">
-                <div className="box position-relative"></div>
-                <div
-                  className="gradient-border1 joinnow-div position-absolute top-btn-div"
-                  style={{ marginTop: "-71px", marginLeft: "6px" }}
-                >
-                  <div className="fon">Get a demo</div>
+                <div data-aos="fade-up" className="mt-4">
+                  <div className="box position-relative"></div>
+                  <div
+                    className="gradient-border1 joinnow-div position-absolute top-btn-div"
+                    style={{ marginTop: "-71px", marginLeft: "6px" }}
+                  >
+                    <div className="fon">Get a demo</div>
+                  </div>
                 </div>
-              </div>
               </div>
               <div class="mt-4 d-flex  align-items-center social-media-icons justify-content-center justify-content-md-start">
                 <img src={TwitterIcon} alt="twitter" />
@@ -87,17 +87,13 @@ const BrandSuccess = () => {
             </div>
 
             <div className=" position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
-            <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
+              <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
               <div className="images-div mx-auto">
                 <motion.div
                   transition={{ ease: "easeInOut" }}
                   style={{ y: logo }}
                 >
-                  <motion.img
-                  className="logo"
-                    src={LogoImg}
-                    alt="logo"
-                  />
+                  <motion.img className="logo" src={LogoImg} alt="logo" />
                 </motion.div>
 
                 <motion.div
@@ -129,11 +125,27 @@ const BrandSuccess = () => {
                   style={{ y: first, x: firstx }}
                   className="first-div"
                 >
-                <div className="phone-wrapper">
-                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
-                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1 }} muted loop={true} width={"100%"}  height={"100%"} playing={true} url={vid1} />
-
-                </div>
+                  <div className="phone-wrapper">
+                    <img
+                      style={{ position: "relative" }}
+                      src={phoneFrame}
+                      alt="iphoneImg"
+                    />
+                    <ReactPlayer
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 5,
+                        zIndex: -1,
+                      }}
+                      muted
+                      loop={true}
+                      width={"100%"}
+                      height={"100%"}
+                      playing={true}
+                      url={vid1}
+                    />
+                  </div>
                 </motion.div>
 
                 <motion.div
@@ -141,15 +153,30 @@ const BrandSuccess = () => {
                   style={{ y: scnd }}
                   className="second-div"
                 >
-                <div className="phone-wrapper">
-                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
-                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1 }} muted loop={true} width={"100%"}  height={"100%"} playing={true} url={vid2} />
-
-                </div>
+                  <div className="phone-wrapper">
+                    <img
+                      style={{ position: "relative" }}
+                      src={phoneFrame}
+                      alt="iphoneImg"
+                    />
+                    <ReactPlayer
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 5,
+                        zIndex: -1,
+                      }}
+                      muted
+                      loop={true}
+                      width={"100%"}
+                      height={"100%"}
+                      playing={true}
+                      url={vid2}
+                    />
+                  </div>
                 </motion.div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
