@@ -19,6 +19,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    @media (max-width: 768px) {
+      .title {
+        font-size: 45px;
+      }
+    }
   }
   .desc-div {
     .description {
@@ -27,6 +32,13 @@
       font-weight: 500;
       max-width: 78%;
       margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
     }
   }
   .top-btn-div {
@@ -60,6 +72,7 @@
     transition: transform 0.3s ease;
     .iphone-div {
       position: relative;
+      width: 100%;
       .rocket-img {
         position: absolute;
         left: 100px;
@@ -68,23 +81,23 @@
         transition: transform 0.3s ease;
         visibility: hidden;
       }
-      .mobil-div{
-       height:400px;
+      .mobil-div {
+        width: 60%;
+        margin: 0 auto;
       }
+
       .left-mobile {
-        margin-right: -130px;
+        margin-right: -90px;
         transition: transform 0.3s ease;
-        height: 100%;
+        height: auto;
         transform: translateY(0);
-        // max-height: 500px;
-        // max-width: 60%;
+        width: 100%;
       }
       .right-mobile {
         margin-left: -120px;
         transition: transform 0.3s ease;
-        height: 100%;
-        // max-height: 444px;
-        // max-width: 55%;
+        height: auto;
+        width: 100%;
         margin-bottom: 0 !important;
       }
       .mobile {
@@ -101,35 +114,106 @@
         transition: transform 0.3s ease;
         visibility: hidden;
       }
-      .phone-wrapper{
+      .phone-wrapper {
         height: 70%;
+        width: auto;
         position: relative;
         z-index: 1;
-        img{
-        height: 100%;
-        width: 148px;
+        img {
+          height: 100%;
+          width: 148px;
         }
-        video{
-       object-fit: cover;
-       border-radius: 25px;
+        video {
+          object-fit: cover;
+          border-radius: 25px;
+        }
+      }
+      @media (max-width: 768px) {
+        .mobil-div {
+          width: 100%;
+          margin: 0 auto;
+        }
+        .left-mobile {
+          margin-right: 0px;
+          transform: translateY(-65%) !important;
+        }
+        .phone-wrapper {
+          margin: auto;
+        }
+        .phone-wrapper {
+          width: 35%;
+          margin-bottom: 0;
+          margin-top: -150px;
+          margin-bottom: 50%;
+          img {
+            width: 100%;
+          }
+          video {
+            border-radius: 15px;
+          }
         }
       }
     }
   }
+  .iphone-div {
+    @media (max-width:768px) {
+      .fire-img {
+        transform: translate(90%, -35%);
+      }
+    }
+   
+  }
   .iphone-div:hover {
     .rocket-img {
-      transform: translate(-260px, -310px);
+      transform: translate(-40%, -58%);
       visibility: visible;
+      img {
+        width: 75%;
+      }
     }
     .fire-img {
-      transform: translate(270px, 135px);
+      transform: translate(40%, 28%);
       visibility: visible;
+      img {
+        width: 75%;
+      }
     }
     .left-mobile {
       transform: translateX(50px);
     }
     .right-mobile {
       transform: translateX(-50px);
+    }
+    @media (max-width: 991px) {
+      .rocket-img {
+        transform: translate(-55%, -38%);
+      }
+      .fire-img {
+        transform: translate(75%, 28%);
+      }
+    }
+    @media (max-width: 768px) {
+      margin-top: 50px;
+      .right-mobile {
+        transform: translateX(0px);
+        transform: translateY(-60px);
+      }
+      .left-mobile {
+        transform: translateX(0px);
+        transform: translateY(-40%) !important;
+      }
+      .rocket-img {
+        transform: translate(-55%, -48%);
+        img {
+          width: 100%;
+        }
+      }
+      .fire-img {
+        transform: translate(110%, 25%);
+        img {
+          width: 300px;
+        }
+      }
     }
   }
 }

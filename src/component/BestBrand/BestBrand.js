@@ -14,7 +14,8 @@ const BestBrand = () => {
   return (
     <React.Fragment>
       <div className="best-brand-main-div container my-5 pt-5">
-        <div className="title-div d-flex justify-content-center">
+      <div className="py-4 py-md-0"></div>
+        <div className="title-div d-flex justify-content-center mt-5 mt-md-0">
           <h2 className="title">The world's best brands trust Vidbling</h2>
         </div>
         <div className="d-flex">
@@ -28,7 +29,7 @@ const BestBrand = () => {
             </div>
           </div>
           </div>
-        <div className="py-5">
+        <div className="py-3 my-md-5">
 
         </div>
       </div>
