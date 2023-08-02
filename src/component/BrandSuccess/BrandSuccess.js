@@ -94,10 +94,9 @@ const BrandSuccess = () => {
                   style={{ y: logo }}
                 >
                   <motion.img
+                  className="logo"
                     src={LogoImg}
                     alt="logo"
-                    width={362}
-                    height={406}
                   />
                 </motion.div>
 

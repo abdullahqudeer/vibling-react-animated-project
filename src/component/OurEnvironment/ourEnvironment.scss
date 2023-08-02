@@ -64,7 +64,6 @@
 .bg-environment{
   .stick{
     background-image: url(../../assets/Images/brandbgImg.png);
-    
   }
 
   .left-part {
@@ -185,5 +184,143 @@
 video{
   object-fit: cover;
   border-radius: 35px;
+}
+.main-wrapper{
+  height: 540px;
+}
+.video-wrapper{
+  height: 540px;
+}
+@media (max-width:991px) {
+  .left-part {
+    position: absolute;
+    width: 50%;
+    span {
+      font-size: 45px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .third-left-part {
+    width: 50% ;
+    span {
+      font-size: 45px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width:768px) {
+  .main-wrapper{
+    height: 480px;
+  }
+  .video-wrapper{
+    height: 480px;
+    width: 223px;
+  }
+  .wrapper1{
+    transform: translateX(5px);
+    
+  }
+  .wrapper2{
+    transform: translateX(20px);
+
+  }
+  .phone-frame{
+    height: 480px;
+  }
+  .left-part {
+    position: absolute;
+    width: 50%;
+    span {
+      font-size: 35px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .third-left-part {
+    width: 50% ;
+    span {
+      font-size: 35px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width:576px) {
+  .main-wrapper{
+    height: 400px;
+  }
+  .video-wrapper{
+    height: 400px;
+    width: 185px;
+  }
+  .wrapper1{
+    transform: translateX(29px);
+    
+  }
+  .wrapper2{
+    transform: translateX(67px);
+
+  }
+  .phone-frame{
+    height: 400px;
+  }
+  .left-part {
+    width: 45% ;
+
+    span {
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 30px;
+    }
+  }
+  .third-left-part {
+    width: 45% ;
+    span {
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+      padding-left: 30px;
+      font-weight: 400;
+
+
+    }
+  }
+}
+@media (max-width:400px) {
+  .left-part {
+    width: 45% ;
+
+    span {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 30px;
+    }
+  }
+  .third-left-part {
+    width: 45% ;
+    span {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      padding-left: 30px;
+      font-weight: 400;
+
+
+    }
+  }
 }
 }

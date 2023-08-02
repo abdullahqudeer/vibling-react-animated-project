@@ -2,14 +2,19 @@
   background-image: url(../../assets/Images/brandbgImg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  // overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   .talk-content {
     display: flex;
     flex-direction: column;
     transition: transform 0.6s ease;
-
-    // .logo {
-    // height: 500px;
-    // }
+    .animation-wrapper{
+      height: 300px;
+      width: 100%;
+      overflow-x: hidden;
+    }
     h2 {
       margin-top: 10px;
       width: 800px;
@@ -69,39 +74,77 @@
         height: 60px;
       }
     }
-   
-    .polygon-left{
+
+    .polygon-left {
       position: absolute;
       top: 136px;
       left: 338px;
-    transition: transform 0.6s ease;
-
+      transition: transform 0.6s ease;
     }
-    .logo{
+    .logo {
       position: absolute;
       bottom: 363px;
-    transition: transform 0.6s ease;
-
+      transition: transform 0.6s ease;
     }
-    .polygon-right{
+    .polygon-right {
       position: absolute;
       top: 90px;
       right: 317px;
-    transition: transform 0.6s ease;
-
+      transition: transform 0.6s ease;
     }
 
-    &:hover{
-     .polygon-left{
-        transform: translate(-500px,170px);
-     }
-     .logo{
-      transform: rotate(-135deg);
-     }
-     .polygon-right{
-      transform: translate(420px,60px);
-     }
+    &:hover {
+      .polygon-left {
+        transform: translate(-500px, 170px);
+      }
+      .logo {
+        transform: rotate(-135deg);
+      }
+      .polygon-right {
+        transform: translate(420px, 60px);
+      }
     }
-
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 45px;
+        max-width: 350px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 350px;
+      }
+      .logo {
+        top: -40px;
+        width: 250px;
+        height: 250px;
+      }
+      .polygon-left {
+        height: 120px;
+        width: auto;
+        top: 20px;
+        left: 65%;
+      }
+      .polygon-right {
+        height: 120px;
+        width: auto;
+        top: 20px;
+        right: 65%;
+      }
+      .animation-wrapper{
+        height: 150px;
+      }
+    }
+    &:hover {
+      .polygon-left {
+        transform: translate(-56vw, 60px);
+      }
+      .logo {
+        transform: rotate(-135deg);
+      }
+      .polygon-right {
+        transform: translate(56vw, 60px);
+      }
+    }
   }
 }

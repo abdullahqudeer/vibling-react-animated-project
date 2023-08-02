@@ -29,12 +29,12 @@ const ForBrand = () => {
         </div>
          <DriveSales />
         <HowWorksCom />
-      {/* <ElevateBrand />
-        <OurEnvironment /> */}
-         {/*<LetsTalk />
-        <div className="footer">
+       <ElevateBrand />
+       <OurEnvironment /> 
+         <LetsTalk />
+     <div className="footer">
           <Footer />
-        </div>  */}
+        </div> 
       </div>
     </React.Fragment>
   );

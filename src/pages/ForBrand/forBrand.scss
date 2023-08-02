@@ -5,6 +5,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @media (max-width:768px) {
+    .footer {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
