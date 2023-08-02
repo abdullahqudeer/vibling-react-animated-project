@@ -34,7 +34,7 @@ export default function DriveSales() {
         className="bg-environment drive-sales-wrapper"
       >
         <div
-          style={{position: "sticky", top: 0 }}
+          style={{ position: "sticky", top: 0 }}
           className="d-flex justify-content-between align-items-center stick animation-height"
         >
           <div
@@ -60,7 +60,7 @@ export default function DriveSales() {
             >
               <div>
                 <motion.img
-                className="images image1"
+                  className="images image1"
                   style={{
                     position: "relative",
                     opacity: o1,
@@ -71,7 +71,7 @@ export default function DriveSales() {
               </div>
               <div>
                 <motion.img
-                className="images"
+                  className="images"
                   style={{
                     position: "absolute",
                     top: y1,
@@ -84,7 +84,7 @@ export default function DriveSales() {
               </div>
               <div>
                 <motion.img
-                className="images"
+                  className="images"
                   style={{
                     position: "absolute",
                     top: y2,
