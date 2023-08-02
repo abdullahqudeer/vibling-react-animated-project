@@ -82,21 +82,21 @@ export default function HowWorksCom() {
     <div className="how-works-main mt-0 mt-md-5 pt-0 pt-md-5">
       <div className="py-0 py-md-5"></div>
       <div className="w-100 overflow">
-      <div className="how-works-header">
-        <img className="img1" src={pic11} alt=".." />
-        <img className="img2" src={pic12} alt=".." />
-        <img className="ploygon" src={polygonRight} alt=".." />
-        <img className="img3" src={pic13} alt=".." />
-        <img className="img4" src={pic14} alt=".." />
-        <h1>How It Works?</h1>
-        <h6 className="mt-3">
-          We combine the power of <br />
-          <span> subscription-based</span> partnerships with <br />
-          <span> cutting-edge</span> technology, data, strategy, and <br />{" "}
-          creatives to help you drive virality and profitable <br />
-          <span> hyper-growth.</span>
-        </h6>
-      </div>
+        <div className="how-works-header">
+          <img className="img1" src={pic11} alt=".." />
+          <img className="img2" src={pic12} alt=".." />
+          <img className="ploygon" src={polygonRight} alt=".." />
+          <img className="img3" src={pic13} alt=".." />
+          <img className="img4" src={pic14} alt=".." />
+          <h1>How It Works?</h1>
+          <h6 className="mt-3">
+            We combine the power of <br />
+            <span> subscription-based</span> partnerships with <br />
+            <span> cutting-edge</span> technology, data, strategy, and <br />{" "}
+            creatives to help you drive virality and profitable <br />
+            <span> hyper-growth.</span>
+          </h6>
+        </div>
       </div>
       <div
         ref={targetRef}
@@ -116,14 +116,14 @@ export default function HowWorksCom() {
             className="d-flex justify-content-center align-items-center  container px-4"
           >
             <img
-            className="phone-frame"
+              className="phone-frame"
               src={phoneFrame}
               alt="phone"
               style={{ position: "absolute", zIndex: 999 }}
             />
             <div
               className="images-wrapper d-flex flex-column justify-content-center align-items-center"
-              style={{  position: "relative" }}
+              style={{ position: "relative" }}
             >
               <div>
                 <motion.div style={{ position: "relative", opacity: o1 }}>
@@ -209,6 +209,7 @@ export default function HowWorksCom() {
                     left: 2,
                     top: y5,
                     opacity: o6,
+                    width: "100%",
                   }}
                   src={pic6}
                   alt=""
