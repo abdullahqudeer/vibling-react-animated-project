@@ -13,9 +13,9 @@ const Brilliance = () => {
   }, []);
   return (
     <React.Fragment>
-      <div className="brilliance-main-div py-5">
+      <div className="brilliance-main-div py-0 py-md-5">
         <div className="container">
-          <div className="py-5"></div>
+          <div className="py-0 py-md-5"></div>
           <div className="title-div d-flex justify-content-center">
             <h2 className="title">AI-Powered Platform</h2>
           </div>
@@ -30,23 +30,27 @@ const Brilliance = () => {
               tracking.
             </h6>
           </div>
-          <div className="images-div my-5">
-            <div className="py-4"></div>
+          <div className="images-div my-0 my-md-5">
+            <div className="py-0 py-md-4"></div>
             <div className="iphone-div">
               <div className="analytics-img">
-                <img src={Analytics} alt="Rocket" width={390} />
+                <img src={Analytics} alt="Rocket" />
               </div>
               <div className="mobil-div d-flex justify-content-center">
                 <img
                   src={leftPhone}
                   className="left-mobile mb-4"
-                  height={563}
+                  alt="..."
                 />
-                <img src={midlePhone} className="mobile" height={659} />
+                <img
+                  src={midlePhone}
+                  className="mobile"
+                  alt="..."
+                />
                 <img
                   src={rightPhone}
                   className="right-mobile mb-4"
-                  height={563}
+                  alt="..."
                 />
               </div>
               <div className="target-img d-flex align-items-end justify-content-end">
@@ -66,7 +70,7 @@ const Brilliance = () => {
               </div>
             </div>
           </div>
-          <div className="py-5 my-5"></div>
+          <div className="py-0 py-md-5 my-0 my-md-5"></div>
         </div>
       </div>
     </React.Fragment>

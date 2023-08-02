@@ -3,6 +3,8 @@
   background-repeat: no-repeat;
   // background-size: 100% 100%;
   // height: 1000px;
+
+
   .brand-inner-div {
     background: linear-gradient(
       180deg,
@@ -34,6 +36,12 @@
           -webkit-text-fill-color: transparent;
         }
       }
+      @media (max-width: 768px) {
+        .content {
+          font-size: 45px;
+          text-align: center;
+        }
+      }
     }
     .right-part {
       transition: 0.4s ease;
@@ -62,16 +70,16 @@
         }
       }
       .iphone-div {
-        .phone-wrapper{
+        .phone-wrapper {
           position: relative;
           height: 480px;
           width: 238px;
         }
-        img{
+        img {
           width: 100%;
           height: 100%;
         }
-        video{
+        video {
           border-radius: 35px;
           width: 95% !important;
           object-fit: cover;
@@ -81,14 +89,27 @@
           margin-top: 360px;
           margin-left: -170px;
           transition: transform 0.4s ease;
-
-         
         }
         .second-div {
           margin-left: 0px;
           margin-top: -805px;
           z-index: 999;
           transition: transform 0.4s ease;
+        }
+        @media (max-width: 768px) {
+          .first-div {
+            margin-left: -40px;
+            left: 50%;
+          }
+        }
+      }
+      @media (max-width: 768px) {
+        .iphone-div {
+          transform: translateX(-50%) !important;
+          left: 50%;
+          position: absolute;
+          height: 440px;
+          width: 218px;
         }
       }
     }
@@ -101,5 +122,8 @@
     img {
       cursor: pointer;
     }
+  }
+
+  @media (max-width: 768px) {
   }
 }

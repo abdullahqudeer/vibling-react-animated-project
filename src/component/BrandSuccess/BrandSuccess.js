@@ -57,9 +57,9 @@ const BrandSuccess = () => {
     <div
       ref={targetRef}
       style={{ height: "100vh" }}
-      className="brand-success-main-div mt-5 pt-5"
+      className="brand-success-main-div  mt-0 mt-md-5  pt-0 pt-md-5"
     >
-      <div className="brand-inner-div  py-5 ">
+      <div className="brand-inner-div  py-0 py-md-5 ">
         <div className="container mb-5 pb-3">
           <div className="row">
             <div className="left-part col-lg-6 col-md-12 col-sm-12 px-2 my-5">
@@ -67,6 +67,7 @@ const BrandSuccess = () => {
                 Go Viral With <span>Vidbling</span>: <br /> Elevate Your Brand's{" "}
                 <span>Success!</span>
               </h3>
+              <div className="d-flex justify-content-center justify-content-md-start">
               <div data-aos="fade-up" className="mt-4">
                 <div className="box position-relative"></div>
                 <div
@@ -76,7 +77,8 @@ const BrandSuccess = () => {
                   <div className="fon">Get a demo</div>
                 </div>
               </div>
-              <div class="mt-4 d-flex  align-items-center social-media-icons">
+              </div>
+              <div class="mt-4 d-flex  align-items-center social-media-icons justify-content-center justify-content-md-start">
                 <img src={TwitterIcon} alt="twitter" />
                 <img src={FacebookIcon} alt="facebook" />
                 <img src={InstagramIcon} alt="instagram" />
@@ -84,8 +86,9 @@ const BrandSuccess = () => {
               </div>
             </div>
 
-            <div className="right-part col-lg-6 col-md-12 col-sm-12 d-flex">
-              <div className="images-div">
+            <div className=" position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
+            <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
+              <div className="images-div mx-auto">
                 <motion.div
                   transition={{ ease: "easeInOut" }}
                   style={{ y: logo }}
@@ -147,6 +150,7 @@ const BrandSuccess = () => {
                 </motion.div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

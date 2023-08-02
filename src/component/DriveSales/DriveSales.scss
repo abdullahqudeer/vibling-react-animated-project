@@ -1,4 +1,7 @@
 .drive-sales {
+  .animation-height {
+    height: 100vh;
+  }
   .left-part {
     span {
       text-align: left;
@@ -11,6 +14,128 @@
       margin-top: 30px;
       font-weight: 500;
       font-size: 20px;
+    }
+  }
+  .laptop-frame {
+    max-height: 400px;
+    max-width: 80%;
+    position: absolute;
+  }
+  .images-wrapper {
+    top: 15px;
+    height: 100%;
+    max-width: 550px;
+  }
+  .images {
+    width: 100%;
+    transform: translateX(-80px);
+    top: 0;
+  }
+  .drive-sales-wrapper {
+    padding-top: 100px;
+  }
+  .main-wrapper {
+    height: 400px;
+  }
+
+  @media (max-width: 991px) {
+    .main-wrapper {
+      height: 320px;
+    }
+    .laptop-frame {
+      max-height: 400px;
+      max-width: 70%;
+      position: absolute;
+    }
+    .images-wrapper {
+      max-width: 370px;
+    }
+    .images {
+      width: 100%;
+      transform: translateX(-60px);
+    }
+
+    .left-part {
+      span {
+        font-size: 35px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .main-wrapper {
+      height: 250px;
+    }
+    .drive-sales-wrapper {
+      padding-top: 0px;
+    }
+    .laptop-frame {
+      max-height: 400px;
+      max-width: 65%;
+      position: absolute;
+    }
+    .images-wrapper {
+      max-width: 255px;
+    }
+    .images {
+      width: 100%;
+      transform: translateX(-40px);
+    }
+
+    .left-part {
+      width: calc(50% - 60px);
+      span {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+      }
+    }
+  }
+  .image1 {
+    top: -40px;
+  }
+  @media (max-width: 576px) {
+    .main-wrapper {
+      height: 180px;
+    }
+    .laptop-frame {
+      max-width: 60%;
+    }
+    .images-wrapper {
+      top: 5px;
+      max-width: 46%;
+    }
+    .images {
+      transform: translateX(-15%);
+      border-radius: 0px;
+    }
+
+    .left-part {
+      width: calc(50% - 5px);
+      span {
+        font-size: 18px;
+        margin: 0;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 300;
+      }
+    }
+    
+    .image1 {
+      top: -5px;
+    }
+  }
+  @media (max-width: 480px) {
+    .image1 {
+      top: -30px;
     }
   }
 }

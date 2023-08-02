@@ -79,8 +79,9 @@ export default function HowWorksCom() {
   const o8 = useTransform(scrollYProgress, [0.0, 0.9, 0.95, 1], [1, 1, 0, 0]);
 
   return (
-    <div className="how-works-main mt-5 pt-5">
-      <div className="py-5"></div>
+    <div className="how-works-main mt-0 mt-md-5 pt-0 pt-md-5">
+      <div className="py-0 py-md-5"></div>
+      <div className="w-100 overflow">
       <div className="how-works-header">
         <img className="img1" src={pic11} alt=".." />
         <img className="img2" src={pic12} alt=".." />
@@ -96,10 +97,11 @@ export default function HowWorksCom() {
           <span> hyper-growth.</span>
         </h6>
       </div>
+      </div>
       <div
         ref={targetRef}
-        style={{ height: "900vh", paddingTop: 100, position: "relative" }}
-        className="bg-environment"
+        style={{ height: "900vh", position: "relative" }}
+        className="bg-environment animation-wrapper"
       >
         <div
           style={{ height: "100vh", position: "sticky", top: 0 }}
@@ -114,13 +116,14 @@ export default function HowWorksCom() {
             className="d-flex justify-content-center align-items-center  container px-4"
           >
             <img
+            className="phone-frame"
               src={phoneFrame}
               alt="phone"
               style={{ position: "absolute", zIndex: 999 }}
             />
             <div
-              className="d-flex flex-column justify-content-center align-items-center"
-              style={{ width: 260, position: "relative" }}
+              className="images-wrapper d-flex flex-column justify-content-center align-items-center"
+              style={{  position: "relative" }}
             >
               <div>
                 <motion.div style={{ position: "relative", opacity: o1 }}>
@@ -271,7 +274,7 @@ export default function HowWorksCom() {
             </motion.div>
             <motion.div
               style={{ position: "absolute", opacity: o3, top: y2 }}
-              className="third-left-part"
+              className="left-part"
             >
               <span>AI-Powered Recommendations</span>
               <p>
@@ -294,7 +297,7 @@ export default function HowWorksCom() {
 
             <motion.div
               style={{ position: "absolute", opacity: o5, top: y4 }}
-              className="third-left-part"
+              className=" left-part"
             >
               <span>Leverage our sub-accounts feature</span>
               <p>
@@ -315,7 +318,7 @@ export default function HowWorksCom() {
             </motion.div>
             <motion.div
               style={{ position: "absolute", opacity: o7, top: y6 }}
-              className="third-left-part"
+              className=" left-part"
             >
               <span>Advanced Data Dashboard</span>
               <p>
@@ -327,7 +330,7 @@ export default function HowWorksCom() {
 
             <motion.div
               style={{ position: "absolute", opacity: o8, top: y7 }}
-              className="third-left-part"
+              className="second-right-part"
             >
               <span>Seamless Integration</span>
               <p>
@@ -338,7 +341,7 @@ export default function HowWorksCom() {
             </motion.div>
             <motion.div
               style={{ position: "absolute", top: y8 }}
-              className="second-right-part"
+              className="left-part"
             >
               <span>
                 Sit back and watch Vidbling skyrocket your business to the moon.

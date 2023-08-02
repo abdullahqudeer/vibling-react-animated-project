@@ -49,25 +49,26 @@ const Explode = () => {
           </div>
           <div className="py-5"></div>
         </div>
-        <div className="images-div mt-5 ">
-          <div className="container pb-5">
+        <div className="images-div mt-0 mt-md-5 ">
+          <div className="container pb-0 pb-md-5">
             <div className="iphone-div">
               <div className="rocket-img">
-                <img src={Rocket} alt="Rocket" width={677} />
+                <img src={Rocket} alt="Rocket" />
               </div>
-              <div className="mobil-div d-flex justify-content-center align-items-end">
-                <img src={leftPhone} className="left-mobile mb-4" />
+              <div className="mobil-div d-flex justify-content-center align-items-end flex-column-reverse flex-md-row">
+                <img src={leftPhone} className="left-mobile mb-4" alt="..." />
+
                 <div className="phone-wrapper mb-4">
                 <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
-                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1,overflow:"hidden" }} muted loop={true} width={140}  height={"100%"} playing={true} url={vid1} />
+                <ReactPlayer   style={{position:"absolute",top:0,left:5,zIndex:-1,overflow:"hidden" }} muted loop={true} width={"95%"}  height={"100%"} playing={true} url={vid1} />
                 </div>
-                {/* <img src={midlePhone} className="mobile" /> */}
-                <img src={rightPhone} className="right-mobile mb-4" />
+                
+                <img src={rightPhone} className="right-mobile mb-4" alt="..."/>
               </div>
               <div className="fire-img d-flex align-items-end justify-content-end">
-                <img src={Fire} alt="Fire" width={500} />
+                <img src={Fire} alt="Fire"/>
               </div>
-              <div className="py-5"></div>
+              <div className="py-0 py-md-5"></div>
             </div>
           </div>
         </div>

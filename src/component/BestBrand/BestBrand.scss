@@ -20,5 +20,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    @media (max-width:768px) {
+      .title{
+        font-size: 45px;
+      }
+    }
   }
 }
