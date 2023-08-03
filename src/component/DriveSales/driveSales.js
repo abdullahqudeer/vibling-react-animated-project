@@ -27,7 +27,7 @@ export default function DriveSales() {
   const o1 = useTransform(scrollYProgress, [0.0, 0.45, 0.52, 1], [1, 1, 0, 0]);
   const o2 = useTransform(scrollYProgress, [0.0, 0.75, 0.82, 1], [1, 1, 0, 0]);
   return (
-    <div className="drive-sales container">
+    <div className="drive-sales ">
       <div
         ref={targetRef}
         style={{ height: "300vh", position: "relative" }}
