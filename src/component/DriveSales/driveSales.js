@@ -30,7 +30,7 @@ export default function DriveSales() {
     <div className="drive-sales ">
       <div
         ref={targetRef}
-        style={{ height: "300vh", position: "relative" }}
+        style={{ position: "relative" }}
         className="bg-environment drive-sales-wrapper"
       >
         <div

@@ -33,6 +33,7 @@
   }
   .drive-sales-wrapper {
     padding-top: 100px;
+    height: 300vh;
   }
   .main-wrapper {
     height: 400px;
@@ -56,7 +57,7 @@
     }
 
     .left-part {
-        width: calc(50% - 110px);
+      width: calc(50% - 110px);
       span {
         font-size: 35px;
       }
@@ -97,6 +98,10 @@
         margin-top: 10px;
       }
     }
+    .animation-height {
+      height: 60vh;
+      top: 40vh !important;
+    }
   }
   .image1 {
     top: -40px;
@@ -124,17 +129,18 @@
     .image1 {
       top: 0px;
     }
+    .drive-sales-wrapper {
+      height: 110vh;
+    }
     margin: 0 5%;
   }
   @media (max-width: 480px) {
     .image1 {
       top: -10px;
     }
-   
   }
-  
 }
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .images {
     border-radius: 0px;
     transform: translateX(-40px) !important;
