@@ -1,4 +1,5 @@
 .brilliance-main-div {
+  // margin-bottom: 400px;
   background-image: url(../../assets/Images/brandbgImg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,10 +148,12 @@
         }
         .right-mobile {
           transform: translateY(50px);
-        }@media (max-width: 768px) {
-        .mobile {
-          transform: translateY(90px);
-        }}
+        }
+        @media (max-width: 768px) {
+          .mobile {
+            transform: translateY(90px);
+          }
+        }
       }
       @media (max-width: 991px) {
         .analytics-img {
@@ -192,6 +195,11 @@
           width: 65%;
         }
       }
+    }
+  }
+  @media (max-width: 576px) {
+    .images-div {
+      height: 71vh;
     }
   }
 }
