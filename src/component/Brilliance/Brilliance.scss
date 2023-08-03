@@ -82,7 +82,7 @@
     }
   }
   .images-div {
-    height: 100vh;
+    height: 125vh;
     position: relative;
     text-align: center;
     top: 100px;
@@ -195,11 +195,17 @@
           width: 65%;
         }
       }
+      
     }
   }
   @media (max-width: 576px) {
     .images-div {
       height: 71vh;
+    }
+  }
+  @media (max-width: 991px) {
+    .images-div {
+      height: 85vh;
     }
   }
 }
