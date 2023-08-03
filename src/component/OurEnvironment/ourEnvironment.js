@@ -36,13 +36,13 @@ const OurEnvironment = () => {
       >
         <div
           style={{
-            height: 540,
             position: "relative",
             overflow: "hidden",
           }}
-          className="d-flex justify-content-center align-items-center  container px-4"
+          className="main-wrapper d-flex justify-content-end justify-content-lg-center align-items-center  container px-4"
         >
           <img
+            className="phone-frame"
             src={phoneFrame}
             alt="phone"
             style={{ position: "absolute", zIndex: 999 }}
@@ -53,30 +53,32 @@ const OurEnvironment = () => {
           >
             <div>
               <motion.div
+                className="video-wrapper wrapper1"
                 style={{ position: "relative", opacity: o1 }}
               >
                 <ReactPlayer
-                    muted
-                    loop={true}
-                    width={"100%"}
-                    height={540}
-                    playing={true}
-                    url={vid1}
-                  />
+                  muted
+                  loop={true}
+                  width={"100%"}
+                  height={"100%"}
+                  playing={true}
+                  url={vid1}
+                />
               </motion.div>
             </div>
             <div>
               <motion.div
+                className="video-wrapper wrapper2"
                 style={{ position: "absolute", left: 2, top: y1 }}
               >
-                 <ReactPlayer
-                    muted
-                    loop={true}
-                    width={"100%"}
-                    height={540}
-                    playing={true}
-                    url={vid2}
-                  />
+                <ReactPlayer
+                  muted
+                  loop={true}
+                  width={"100%"}
+                  height={"100%"}
+                  playing={true}
+                  url={vid2}
+                />
               </motion.div>
             </div>
           </div>
@@ -93,7 +95,7 @@ const OurEnvironment = () => {
           </motion.div>
           <motion.div
             style={{ position: "absolute", top: y1 }}
-            className="third-left-part"
+            className="third-left-part "
           >
             <span>
               Targeted <br />

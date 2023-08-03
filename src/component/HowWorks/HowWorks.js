@@ -126,12 +126,15 @@ export default function HowWorksCom() {
               style={{ position: "relative" }}
             >
               <div>
-                <motion.div style={{ position: "relative", opacity: o1 }}>
+                <motion.div
+                  className="video-wrapper"
+                  style={{ position: "relative", opacity: o1 }}
+                >
                   <ReactPlayer
                     muted
                     loop={true}
                     width={"100%"}
-                    height={540}
+                    height={"100%"}
                     playing={true}
                     url={vid1}
                   />
@@ -165,6 +168,7 @@ export default function HowWorksCom() {
               </div>
               <div>
                 <motion.div
+                  className="video-wrapper"
                   style={{
                     position: "absolute",
                     left: 2,
@@ -175,8 +179,8 @@ export default function HowWorksCom() {
                   <ReactPlayer
                     muted
                     loop={true}
-                    width={"100%"}
-                    height={540}
+                    width={"98%"}
+                    height={"100%"}
                     playing={true}
                     url={vid2}
                   />
@@ -184,6 +188,7 @@ export default function HowWorksCom() {
               </div>
               <div>
                 <motion.div
+                  className="video-wrapper"
                   style={{
                     position: "absolute",
                     left: 2,
@@ -194,8 +199,8 @@ export default function HowWorksCom() {
                   <ReactPlayer
                     muted
                     loop={true}
-                    width={"100%"}
-                    height={540}
+                    width={"98%"}
+                    height={"100%"}
                     playing={true}
                     url={vid3}
                   />

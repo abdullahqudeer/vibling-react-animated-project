@@ -19,22 +19,22 @@ const ForBrand = () => {
   return (
     <React.Fragment>
       <div className="brand-main-div">
-      <div style={{overflow:"hidden"}}>
-        <Header />
-        <BrandSuccess />
-        <BestBrand />
-        <Branding isShowNews={true} />
-        <Explode />
-         <Brilliance />
+        <div style={{ overflow: "hidden" }}>
+          <Header />
+          <BrandSuccess />
+          <BestBrand />
+          <Branding isShowNews={true} />
+          <Explode />
+          <Brilliance />
         </div>
-         <DriveSales />
+        <DriveSales />
         <HowWorksCom />
-      {/* <ElevateBrand />
-        <OurEnvironment /> */}
-         {/*<LetsTalk />
+        <ElevateBrand />
+        <OurEnvironment />
+        <LetsTalk />
         <div className="footer">
           <Footer />
-        </div>  */}
+        </div>
       </div>
     </React.Fragment>
   );
