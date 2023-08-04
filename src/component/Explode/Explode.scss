@@ -24,6 +24,11 @@
         font-size: 45px;
       }
     }
+    @media (max-width: 576px) {
+      .title {
+        font-size: 36px;
+      }
+    }
   }
   .desc-div {
     .description {

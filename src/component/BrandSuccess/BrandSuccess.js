@@ -86,7 +86,7 @@ const BrandSuccess = () => {
               </div>
             </div>
 
-            <div className=" position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
+            <div className="d-sm-block d-none position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
               <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
               <div className="images-div mx-auto">
                 <motion.div
@@ -177,10 +177,101 @@ const BrandSuccess = () => {
                 </motion.div>
               </div>
             </div>
+            <div className="d-sm-none d-block position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
+              <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
+              <div className="images-div mx-auto">
+                <div
+                  // transition={{ ease: "easeInOut" }}
+                  // style={{ y: logo }}
+                >
+                  <img className="logo" src={LogoImg} alt="logo" />
+                </div>
+
+                <div
+                  transition={{ ease: "easeInOut" }}
+                  // style={{ y: poly2, x: poly2X }}
+                  className="poly-img"
+                >
+                  <img
+                    // style={{ rotate: poly2R }}
+                    src={PolygonImg2}
+                    alt="polygon"
+                  />
+                </div>
+                <div
+                  transition={{ ease: "easeInOut" }}
+                  // style={{ x: poly1 }}
+                  className="polygon-img"
+                >
+                  <img
+                    // style={{ rotate: poly2R }}
+                    src={PolygonImg1}
+                    alt="polygon"
+                  />
+                </div>
+              </div>
+              <div className="iphone-div d-flex">
+                <div
+                  transition={{ ease: "easeInOut" }}
+                  // style={{ y: first, x: firstx }}
+                  className="first-div"
+                >
+                  <div className="phone-wrapper">
+                    <img
+                      style={{ position: "relative" }}
+                      src={phoneFrame}
+                      alt="iphoneImg"
+                    />
+                    <ReactPlayer
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 5,
+                        zIndex: -1,
+                      }}
+                      muted
+                      loop={true}
+                      width={"100%"}
+                      height={"100%"}
+                      playing={true}
+                      url={vid1}
+                    />
+                  </div>
+                </div>
+
+                <div
+                  transition={{ ease: "easeInOut" }}
+                  // style={{ y: scnd }}
+                  className="second-div"
+                >
+                  <div className="phone-wrapper">
+                    <img
+                      style={{ position: "relative" }}
+                      src={phoneFrame}
+                      alt="iphoneImg"
+                    />
+                    <ReactPlayer
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 5,
+                        zIndex: -1,
+                      }}
+                      muted
+                      loop={true}
+                      width={"100%"}
+                      height={"100%"}
+                      playing={true}
+                      url={vid2}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

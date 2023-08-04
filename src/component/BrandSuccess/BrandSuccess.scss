@@ -99,6 +99,11 @@
             width: auto;
           }
         }
+        @media (max-width:576px) {
+          .polygon-img {
+            margin-top: 0px;
+          }
+        }
       }
       .iphone-div {
         .phone-wrapper {
@@ -144,6 +149,18 @@
             border-radius: 35px;
             width: 95% !important;
             object-fit: cover;
+          }
+        }
+        @media (max-width:576px) {
+          .first-div {
+            margin-left: -50px;
+            margin-top: 0;
+          }
+          .second-div {
+            margin-left: -40px;
+            margin-top: -90px;
+            z-index: 999;
+            transition: transform 0.4s ease;
           }
         }
       }
