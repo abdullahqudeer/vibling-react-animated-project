@@ -204,7 +204,28 @@
       width: 199px;
       height: 400px;
     }
-
+    .how-works-header {
+      margin-bottom: 50px;
+      h1{
+        font-size: 36px;
+      }
+      h6 {
+        font-size: 18px;
+        padding: 0 9%;
+      }
+      .img1{
+        top: 5px;
+      }
+      .img2{
+        top: 5px;
+      }
+    .img3{
+      bottom: -50px;
+    }
+    .img4{
+      bottom: -50px;
+    }
+    }
     .images-wrapper {
       width: 199px;
       height: 400px !important;

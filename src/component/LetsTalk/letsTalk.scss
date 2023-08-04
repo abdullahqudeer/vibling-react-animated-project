@@ -146,5 +146,9 @@
         transform: translate(56vw, 60px);
       }
     }
+    @media (max-width: 576px) {
+      h2 {
+        font-size: 36px;
+      }}
   }
 }

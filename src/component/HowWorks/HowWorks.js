@@ -89,11 +89,17 @@ export default function HowWorksCom() {
           <img className="img3" src={pic13} alt=".." />
           <img className="img4" src={pic14} alt=".." />
           <h1>How It Works?</h1>
-          <h6 className="mt-3">
+          <h6 className="d-sm-block d-none mt-3">
             We combine the power of <br />
             <span> subscription-based</span> partnerships with <br />
             <span> cutting-edge</span> technology, data, strategy, and <br />{" "}
             creatives to help you drive virality and profitable <br />
+            <span> hyper-growth.</span>
+          </h6>
+          <h6 className="d-sm-none d-block mt-4">
+          <span> subscription-based</span> partnerships with
+            <span> cutting-edge</span> technology, data, strategy, and
+            creatives to help you drive virality and profitable
             <span> hyper-growth.</span>
           </h6>
         </div>

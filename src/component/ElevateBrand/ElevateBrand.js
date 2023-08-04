@@ -12,7 +12,7 @@ export default function ElevateBrand() {
       <div className="py-0 py-md-5"></div>
       <div className="container">
         <div className="py-0 py-md-5"></div>
-        <div>
+        <div className="d-sm-block d-none">
           <h1>
             Elevate Your Brand at a <br /> Special Price
           </h1>
@@ -29,6 +29,19 @@ export default function ElevateBrand() {
             <br />
             features, connecting you with the perfect <br />
             influencers to <span>amplify your brand's reach.</span>
+          </h4>
+        </div>
+        <div className="d-sm-none d-block">
+        <h1 className="mx-4">
+            Elevate Your Brand at a Special Price
+          </h1>
+          <h4 className="mt-4">
+            Don't miss out on our <span> pre-launch opportunity! </span>
+            to access our platform packed with <span> cutting-edge </span>
+            Sign up now for
+            only <span> $299 </span>(originally $499) <br/>
+            features, connecting you with the perfect <br />
+            influencers to <span> amplify your brand's reach.</span>
           </h4>
         </div>
         <div className="mt-5 py-2 py-md-5">
