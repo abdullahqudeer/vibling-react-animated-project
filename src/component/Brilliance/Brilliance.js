@@ -57,6 +57,7 @@ const Brilliance = () => {
                 <img src={Target} alt="Fire" width={339} />
               </div>
             </div>
+            <div className="d-flex justify-content-center">
 
             <div className="d-flex justify-content-center py-5 my-5">
               <div data-aos="fade-up" className="mt-4 mx-auto">
@@ -68,6 +69,7 @@ const Brilliance = () => {
                   <div className="fon h4"> Learn More</div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
           <div className="py-0 py-md-5 my-0 my-md-5"></div>

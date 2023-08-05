@@ -241,9 +241,15 @@
     }
     .second-right-part {
       width: 40%;
+      top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
       span {
         font-size: 23px !important;
-        margin-top: 70px;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
       p {
         font-size: 14px !important;
@@ -251,9 +257,15 @@
     }
     .left-part {
       width: 47%;
+      top: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
       span {
         font-size: 23px !important;
-        margin-top: 70px;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
       p {
         font-size: 14px !important;

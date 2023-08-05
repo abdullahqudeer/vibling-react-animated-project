@@ -103,6 +103,11 @@
           .polygon-img {
             margin-top: 0px;
           }
+          .logo {
+            width: 180px;
+            height: 180px;
+            margin-right: 0px;
+          }
         }
       }
       .iphone-div {
@@ -162,6 +167,15 @@
             z-index: 999;
             transition: transform 0.4s ease;
           }
+            img {
+              width: 80%;
+              height: 80%;
+            }
+            video {
+              width: 75% !important;
+              height: 80% !important;
+              object-fit: cover;
+            }
         }
       }
       @media (max-width: 768px) {
@@ -185,3 +199,10 @@
     }
   }
 }
+
+// @media (max-width:576px) {
+//   .w-80{
+//     width: 80% !important;
+//     height: 80% !important;
+//   }
+// }

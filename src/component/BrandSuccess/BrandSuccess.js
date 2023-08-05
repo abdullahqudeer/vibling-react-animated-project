@@ -229,6 +229,7 @@ const BrandSuccess = () => {
                         left: 5,
                         zIndex: -1,
                       }}
+                      className="w-80"
                       muted
                       loop={true}
                       width={"100%"}
@@ -257,6 +258,7 @@ const BrandSuccess = () => {
                         left: 5,
                         zIndex: -1,
                       }}
+                      className="w-80"
                       muted
                       loop={true}
                       width={"100%"}

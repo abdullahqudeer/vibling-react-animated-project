@@ -58,7 +58,7 @@ const Explode = () => {
               <div className="mobil-div d-flex justify-content-center align-items-end flex-column-reverse flex-md-row">
                 <img src={leftPhone} className="left-mobile mb-4 mt-sm-0 mt-5" alt="..." />
 
-                <div className="d-sm-block d-none phone-wrapper mb-sm-4 mb-5">
+                <div className="phone-wrapper mb-sm-4 mb-5">
                 <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
                 <ReactPlayer style={{position:"absolute",top:0,left:5,zIndex:-1,overflow:"hidden" }} muted loop={true} width={"95%"}  height={"100%"} playing={true} url={vid1} />
                 </div>
