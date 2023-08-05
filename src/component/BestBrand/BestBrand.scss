@@ -1,5 +1,5 @@
 .best-brand-main-div {
-  margin-top: 110px !important;
+  margin-top: -110px !important;
   .title-div {
     .title {
       width: 800px;
@@ -20,19 +20,19 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    @media (max-width:768px) {
-      .title{
+    @media (max-width: 768px) {
+      .title {
         font-size: 45px;
       }
     }
   }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .best-brand-main-div {
     margin-top: -60px !important;
   }
-  .best-brand-main-div .title-div .title{
-      font-size: 36px !important;
-    }
+  .best-brand-main-div .title-div .title {
+    font-size: 36px !important;
+  }
 }

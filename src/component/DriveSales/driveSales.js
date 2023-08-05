@@ -24,8 +24,8 @@ export default function DriveSales() {
     ["100vh", "0vh", "0vh"]
   );
 
-  const o1 = useTransform(scrollYProgress, [0.0, 0.45, 0.52, 1], [1, 1, 0, 0]);
-  const o2 = useTransform(scrollYProgress, [0.0, 0.75, 0.82, 1], [1, 1, 0, 0]);
+  const o1 = useTransform(scrollYProgress, [0.0, 0.55, 0.59, 1], [1, 1, 0, 0]);
+  const o2 = useTransform(scrollYProgress, [0.0, 0.85, 0.89, 1], [1, 1, 0, 0]);
   return (
     <div className="drive-sales ">
       <div
