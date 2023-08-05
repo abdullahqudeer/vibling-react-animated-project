@@ -14,8 +14,8 @@ const BestBrand = () => {
   return (
     <React.Fragment>
       <div className="best-brand-main-div container my-sm-5 mt-0 mb-5 pt-sm-5">
-      <div className="py-4 py-md-0"></div>
-        <div className="title-div d-flex justify-content-center">
+      <div className="py-4 py-md-0 mt-sm-5"></div>
+        <div className="title-div d-flex justify-content-center mt-sm-5">
           <h2 className="title">The world's best brands trust Vidbling</h2>
         </div>
         <div className="d-flex justify-content-center">

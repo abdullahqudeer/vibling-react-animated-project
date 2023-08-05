@@ -57,7 +57,7 @@ const BrandSuccess = () => {
     <div
       ref={targetRef}
       style={{ height: "100vh" }}
-      className="brand-success-main-div  mt-0 mt-md-5  pt-0 pt-md-5"
+      className="brand-success-main-div  mt-0 pt-0 pt-md-5"
     >
       <div className="brand-inner-div  py-0 py-md-5 ">
         <div className="container mb-5 pb-3">
@@ -85,7 +85,6 @@ const BrandSuccess = () => {
                 <img src={AmazonIcon} alt="amazon" />
               </div>
             </div>
-
             <div className="d-sm-block d-none position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
               <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
               <div className="images-div mx-auto">
@@ -181,8 +180,8 @@ const BrandSuccess = () => {
               <div className="mt-5 mt-md-0 pt-5 pt-md-0"></div>
               <div className="images-div mx-auto">
                 <div
-                  // transition={{ ease: "easeInOut" }}
-                  // style={{ y: logo }}
+                // transition={{ ease: "easeInOut" }}
+                // style={{ y: logo }}
                 >
                   <img className="logo" src={LogoImg} alt="logo" />
                 </div>

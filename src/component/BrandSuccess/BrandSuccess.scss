@@ -50,9 +50,8 @@
     }
     .right-part {
       transition: 0.4s ease;
-      // margin-bottom: 400px;
-      // height: 1000px;
-
+      margin-bottom: 400px;
+     right: -240px;
       .images-div {
         margin-top: -70px;
         img {
@@ -127,7 +126,7 @@
         }
         .first-div {
           position: absolute;
-          margin-top: 360px;
+          margin-top: 60px;
           margin-left: -170px;
           transition: transform 0.4s ease;
         }
