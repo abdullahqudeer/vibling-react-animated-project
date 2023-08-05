@@ -24,6 +24,11 @@
         font-size: 45px;
       }
     }
+    @media (max-width: 576px) {
+      .title {
+        font-size: 36px;
+      }
+    }
   }
   .desc-div {
     .description {
@@ -65,7 +70,7 @@
     }
   }
   .images-div {
-    background-image: url(../../assets/Images/brandbgImg.png);
+    // background-image: url(../../assets/Images/brandbgImg.png);
     z-index: 0;
     position: relative;
     text-align: center;
@@ -153,6 +158,18 @@
           }
         }
       }
+      @media (max-width: 576px) {
+        .phone-wrapper {
+          width: 35%;
+        img{
+          width: 80px;
+        }}
+        }
+    }
+    @media (max-width:576px) {
+      .images-div{
+        height: 200px;
+      }
     }
   }
   .iphone-div {
@@ -215,6 +232,7 @@
         }
       }
     }
+
   }
 }
 @keyframes rockerMove {
@@ -235,5 +253,24 @@
   to {
     right: 180px;
     bottom: -140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .explode-main-div .images-div{
+    height: 200px;
+  }
+  .explode-main-div .images-div .iphone-div .right-mobile {
+    width: 200px;
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+  .explode-main-div .images-div .iphone-div .left-mobile {
+    width: 200px;
+    align-self: flex-start;
+    transform: translateY(-227px) !important;
+  }
+  .explode-main-div .images-div .iphone-div .phone-wrapper video{
+    width: 76px !important;
   }
 }

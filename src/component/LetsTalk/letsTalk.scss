@@ -1,5 +1,5 @@
 .talk-main-div {
-  background-image: url(../../assets/Images/brandbgImg.png);
+  // background-image: url(../../assets/Images/brandbgImg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   // overflow-x: hidden;
@@ -146,5 +146,9 @@
         transform: translate(56vw, 60px);
       }
     }
+    @media (max-width: 576px) {
+      h2 {
+        font-size: 36px;
+      }}
   }
 }

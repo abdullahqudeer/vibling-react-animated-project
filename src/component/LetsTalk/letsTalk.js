@@ -11,8 +11,7 @@ const LetsTalk = () => {
   }, []);
   return (
     <div>
-      <div className="py-0 py-md-5 my-0 my-md-5"></div>
-      <div className="talk-main-div position-relative py-0 pymd-5">
+      <div className="talk-main-div position-relative py-0">
         <div className="talk-content container d-flex justify-content-center align-items-center">
           <div className="animation-wrapper d-flex justify-content-center">
             <img

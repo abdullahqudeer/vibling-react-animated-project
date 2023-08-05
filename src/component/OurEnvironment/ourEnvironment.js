@@ -22,12 +22,12 @@ const OurEnvironment = () => {
     ["100vh", "0vh", "0vh"]
   );
 
-  const o1 = useTransform(scrollYProgress, [0.0, 0.6, 0.9, 1], [1, 1, 0, 0]);
+  const o1 = useTransform(scrollYProgress, [0.0, 0.6, 0.83, 1], [1, 1, 0, 0]);
 
   return (
     <div
       ref={targetRef}
-      style={{ height: "200vh", position: "relative" }}
+      style={{ height: "150vh", position: "relative" }}
       className="bg-environment"
     >
       <div
@@ -94,7 +94,15 @@ const OurEnvironment = () => {
             </p>
           </motion.div>
           <motion.div
-            style={{ position: "absolute", top: y1 }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+              height: "100%",
+              position: "absolute",
+              top: y1,
+            }}
             className="third-left-part "
           >
             <span>

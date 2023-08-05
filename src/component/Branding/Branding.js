@@ -11,7 +11,7 @@ import Marquee from "react-fast-marquee";
 const Branding = () => {
   return (
     <div className="marquee-div">
-      <Marquee speed={400} pauseOnHover>
+      <Marquee speed={100} pauseOnHover>
         <div>
           <img src={zara} alt="brands" />
         </div>

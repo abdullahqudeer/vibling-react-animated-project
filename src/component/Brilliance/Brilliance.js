@@ -30,42 +30,31 @@ const Brilliance = () => {
               tracking.
             </h6>
           </div>
-          <div className="images-div my-0 my-md-5">
+          <div className="images-div my-0 mt-md-5">
             <div className="py-0 py-md-4"></div>
             <div className="iphone-div">
               <div className="analytics-img">
                 <img src={Analytics} alt="Rocket" />
               </div>
               <div className="mobil-div d-flex justify-content-center">
-                <img
-                  src={leftPhone}
-                  className="left-mobile mb-4"
-                  alt="..."
-                />
-                <img
-                  src={midlePhone}
-                  className="mobile"
-                  alt="..."
-                />
-                <img
-                  src={rightPhone}
-                  className="right-mobile mb-4"
-                  alt="..."
-                />
+                <img src={leftPhone} className="left-mobile mb-4" alt="..." />
+                <img src={midlePhone} className="mobile" alt="..." />
+                <img src={rightPhone} className="right-mobile mb-4" alt="..." />
               </div>
               <div className="target-img d-flex align-items-end justify-content-end">
                 <img src={Target} alt="Fire" width={339} />
               </div>
             </div>
-
-            <div className="d-flex justify-content-center py-5 my-5">
-              <div data-aos="fade-up" className="mt-4 mx-auto">
-                <div className="box position-relative"></div>
-                <div
-                  className=" gradient-border1 joinnow-div position-absolute"
-                  style={{ marginTop: "-71px", marginLeft: "6px" }}
-                >
-                  <div className="fon h4"> Learn More</div>
+            <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center py-5 my-5">
+                <div data-aos="fade-up" className="mt-4 mx-auto">
+                  <div className="box position-relative"></div>
+                  <div
+                    className=" gradient-border1 joinnow-div position-absolute"
+                    style={{ marginTop: "-71px", marginLeft: "6px" }}
+                  >
+                    <div className="fon h4"> Learn More</div>
+                  </div>
                 </div>
               </div>
             </div>

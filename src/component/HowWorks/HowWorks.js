@@ -30,57 +30,64 @@ export default function HowWorksCom() {
   const y1 = useTransform(
     scrollYProgress,
     [0.2, 0.25, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y2 = useTransform(
     scrollYProgress,
     [0.3, 0.35, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y3 = useTransform(
     scrollYProgress,
     [0.4, 0.45, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y4 = useTransform(
     scrollYProgress,
     [0.5, 0.55, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y5 = useTransform(
     scrollYProgress,
     [0.6, 0.65, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y6 = useTransform(
     scrollYProgress,
     [0.7, 0.75, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y7 = useTransform(
     scrollYProgress,
     [0.8, 0.85, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
   const y8 = useTransform(
     scrollYProgress,
     [0.9, 0.95, 1],
-    ["100vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"],
+    { clamp: true }
   );
 
-  const o1 = useTransform(scrollYProgress, [0.0, 0.2, 0.25, 1], [1, 1, 0, 0]);
-  const o2 = useTransform(scrollYProgress, [0.0, 0.3, 0.35, 1], [1, 1, 0, 0]);
-  const o3 = useTransform(scrollYProgress, [0.0, 0.4, 0.45, 1], [1, 1, 0, 0]);
-
-  const o4 = useTransform(scrollYProgress, [0.0, 0.5, 0.55, 1], [1, 1, 0, 0]);
-  const o5 = useTransform(scrollYProgress, [0.0, 0.6, 0.65, 1], [1, 1, 0, 0]);
-  const o6 = useTransform(scrollYProgress, [0.0, 0.7, 0.75, 1], [1, 1, 0, 0]);
-  const o7 = useTransform(scrollYProgress, [0.0, 0.8, 0.85, 1], [1, 1, 0, 0]);
-  const o8 = useTransform(scrollYProgress, [0.0, 0.9, 0.95, 1], [1, 1, 0, 0]);
+  const o1 = useTransform(scrollYProgress, [0.0, 0.22, 0.25, 1], [1, 1, 0, 0]);
+  const o2 = useTransform(scrollYProgress, [0.0, 0.32, 0.35, 1], [1, 1, 0, 0]);
+  const o3 = useTransform(scrollYProgress, [0.0, 0.42, 0.45, 1], [1, 1, 0, 0]);
+  const o4 = useTransform(scrollYProgress, [0.0, 0.52, 0.55, 1], [1, 1, 0, 0]);
+  const o5 = useTransform(scrollYProgress, [0.0, 0.62, 0.65, 1], [1, 1, 0, 0]);
+  const o6 = useTransform(scrollYProgress, [0.0, 0.72, 0.75, 1], [1, 1, 0, 0]);
+  const o7 = useTransform(scrollYProgress, [0.0, 0.82, 0.85, 1], [1, 1, 0, 0]);
+  const o8 = useTransform(scrollYProgress, [0.0, 0.92, 0.95, 1], [1, 1, 0, 0]);
 
   return (
-    <div className="how-works-main mt-0 mt-md-5 pt-0 pt-md-5">
-      <div className="py-0 py-md-5"></div>
+    <div className="how-works-main mt-0  pt-0 ">
+      <div className="py-0 "></div>
       <div className="w-100 overflow">
         <div className="how-works-header">
           <img className="img1" src={pic11} alt=".." />
@@ -89,18 +96,24 @@ export default function HowWorksCom() {
           <img className="img3" src={pic13} alt=".." />
           <img className="img4" src={pic14} alt=".." />
           <h1>How It Works?</h1>
-          <h6 className="mt-3">
+          <h6 className="d-sm-block d-none mt-3">
             We combine the power of <br />
             <span> subscription-based</span> partnerships with <br />
             <span> cutting-edge</span> technology, data, strategy, and <br />{" "}
             creatives to help you drive virality and profitable <br />
             <span> hyper-growth.</span>
           </h6>
+          <h6 className="d-sm-none d-block mt-4">
+            <span> subscription-based</span> partnerships with
+            <span> cutting-edge</span> technology, data, strategy, and creatives
+            to help you drive virality and profitable
+            <span> hyper-growth.</span>
+          </h6>
         </div>
       </div>
       <div
         ref={targetRef}
-        style={{ height: "900vh", position: "relative" }}
+        style={{ height: "600vh", position: "relative" }}
         className="bg-environment animation-wrapper"
       >
         <div
@@ -261,7 +274,15 @@ export default function HowWorksCom() {
             </div>
 
             <motion.div
-              style={{ position: "absolute", opacity: o1 }}
+              style={{
+                position: "absolute",
+                opacity: o1,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+              }}
               className="left-part"
             >
               <span>Connect with top Creators</span>
@@ -271,7 +292,16 @@ export default function HowWorksCom() {
               </p>
             </motion.div>
             <motion.div
-              style={{ position: "absolute", opacity: o2, top: y1 }}
+              style={{
+                position: "absolute",
+                opacity: o2,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y1,
+              }}
               className="second-right-part"
             >
               <span>
@@ -279,7 +309,16 @@ export default function HowWorksCom() {
               </span>
             </motion.div>
             <motion.div
-              style={{ position: "absolute", opacity: o3, top: y2 }}
+              style={{
+                position: "absolute",
+                opacity: o3,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y2,
+              }}
               className="left-part"
             >
               <span>AI-Powered Recommendations</span>
@@ -290,7 +329,16 @@ export default function HowWorksCom() {
               </p>
             </motion.div>
             <motion.div
-              style={{ position: "absolute", opacity: o4, top: y3 }}
+              style={{
+                position: "absolute",
+                opacity: o4,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y3,
+              }}
               className="second-right-part"
             >
               <span>Subscribe to Your Favorites</span>
@@ -302,7 +350,16 @@ export default function HowWorksCom() {
             </motion.div>
 
             <motion.div
-              style={{ position: "absolute", opacity: o5, top: y4 }}
+              style={{
+                position: "absolute",
+                opacity: o5,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y4,
+              }}
               className=" left-part"
             >
               <span>Leverage our sub-accounts feature</span>
@@ -312,7 +369,16 @@ export default function HowWorksCom() {
               </p>
             </motion.div>
             <motion.div
-              style={{ position: "absolute", opacity: o6, top: y5 }}
+              style={{
+                position: "absolute",
+                opacity: o6,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y5,
+              }}
               className="second-right-part"
             >
               <span>Explode your sales with Vidbling affiliates</span>
@@ -323,7 +389,16 @@ export default function HowWorksCom() {
               </p>
             </motion.div>
             <motion.div
-              style={{ position: "absolute", opacity: o7, top: y6 }}
+              style={{
+                position: "absolute",
+                opacity: o7,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y6,
+              }}
               className=" left-part"
             >
               <span>Advanced Data Dashboard</span>
@@ -335,7 +410,16 @@ export default function HowWorksCom() {
             </motion.div>
 
             <motion.div
-              style={{ position: "absolute", opacity: o8, top: y7 }}
+              style={{
+                position: "absolute",
+                opacity: o8,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                top: y7,
+              }}
               className="second-right-part"
             >
               <span>Seamless Integration</span>
@@ -346,7 +430,16 @@ export default function HowWorksCom() {
               </p>
             </motion.div>
             <motion.div
-              style={{ position: "absolute", top: y8 }}
+              style={{
+                position: "absolute",
+                top: y8,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                height: "100%",
+                fontSize: 20,
+              }}
               className="left-part"
             >
               <span>
