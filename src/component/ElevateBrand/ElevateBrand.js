@@ -8,11 +8,11 @@ export default function ElevateBrand() {
     Aos.init({ duration: 3000 });
   }, []);
   return (
-    <div className="elevate-main  py-5">
-      <div className="py-5"></div>
+    <div className="elevate-main  py-0 py-md-5">
+      <div className="py-0 py-md-5"></div>
       <div className="container">
-        <div className="py-5 "></div>
-        <div>
+        <div className="py-0 py-md-5"></div>
+        <div className="d-sm-block d-none">
           <h1>
             Elevate Your Brand at a <br /> Special Price
           </h1>
@@ -31,11 +31,24 @@ export default function ElevateBrand() {
             influencers to <span>amplify your brand's reach.</span>
           </h4>
         </div>
-        <div className="mt-5 py-5">
+        <div className="d-sm-none d-block">
+        <h1 className="mx-4">
+            Elevate Your Brand at a Special Price
+          </h1>
+          <h4 className="mt-4">
+            Don't miss out on our <span> pre-launch opportunity! </span>
+            to access our platform packed with <span> cutting-edge </span>
+            Sign up now for
+            only <span> $299 </span>(originally $499) <br/>
+            features, connecting you with the perfect <br />
+            influencers to <span> amplify your brand's reach.</span>
+          </h4>
+        </div>
+        <div className="mt-5 py-2 py-md-5">
           <img src={pic1} alt="..." />
         </div>
         <div className="d-flex justify-content-center">
-          <div data-aos="fade-up" className="mt-4">
+          <div data-aos="fade-up" className="mt-0 mt-md-4">
             <div className="box position-relative"></div>
             <div
               className="gradient-border1 joinnow-div position-absolute "
@@ -46,7 +59,7 @@ export default function ElevateBrand() {
           </div>
         </div>
       </div>
-      <div className="py-3"></div>
+      <div className="py-0 py-md-3"></div>
     </div>
   );
 }

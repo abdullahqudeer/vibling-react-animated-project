@@ -1,4 +1,7 @@
 .drive-sales {
+  .animation-height {
+    height: 100vh;
+  }
   .left-part {
     span {
       text-align: left;
@@ -12,5 +15,134 @@
       font-weight: 500;
       font-size: 20px;
     }
+  }
+  .laptop-frame {
+    max-height: 400px;
+    max-width: 80%;
+    position: absolute;
+  }
+  .images-wrapper {
+    top: 15px;
+    height: 100%;
+    max-width: 550px;
+  }
+  .images {
+    width: 100%;
+    transform: translateX(-80px);
+    top: 0;
+  }
+  .drive-sales-wrapper {
+    // padding-top: 100px;
+    height: 240vh;
+  }
+  .main-wrapper {
+    height: 400px;
+  }
+
+  @media (max-width: 991px) {
+    .main-wrapper {
+      height: 320px;
+    }
+    .laptop-frame {
+      max-height: 400px;
+      max-width: 70%;
+      position: absolute;
+    }
+    .images-wrapper {
+      max-width: 370px;
+    }
+    .images {
+      width: 100%;
+      transform: translateX(-60px);
+    }
+
+    .left-part {
+      width: calc(50% - 110px);
+      span {
+        font-size: 35px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .main-wrapper {
+      height: 250px;
+    }
+    .drive-sales-wrapper {
+      padding-top: 0px;
+    }
+    .laptop-frame {
+      max-height: 400px;
+      max-width: 65%;
+      position: absolute;
+    }
+    .images-wrapper {
+      max-width: 255px;
+    }
+    .images {
+      width: 100%;
+      transform: translateX(-40px);
+    }
+
+    .left-part {
+      width: calc(50% - 60px);
+      span {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+      }
+    }
+    .animation-height {
+      height: 60vh;
+      top: 40vh !important;
+    }
+  }
+  .image1 {
+    top: -40px;
+  }
+  @media (max-width: 576px) {
+    .main-wrapper {
+      height: auto;
+    }
+    .laptop-frame {
+      max-width: 100%;
+    }
+    .images-wrapper {
+      top: 5px;
+      max-width: 77%;
+    }
+    .images {
+      border-radius: 0px;
+      transform: translateX(-50px);
+    }
+
+    .left-part {
+      display: none !important;
+    }
+
+    .image1 {
+      top: 0px;
+    }
+    .drive-sales-wrapper {
+      height: 110vh;
+    }
+    margin: 0 5%;
+  }
+  @media (max-width: 480px) {
+    .image1 {
+      top: -10px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .images {
+    border-radius: 0px;
+    transform: translateX(-40px) !important;
   }
 }

@@ -22,12 +22,12 @@ const OurEnvironment = () => {
     ["100vh", "0vh", "0vh"]
   );
 
-  const o1 = useTransform(scrollYProgress, [0.0, 0.6, 0.9, 1], [1, 1, 0, 0]);
+  const o1 = useTransform(scrollYProgress, [0.0, 0.6, 0.83, 1], [1, 1, 0, 0]);
 
   return (
     <div
       ref={targetRef}
-      style={{ height: "200vh", position: "relative" }}
+      style={{ height: "150vh", position: "relative" }}
       className="bg-environment"
     >
       <div
@@ -36,13 +36,13 @@ const OurEnvironment = () => {
       >
         <div
           style={{
-            height: 540,
             position: "relative",
             overflow: "hidden",
           }}
-          className="d-flex justify-content-center align-items-center  container px-4"
+          className="main-wrapper d-flex justify-content-end justify-content-lg-center align-items-center  container px-4"
         >
           <img
+            className="phone-frame"
             src={phoneFrame}
             alt="phone"
             style={{ position: "absolute", zIndex: 999 }}
@@ -53,30 +53,32 @@ const OurEnvironment = () => {
           >
             <div>
               <motion.div
+                className="video-wrapper wrapper1"
                 style={{ position: "relative", opacity: o1 }}
               >
                 <ReactPlayer
-                    muted
-                    loop={true}
-                    width={"100%"}
-                    height={540}
-                    playing={true}
-                    url={vid1}
-                  />
+                  muted
+                  loop={true}
+                  width={"100%"}
+                  height={"100%"}
+                  playing={true}
+                  url={vid1}
+                />
               </motion.div>
             </div>
             <div>
               <motion.div
+                className="video-wrapper wrapper2"
                 style={{ position: "absolute", left: 2, top: y1 }}
               >
-                 <ReactPlayer
-                    muted
-                    loop={true}
-                    width={"100%"}
-                    height={540}
-                    playing={true}
-                    url={vid2}
-                  />
+                <ReactPlayer
+                  muted
+                  loop={true}
+                  width={"100%"}
+                  height={"100%"}
+                  playing={true}
+                  url={vid2}
+                />
               </motion.div>
             </div>
           </div>
@@ -92,8 +94,16 @@ const OurEnvironment = () => {
             </p>
           </motion.div>
           <motion.div
-            style={{ position: "absolute", top: y1 }}
-            className="third-left-part"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+              height: "100%",
+              position: "absolute",
+              top: y1,
+            }}
+            className="third-left-part "
           >
             <span>
               Targeted <br />

@@ -16,58 +16,54 @@ export default function DriveSales() {
   const y1 = useTransform(
     scrollYProgress,
     [0.5, 0.6, 1],
-    ["70vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"]
   );
   const y2 = useTransform(
     scrollYProgress,
     [0.8, 0.9, 1],
-    ["70vh", "0vh", "0vh"]
+    ["100vh", "0vh", "0vh"]
   );
 
-  const o1 = useTransform(scrollYProgress, [0.0, 0.45, 0.52, 1], [1, 1, 0, 0]);
-  const o2 = useTransform(scrollYProgress, [0.0, 0.75, 0.82, 1], [1, 1, 0, 0]);
+  const o1 = useTransform(scrollYProgress, [0.0, 0.55, 0.59, 1], [1, 1, 0, 0]);
+  const o2 = useTransform(scrollYProgress, [0.0, 0.85, 0.89, 1], [1, 1, 0, 0]);
   return (
-    <div className="drive-sales">
+    <div className="drive-sales ">
       <div
         ref={targetRef}
-        style={{ height: "300vh", paddingTop: 100, position: "relative" }}
-        className="bg-environment"
+        style={{ position: "relative" }}
+        className="bg-environment drive-sales-wrapper"
       >
         <div
-          style={{ height: "100vh", position: "sticky", top: 0 }}
-          className="d-flex justify-content-between align-items-center stick "
+          style={{ position: "sticky", top: 0 }}
+          className="d-flex justify-content-between align-items-center stick animation-height"
         >
           <div
             style={{
-              height: 400,
               position: "relative",
               overflow: "hidden",
             }}
-            className="d-flex justify-content-end align-items-center  container px-0"
+            className="main-wrapper d-flex justify-content-end align-items-center  container px-0 pb-3 pb-lg-4"
           >
             <img
               src={phoneFrame}
               alt="phone"
+              className="laptop-frame"
               style={{
-                position: "absolute",
                 zIndex: 999,
-                maxHeight: "400px",
-                maxWidth: "100%",
                 right: "0",
                 top: "0",
               }}
             />
             <div
-              className="d-flex flex-column justify-content-center align-items-center"
+              className="images-wrapper d-flex flex-column justify-content-center align-items-center"
               style={{ position: "relative" }}
             >
               <div>
                 <motion.img
+                  className="images image1"
                   style={{
                     position: "relative",
                     opacity: o1,
-                    maxWidth: "550px",
-                    transform: "translateX(-80px)",
                   }}
                   src={pic1}
                   alt=""
@@ -75,13 +71,12 @@ export default function DriveSales() {
               </div>
               <div>
                 <motion.img
+                  className="images"
                   style={{
                     position: "absolute",
                     top: y1,
                     opacity: o2,
-                    maxWidth: "550px",
                     left: 0,
-                    transform: "translateX(-80px)",
                   }}
                   src={pic2}
                   alt=""
@@ -89,12 +84,11 @@ export default function DriveSales() {
               </div>
               <div>
                 <motion.img
+                  className="images"
                   style={{
                     position: "absolute",
                     top: y2,
-                    maxWidth: "540px",
                     left: 0,
-                    transform: "translateX(-80px)",
                   }}
                   src={pic3}
                   alt=""

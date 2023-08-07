@@ -7,29 +7,33 @@ import Aos from "aos";
 
 const LetsTalk = () => {
   useEffect(() => {
-    Aos.init({ duration: 3000});
+    Aos.init({ duration: 3000 });
   }, []);
   return (
     <div>
-      <div className="py-5 my-5"></div>
-      <div className="talk-main-div position-relative py-5">
+      <div className="talk-main-div position-relative py-0">
         <div className="talk-content container d-flex justify-content-center align-items-center">
-          <div
-            className="d-flex justify-content-center"
-            style={{ height: 300 }}
-          >
+          <div className="animation-wrapper d-flex justify-content-center">
             <img
               src={polygonLeft}
               height={299}
               width={299}
               className="polygon-left align-self-end"
+              alt="..."
             />
-            <img src={starImg} width={403} height={440} className="logo" />
+            <img
+              src={starImg}
+              width={403}
+              height={440}
+              className="logo"
+              alt="..."
+            />
             <img
               src={polygonRight}
               height={299}
               width={299}
               className="polygon-right align-self-end"
+              alt="..."
             />
           </div>
           <h2>Want to see it in action? Let's Talk</h2>
