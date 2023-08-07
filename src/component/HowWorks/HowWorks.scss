@@ -213,7 +213,7 @@
         font-size: 18px !important;
         padding: 0 9%;
       }
-      span{
+      span {
         font-size: 18px;
       }
       .img1 {
@@ -250,7 +250,8 @@
       justify-content: center;
       height: 100%;
       span {
-        font-size: 23px !important;
+        font-size: 20px !important;
+        font-weight: bold;
         margin-top: 0px;
         margin-bottom: 0px;
       }
@@ -260,13 +261,13 @@
     }
     .left-part {
       width: 47%;
-      top: 10vh;
+      // top: 10vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: 100%;
       span {
-        font-size: 23px !important;
+        font-size: 16px !important;
         margin-top: 0px;
         margin-bottom: 0px;
       }

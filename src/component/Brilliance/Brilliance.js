@@ -19,12 +19,12 @@ const Brilliance = () => {
           <div className="title-div d-flex justify-content-center">
             <h2 className="title">AI-Powered Platform</h2>
           </div>
-          <div className="desc-div mt-4">
+          <div className="desc-div mt-4 title-div">
             <h6 className="description">
               Vidbling's AI-powered matching algorithm will match your Brand
               with the right Creator for the perfect creative partnerships.
             </h6>
-            <h6 className="title mt-4">Streamlined Collaboration</h6>
+            <h2 className="title mt-4">Streamlined Collaboration</h2>
             <h6 className="description">
               Simplify the process with seamless communication, and campaign
               tracking.

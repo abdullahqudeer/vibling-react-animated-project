@@ -277,11 +277,11 @@ export default function HowWorksCom() {
               style={{
                 position: "absolute",
                 opacity: o1,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "column",
-                height: "100%",
+                // display: "flex",
+                // justifyContent: "center",
+                // alignItems: "center",
+                // flexDirection: "column",
+                // height: "100%",
               }}
               className="left-part"
             >
