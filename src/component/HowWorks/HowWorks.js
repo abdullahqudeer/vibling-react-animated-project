@@ -126,7 +126,7 @@ export default function HowWorksCom() {
               position: "relative",
               overflow: "hidden",
             }}
-            className="d-flex justify-content-center align-items-center  container px-4"
+            className="d-flex justify-content-center align-items-center  container mx-3"
           >
             <img
               className="phone-frame"

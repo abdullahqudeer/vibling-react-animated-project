@@ -210,8 +210,11 @@
         font-size: 36px;
       }
       h6 {
-        font-size: 18px;
+        font-size: 18px !important;
         padding: 0 9%;
+      }
+      span{
+        font-size: 18px;
       }
       .img1 {
         top: 5px;
