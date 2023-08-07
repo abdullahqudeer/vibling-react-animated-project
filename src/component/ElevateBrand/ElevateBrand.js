@@ -44,6 +44,34 @@ export default function ElevateBrand() {
             influencers to <span> amplify your brand's reach.</span>
           </h4>
         </div>
+        <div className="d-sm-flex justify-content-center">
+        <div
+            className="d-flex justify-content-center mt-5 me-sm-3"
+            data-aos="fade-up"
+          >
+            <div className="box position-relative me-0 mb-4"></div>
+            <div
+              className="gradient-border1 fw-bold joinnow-div position-absolute"
+              id="gradient-btn"
+              style={{ marginTop: "4px", marginLeft: 0, fontSize: 22 }}
+            >
+              <div>Buy Now</div>
+            </div>
+          </div>
+          <div
+            className="d-flex justify-content-center mt-sm-5 mt-3 ms-sm-3"
+            data-aos="fade-up"
+          >
+            <div className="box position-relative me-0 mb-4"></div>
+            <div
+              className="gradient-border1 fw-bold joinnow-div position-absolute"
+              id="gradient-btn"
+              style={{ marginTop: "4px", marginLeft: 0, fontSize: 22 }}
+            >
+              <div>Request Demo</div>
+            </div>
+          </div>
+        </div>
         <div className="mt-5 py-2 py-md-5">
           <img src={pic1} alt="..." />
         </div>

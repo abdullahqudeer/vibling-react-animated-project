@@ -10,7 +10,7 @@ export default function DriveSales() {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start end", "end end"],
+    offset: ["center end", "end end"],
   });
 
   const y1 = useTransform(

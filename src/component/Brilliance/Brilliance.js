@@ -19,12 +19,12 @@ const Brilliance = () => {
           <div className="title-div d-flex justify-content-center">
             <h2 className="title">AI-Powered Platform</h2>
           </div>
-          <div className="desc-div mt-4">
+          <div className="desc-div mt-4 title-div">
             <h6 className="description">
               Vidbling's AI-powered matching algorithm will match your Brand
               with the right Creator for the perfect creative partnerships.
             </h6>
-            <h6 className="title mt-4">Streamlined Collaboration</h6>
+            <h2 className="title mt-4">Streamlined Collaboration</h2>
             <h6 className="description">
               Simplify the process with seamless communication, and campaign
               tracking.
@@ -46,7 +46,7 @@ const Brilliance = () => {
               </div>
             </div>
             <div className="d-flex justify-content-center">
-              <div className="d-flex justify-content-center py-5 my-5">
+              <div className="d-flex justify-content-center py-4 mt-5">
                 <div data-aos="fade-up" className="mt-4 mx-auto">
                   <div className="box position-relative"></div>
                   <div
@@ -59,7 +59,7 @@ const Brilliance = () => {
               </div>
             </div>
           </div>
-          <div className="py-0 py-md-5 my-0 my-md-5"></div>
+          {/* <div className="py-0 py-md-5 my-0 my-md-5"></div> */}
         </div>
       </div>
     </React.Fragment>

@@ -19,7 +19,6 @@ const BestBrand = () => {
           <h2 className="title">The world's best brands trust Vidbling</h2>
         </div>
         <div className="d-flex justify-content-center">
-
         <div className="d-flex justify-content-center" >
         <div data-aos="fade-up" className="mt-4 mx-auto">
             <div className="box position-relative"></div>

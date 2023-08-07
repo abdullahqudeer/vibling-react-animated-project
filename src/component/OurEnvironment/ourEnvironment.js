@@ -28,7 +28,7 @@ const OurEnvironment = () => {
     <div
       ref={targetRef}
       style={{ height: "150vh", position: "relative" }}
-      className="bg-environment"
+      className="bg-environment ms-3"
     >
       <div
         style={{ height: "100vh", paddingTop: 60, position: "sticky", top: 0 }}
