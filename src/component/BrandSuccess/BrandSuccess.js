@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import ReactPlayer from 'react-player/lazy';
+import ReactPlayer from "react-player/lazy";
 import "./BrandSuccess.scss";
 import LogoImg from "../../assets/Images/image 1.png";
 import PolygonImg1 from "../../assets/Images/Polygon6.png";
@@ -9,9 +9,8 @@ import TwitterIcon from "../../assets/Images/ico-twitter.png";
 import FacebookIcon from "../../assets/Images/ico-facebook.png";
 import InstagramIcon from "../../assets/Images/ico-instagram.png";
 import AmazonIcon from "../../assets/Images/ico-amazon.png";
-
-import vid1 from  "../../assets/videos/video7.mp4"
-import vid2 from  "../../assets/videos/video8.mp4"
+import vid1 from "../../assets/videos/video7.mp4";
+import vid2 from "../../assets/videos/video8.mp4";
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import Aos from "aos";
@@ -46,6 +45,7 @@ const BrandSuccess = () => {
   );
   const poly2X = useTransform(
     scrollYProgress,
+    
     [0, 0.1, 1],
     ["0px", "0px", "-350px"]
   );
@@ -127,11 +127,27 @@ const BrandSuccess = () => {
                   style={{ y: first, x: firstx }}
                   className="first-div"
                 >
-                <div className="phone-wrapper">
-                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
-                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1 }} muted loop={true} width={"100%"}  height={"100%"} playing={true} url={vid1} />
-
-                </div>
+                  <div className="phone-wrapper">
+                    <img
+                      style={{ position: "relative" }}
+                      src={phoneFrame}
+                      alt="iphoneImg"
+                    />
+                    <ReactPlayer
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 5,
+                        zIndex: -1,
+                      }}
+                      muted
+                      loop={true}
+                      width={"100%"}
+                      height={"100%"}
+                      playing={true}
+                      url={vid1}
+                    />
+                  </div>
                 </motion.div>
 
                 <motion.div
@@ -139,11 +155,27 @@ const BrandSuccess = () => {
                   style={{ y: scnd }}
                   className="second-div"
                 >
-                <div className="phone-wrapper">
-                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
-                <ReactPlayer  style={{position:"absolute",top:0,left:5,zIndex:-1 }} muted loop={true} width={"100%"}  height={"100%"} playing={true} url={vid2} />
-
-                </div>
+                  <div className="phone-wrapper">
+                    <img
+                      style={{ position: "relative" }}
+                      src={phoneFrame}
+                      alt="iphoneImg"
+                    />
+                    <ReactPlayer
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 5,
+                        zIndex: -1,
+                      }}
+                      muted
+                      loop={true}
+                      width={"100%"}
+                      height={"100%"}
+                      playing={true}
+                      url={vid2}
+                    />
+                  </div>
                 </motion.div>
               </div>
             </div>

@@ -65,7 +65,7 @@ const Subscription = () => {
             <motion.div
               transition={{ ease: "easeInOut" }}
               style={{ y: texty, position: "relative", opacity: texto }}
-              className="startearning-div mt-4 "
+              className="startearning-div mt-4"
             >
               <div>
                 <div className="box position-relative me-0"></div>
@@ -81,7 +81,7 @@ const Subscription = () => {
           </div>
         </div>
         <div>
-          <div className="d-flex phone  justify-content-start">
+          <div className="d-flex phone justify-content-start">
             <img
               src={secondPhone}
               alt="phone"
@@ -110,6 +110,7 @@ const Subscription = () => {
                     position: "absolute",
                     opacity: o,
                   }}
+                  
                 >
                   <div className="mb-4">
                     <h4>Join Today</h4>
@@ -158,7 +159,6 @@ const Subscription = () => {
                           playsInline
                           muted
                           style={{
-                            // width: "258px",
                             height: 440,
                             paddingLeft: "11px",
                           }}

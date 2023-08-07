@@ -29,10 +29,10 @@ const Unleash = () => {
             </div>
           </div>
           <svg className="arrows mt-4">
-							<path className="a1" d="M0 0 L15 16 L30 0"></path>
-							<path className="a2" d="M0 20 L15 36 L30 20"></path>
-							<path className="a3" d="M0 40 L15 56 L30 40"></path>
-						</svg>
+            <path className="a1" d="M0 0 L15 16 L30 0"></path>
+            <path className="a2" d="M0 20 L15 36 L30 20"></path>
+            <path className="a3" d="M0 40 L15 56 L30 40"></path>
+          </svg>
         </div>
       </div>
       <div className="rightpart-logo col-md-4 col-lg-5 col-xl-6 d-flex justify-content-center align-items-center d-none d-md-flex">

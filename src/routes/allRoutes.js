@@ -5,6 +5,7 @@ import Dashboard from "../pages/Home/Home";
 import App from "../component/app";
 import SuccessSignUp from "../pages/SuccessSignUp/successSignUp";
 import ForBrand from "../pages/ForBrand/forBrand";
+import RequestPage from "../pages/RequestPage/requestPage";
 
 const AllRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AllRoutes = () => {
               <Route index path="/signup" element={<SignUp />} />
               <Route index path="/successSignUp/:rcode" element={<SuccessSignUp/>}/>
               <Route index path="forbrand" element={<ForBrand/>} />
+              <Route index path="/request-a-demo" element={<RequestPage/>}/>
             </Route>
           </Route>
         </Routes>

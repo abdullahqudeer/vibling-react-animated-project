@@ -9,6 +9,7 @@ import thankyou from "../../assets/Images/thankyou.png";
 import countryList from "react-select-country-list";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import loadingimg from "../../assets/videos/Loading.gif";
+import Header from "../../component/Header/Header";
 
 const SignUp = () => {
   const [Info, setInfo] = useState();
@@ -154,6 +155,7 @@ const SignUp = () => {
   };
   return (
     <React.Fragment>
+    <Header/>
       <div className="signup-main-div container">
         <div className="row">
           <div className="left  col-lg-6 col-md-12 col-sm-12 mt-4 mt-sm-0">
