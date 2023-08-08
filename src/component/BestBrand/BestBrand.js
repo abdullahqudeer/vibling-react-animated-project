@@ -1,9 +1,6 @@
 import React,{useEffect} from "react";
 import "./BestBrand.scss";
-import Deezer from "../../assets/Images/deezer.png";
-import ClickedUp from "../../assets/Images/click-up.png";
-import Hopper from "../../assets/Images/hopper.png";
-import Unidas from "../../assets/Images/unidas .png";
+
 import Aos from "aos";
 
 

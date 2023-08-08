@@ -20,7 +20,7 @@ import Header from "../../component/Header/Header";
 const Home = () => {
   return (
     <div>
-      <Header isname={true} />
+      <Header/>
       <div className="home-main-div container">
         <Unleash />
       </div>

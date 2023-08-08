@@ -20,7 +20,7 @@ const AllRoutes = () => {
               {/* <Route index path="/successSignUp/:rcode" element={<SuccessSignUp/>}/> */}
               <Route index path="/successSignUp" element={<SuccessSignUp/>}/>
 
-              <Route index path="forbrand" element={<ForBrand/>} />
+              <Route index path="/forbrand" element={<ForBrand/>} />
               <Route index path="/request-a-demo" element={<RequestPage/>}/>
             </Route>
           </Route>

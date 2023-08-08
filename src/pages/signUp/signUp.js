@@ -129,8 +129,8 @@ const SignUp = () => {
       .post(`${BASE_URL}/influencer/signup`, payload)
       .then((res) => {
         setSuccess(true);
-        if(res && res.data.code === 200)
-        navigate("/successSignUp/" + res.data.data.referral_code);
+        if (res && res.data.code === 200)
+          navigate("/successSignUp/" + res.data.data.referral_code);
         setInfo({
           city: "",
           country: "",
@@ -155,7 +155,7 @@ const SignUp = () => {
   };
   return (
     <React.Fragment>
-    <Header/>
+      <Header />
       <div className="signup-main-div container">
         <div className="row">
           <div className="left  col-lg-6 col-md-12 col-sm-12 mt-4 mt-sm-0">
@@ -872,7 +872,7 @@ const SignUp = () => {
                           <button
                             onClick={handleSubmit}
                             style={{
-                              fontSize: 24, 
+                              fontSize: 24,
                               fontWeight: "600",
                               position: "absolute",
                               paddingTop: 0,

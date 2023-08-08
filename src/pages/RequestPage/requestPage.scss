@@ -1,8 +1,24 @@
 .request-demo-page-div {
   .first-div {
     background-image: url(../../assets/Images/mainbackgroundimg.png);
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% auto;
+
+    .right {
+      .right-center-part {
+        text-align: center;
+
+        h2 {
+          color: #ffffff;
+          opacity: 1;
+          font: normal normal 600 50px/35px Inter;
+        
+        }
+        .success-message {
+          font: normal normal 600 30px/29px Inter;
+        }
+      }
+    }
 
     .left-part {
       .content-div {
@@ -12,140 +28,218 @@
         h1 {
           font-size: 4.5rem;
           font-weight: 700;
-          // line-height: 1;
+          background: transparent
+            linear-gradient(
+              90deg,
+              #b827dc 0%,
+              #a322de 26%,
+              #4190f5 86%,
+              #6bdef8 100%
+            )
+            0% 0% no-repeat padding-box;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @media (max-width: 700px) {
+            font-size: 3rem;
+            text-align: center;
+          }
         }
+        .creator {
+          animation: slideIn 3s forwards ease-in-out infinite;
+          animation-delay: 2s;
+          opacity: 0;
+        }
+        .marketing {
+          animation: slideIn 3.1s forwards ease-in-out infinite;
+          animation-delay: 2s;
+          opacity: 0;
+        }
+        .drives {
+          animation: slideIn 3.2s forwards ease-in-out infinite;
+          animation-delay: 2s;
+          opacity: 0;
+        }
+        .real {
+          animation: slideIn 3.3s forwards ease-in-out infinite;
+          animation-delay: 2s;
+          opacity: 0;
+        }
+
         p {
           font-size: 1.25rem;
           line-height: 1.5;
           @media (max-width: 1200px) {
             margin: 0 !important;
           }
+          @media (max-width: 700px) {
+            text-align: center;
+            padding: 8px !important;
+          }
         }
       }
     }
     .right-part {
-        .book-demo{
-          h4{
-
-            text-align: center;
-          }
-            .inputs-div {
-              .inputs {
-                margin: 18px;
-                background: transparent;
-                // border: #ffffff;
-                ::placeholder {
-                  color: #ffffffd3;
-                }
-                input {
-                  padding: 10px 20px;
-                  color: white !important;
-                  -webkit-appearance: none;
-                  appearance: none;
-                  margin: 0;
-                  -webkit-filter: grayscale(100%);
-                  filter: grayscale(100%);
-                  background-repeat: no-repeat;
-                  height: 100%;
-                }
-                input[type="checkbox"] {
-                  height: 32px;
-                  width: 10px;
-                }
-                .youtube {
-                  background-image: url("../../assets/Images/icons8-youtube-48.png");
-                  background-size: 32px;
-                }
-                .instagram {
-                  background-image: url("../../assets/Images/icons8-instagram-48.png");
-                  background-size: 32px;
-                }
-                .facebook {
-                  background-image: url("../../assets/Images/icons8-facebook-48.png");
-                  background-size: 32px;
-                }
-                .tiktok {
-                  background-image: url("../../assets/Images/icons8-tiktok-48.png");
-                  background-size: 32px;
-                }
-                .snap {
-                  background-image: url("../../assets/Images/pngwing.com.png");
-                  background-size: 32px;
-                }
-                .twitter {
-                  background-image: url("../../assets/Images/icons8-twitter-48.png");
-                  background-size: 32px;
-                }
-                .pinterest {
-                  background-image: url("../../assets/Images/icons8-pinterest-48.png");
-                  background-size: 32px;
-                }
-              }
-      .privacy-policy{
-        text-align: center;
-span{
-  text-decoration: underline;
-}        
-
+      overflow-y: scroll;
+      max-height: 100vh;
+      overflow-y: scroll;
+      scrollbar-width: thin;
+      -ms-overflow-style: none;
+      scrollbar-color: transparent transparent;
+      &::-webkit-scrollbar {
+        width: 0.5em;
       }
-              // .select-inputs {
-              //   margin: 10px;
-              //   width: 100%;
-              // }
-              .gradient-border {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 200px;
-                height: 57px;
-                // margin-left: 6px;
-                border-radius: 50px;
-                color: white;
-                background: #000000;
-                cursor: pointer !important;
-              }
-              .box1 {
-                --border-size: 4px;
-                --border-radius: 50px;
-                --border-angle: 0turn;
-                width: 212px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 23px;
-                font-weight: 600;
-                height: 65px;
-                background-image: conic-gradient(
-                    from var(--border-angle),
-                    #213,
-                    #112 50%,
-                    #213
-                  ),
-                  conic-gradient(from var(--border-angle), transparent 20%, #b827dc, #6bdef8);
-                background-size: calc(100% - (var(--border-radius) * 2))
-                    calc(100% - (var(--border-size) * 2)),
-                  cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                border-radius: 50px;
-                animation: bg-spin 3s linear infinite;
-                @keyframes bg-spin {
-                  to {
-                    --border-angle: 1turn;
-                  }
-                }
-              
-                &:hover {
-                  animation-play-state: paused;
-                }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      @media (max-width: 700px) {
+        overflow-y: unset;
+        max-height: unset;
+      }
+      .book-demo {
+        @media (max-width: 700px) {
+          margin: 0 !important;
+          padding-top: 20px;
+        }
+        h3 {
+          text-align: center;
+          font-weight: bold;
+          background: transparent
+            linear-gradient(
+              90deg,
+              #b827dc 0%,
+              #a322de 26%,
+              #4190f5 86%,
+              #6bdef8 100%
+            )
+            0% 0% no-repeat padding-box;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .inputs-div {
+          .inputs {
+            margin: 18px;
+            background: transparent;
+            ::placeholder {
+              color: #ffffffd3;
+            }
+            input {
+              padding: 10px 20px;
+              color: white !important;
+              -webkit-appearance: none;
+              appearance: none;
+              margin: 0;
+              -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+              background-repeat: no-repeat;
+              height: 100%;
+            }
+            .error-class {
+              color: #f62d51;
+              margin-bottom: 0;
+            }
+            input[type="checkbox"] {
+              height: 32px;
+              width: 10px;
+            }
+            .youtube {
+              background-image: url("../../assets/Images/icons8-youtube-48.png");
+              background-size: 32px;
+            }
+            .instagram {
+              background-image: url("../../assets/Images/icons8-instagram-48.png");
+              background-size: 32px;
+            }
+            .facebook {
+              background-image: url("../../assets/Images/icons8-facebook-48.png");
+              background-size: 32px;
+            }
+            .tiktok {
+              background-image: url("../../assets/Images/icons8-tiktok-48.png");
+              background-size: 32px;
+            }
+            .snap {
+              background-image: url("../../assets/Images/pngwing.com.png");
+              background-size: 32px;
+            }
+            .twitter {
+              background-image: url("../../assets/Images/icons8-twitter-48.png");
+              background-size: 32px;
+            }
+            .pinterest {
+              background-image: url("../../assets/Images/icons8-pinterest-48.png");
+              background-size: 32px;
+            }
+          }
+          .privacy-policy {
+            text-align: center;
+            span {
+              text-decoration: underline;
+            }
+          }
+
+          .gradient-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 57px;
+            border-radius: 50px;
+            color: white;
+            background: #000000;
+            cursor: pointer !important;
+          }
+          .box1 {
+            --border-size: 4px;
+            --border-radius: 50px;
+            --border-angle: 0turn;
+            width: 212px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            font-weight: 600;
+            height: 65px;
+            background-image: conic-gradient(
+                from var(--border-angle),
+                #213,
+                #112 50%,
+                #213
+              ),
+              conic-gradient(
+                from var(--border-angle),
+                transparent 20%,
+                #b827dc,
+                #6bdef8
+              );
+            background-size: calc(100% - (var(--border-radius) * 2))
+                calc(100% - (var(--border-size) * 2)),
+              cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 50px;
+            animation: bg-spin 3s linear infinite;
+            @keyframes bg-spin {
+              to {
+                --border-angle: 1turn;
               }
             }
 
+            &:hover {
+              animation-play-state: paused;
+            }
+          }
         }
+      }
     }
   }
-  .second-div{
-    .title-div{
+  .second-div {
+    .title-div {
       font-size: 3rem;
       font-weight: 700;
       line-height: 1.3;
@@ -166,22 +260,40 @@ span{
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      @media (max-width: 700px) {
+        font-size: 3rem;
+      }
     }
-    .images-div{
-      img{
 
-        height: 80px;
-        padding: 0.75rem;
+    .faq-div {
+      @media (max-width: 700px) {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
       }
-    }
-    .faq-div{
-      .faq-title{
+      .faq-title {
         font-size: 2rem;
+        font-weight: bold;
+        background: transparent
+          linear-gradient(
+            90deg,
+            #b827dc 0%,
+            #a322de 20%,
+            #4190f5 60%,
+            #6bdef8 100%
+          )
+          0% 0% no-repeat padding-box;
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: 700px) {
+          font-size: 1.7rem;
+        }
       }
-  
-      .accordion{
+
+      .accordion {
         --bs-accordion-bg: tranparent !important;
-        .accordion-item{
+        .accordion-item {
           color: white !important;
           background-color: black !important;
           border-color: white !important;
@@ -190,25 +302,35 @@ span{
 
           .accordion-button {
             color: white !important;
-            &:focus{
-            // border-color: #000000 !important;
 
-            }
-            &:not(.collapsed){
+            &:not(.collapsed) {
               color: white !important;
               background-color: transparent !important;
               box-shadow: none !important;
-
             }
           }
-         &:not(:first-of-type){
-          border-top:1px solid;
-         }
+          &:not(:first-of-type) {
+            border-top: 1px solid;
+          }
         }
       }
-
-     
-      
+    }
+  }
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translate3d(20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+        rotateZ(0) skew(0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
   }
 }
+
+
+
+
+
+

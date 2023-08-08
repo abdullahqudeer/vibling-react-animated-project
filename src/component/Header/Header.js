@@ -30,18 +30,18 @@ const Header = (props) => {
           <div className={active ? "nav-menu active" : "nav-menu"}>
             {props.isname ? (
               <>
-                <p className="mx-3 mt-1" onClick={() => navigate("forbrand")}>
-                  For Brand
-                </p>
-              </>
-            ) : (
-              <>
                 <p
                   className="mx-3 mt-1"
                   style={{ zIndex: 9999999 }}
                   onClick={() => navigate("/")}
                 >
                   For Creator
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="mx-3 mt-1" onClick={() => navigate("/forbrand")}>
+                  For Brand
                 </p>
               </>
             )}

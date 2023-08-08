@@ -20,7 +20,7 @@ const ForBrand = () => {
     <React.Fragment>
       <div className="brand-main-div">
         <div style={{ overflow: "hidden",}}>
-          <Header />
+          <Header  isname={true}  />
           <BrandSuccess />
           <BestBrand />
           <Branding isShowNews={true} />
