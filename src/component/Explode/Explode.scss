@@ -161,24 +161,24 @@
       @media (max-width: 576px) {
         .phone-wrapper {
           width: 35%;
-        img{
-          width: 80px;
-        }}
+          img {
+            width: 80px;
+          }
         }
+      }
     }
-    @media (max-width:576px) {
-      .images-div{
+    @media (max-width: 576px) {
+      .images-div {
         height: 200px;
       }
     }
   }
   .iphone-div {
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       .fire-img {
         transform: translate(90%, -35%);
       }
     }
-   
   }
   .iphone-div:hover {
     .rocket-img {
@@ -210,6 +210,16 @@
       }
     }
     @media (max-width: 768px) {
+      .iphone-div:hover {
+        .rocket-img {
+          opacity: 0 !important;
+          visibility: hidden;
+        }
+        .fire-img {
+          visibility: hidden;
+          opacity: 0 !important;
+        }
+      }
       margin-top: 50px;
       .right-mobile {
         transform: translateX(0px);
@@ -232,7 +242,6 @@
         }
       }
     }
-
   }
 }
 @keyframes rockerMove {
@@ -257,7 +266,7 @@
 }
 
 @media (max-width: 576px) {
-  .explode-main-div .images-div{
+  .explode-main-div .images-div {
     height: 200px;
   }
   .explode-main-div .images-div .iphone-div .right-mobile {
@@ -270,7 +279,7 @@
     align-self: flex-start;
     transform: translateY(-227px) !important;
   }
-  .explode-main-div .images-div .iphone-div .phone-wrapper video{
+  .explode-main-div .images-div .iphone-div .phone-wrapper video {
     width: 76px !important;
   }
 }
