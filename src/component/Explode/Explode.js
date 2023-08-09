@@ -7,10 +7,9 @@ import midlePhone from "../../assets/Images/Middle Phone.png";
 import phoneFrame from "../../assets/Images/secondPhone.png";
 import leftPhone from "../../assets/Images/Group 34.png";
 import Aos from "aos";
-import ReactPlayer from 'react-player/lazy';
+import ReactPlayer from "react-player/lazy";
 
-import vid1 from  "../../assets/videos/video9.mp4"
-
+import vid1 from "../../assets/videos/video9.mp4";
 
 import ArtWork from "../../assets/Images/Artwork.png";
 
@@ -52,21 +51,43 @@ const Explode = () => {
         <div className="images-div mt-0 mt-md-5 ">
           <div className="container pb-0 pb-md-5">
             <div className="iphone-div">
-              <div className="rocket-img">
+              <div className="rocket-img d-none d-md-block">
                 <img src={Rocket} alt="Rocket" />
               </div>
               <div className="mobil-div d-flex justify-content-center align-items-end flex-column-reverse flex-md-row">
-                <img src={leftPhone} className="left-mobile mb-4 mt-sm-0 mt-5" alt="..." />
+                <img
+                  src={leftPhone}
+                  className="left-mobile mb-4 mt-sm-0 mt-5"
+                  alt="..."
+                />
 
                 <div className="phone-wrapper mb-sm-4 mb-5">
-                <img style={{position:"relative"}} src={phoneFrame} alt="iphoneImg" />
-                <ReactPlayer style={{position:"absolute",top:0,left:5,zIndex:-1,overflow:"hidden" }} muted loop={true} width={"95%"}  height={"100%"} playing={true} url={vid1} />
+                  <img
+                    style={{ position: "relative" }}
+                    src={phoneFrame}
+                    alt="iphoneImg"
+                  />
+                  <ReactPlayer
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 5,
+                      zIndex: -1,
+                      overflow: "hidden",
+                    }}
+                    muted
+                    loop={true}
+                    width={"95%"}
+                    height={"100%"}
+                    playing={true}
+                    url={vid1}
+                  />
                 </div>
-                
-                <img src={rightPhone} className="right-mobile mb-4" alt="..."/>
+
+                <img src={rightPhone} className="right-mobile mb-4" alt="..." />
               </div>
-              <div className="fire-img d-flex align-items-end justify-content-end">
-                <img src={Fire} alt="Fire"/>
+              <div className="fire-img d-none d-md-flex align-items-end justify-content-end">
+                <img src={Fire} alt="Fire" />
               </div>
               <div className="py-0 py-md-5"></div>
             </div>

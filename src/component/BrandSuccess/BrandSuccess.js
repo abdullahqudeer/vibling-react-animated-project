@@ -79,10 +79,34 @@ const BrandSuccess = () => {
                 </div>
               </div>
               <div class="mt-4 d-flex  align-items-center social-media-icons justify-content-center justify-content-md-start">
-                <img src={TwitterIcon} alt="twitter" />
-                <img src={FacebookIcon} alt="facebook" />
-                <img src={InstagramIcon} alt="instagram" />
-                <img src={AmazonIcon} alt="amazon" />
+                <img
+                  width={40}
+                  height={40}
+                  style={{ objectFit: "contain" }}
+                  src={TwitterIcon}
+                  alt="twitter"
+                />
+                <img
+                  width={40}
+                  height={40}
+                  style={{ objectFit: "contain" }}
+                  src={FacebookIcon}
+                  alt="facebook"
+                />
+                <img
+                  width={40}
+                  height={40}
+                  style={{ objectFit: "contain" }}
+                  src={InstagramIcon}
+                  alt="instagram"
+                />
+                <img
+                  width={40}
+                  height={40}
+                  style={{ objectFit: "contain" }}
+                  src={AmazonIcon}
+                  alt="amazon"
+                />
               </div>
             </div>
             <div className="d-sm-block d-none position-relative mt-5 pt-md-0 pt-5 mt-md-0 right-part col-lg-6 col-md-12 col-sm-12 d-flex">
@@ -272,7 +296,7 @@ const BrandSuccess = () => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
