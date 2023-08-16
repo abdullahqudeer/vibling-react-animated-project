@@ -55,31 +55,35 @@ const RequestPage = () => {
       platform: [
         {
           name: "Facebook",
-          profileUrl: requestInfo?.facebook,
+          profileUrl: platforms?.facebook,
         },
         {
           name: "Instagram",
-          profileUrl: requestInfo?.instagram,
+          profileUrl: platforms?.instagram,
         },
         {
           name: "Snapchat",
-          profileUrl: requestInfo?.snapchat,
+          profileUrl: platforms?.snapchat,
         },
         {
           name: "Youtube",
-          profileUrl: requestInfo?.youtube,
+          profileUrl: platforms?.youtube,
         },
         {
           name: "Pinterest",
-          profileUrl: requestInfo?.pinterest,
+          profileUrl: platforms?.pinterest,
         },
         {
           name: "Tiktok",
-          profileUrl: requestInfo?.tiktok,
+          profileUrl: platforms?.tiktok,
+        },
+        {
+          name: "Twitter",
+          profileUrl: platforms?.twitter,
         },
       ],
     };
-    // console.log(payload, "payloaddd");
+    console.log(payload, "payloaddd");
     axios.post(`${BASE_URL}/brand/signup`, payload).then((res) => {
       console.log(res,"siiii");
       setIsSuccess(true);
@@ -93,6 +97,7 @@ const RequestPage = () => {
           goals: "",
           currentlySelling: "",
           annualInfluencerBudget: "",
+          platforms:""
         });
     });
   };
@@ -123,7 +128,7 @@ const RequestPage = () => {
           )}
           {!isSuccess && (
             <div className="container">
-              <div className="row py-5">
+              <div className="row pt-2 pb-5">
                 <div className="left-part col-lg-6 col-md-12 col-sm-12">
                   <div className="content-div mx-5">
                     <h1 className="creator">Creator </h1>
@@ -143,7 +148,7 @@ const RequestPage = () => {
                   </div>
                 </div>
                 <div className="right-part col-lg-6 col-md-12 col-sm-12">
-                  <div className="book-demo mx-5">
+                  <div className="book-demo mx-3 p-4">
                     <h3>See the Power of Vidbling Today</h3>
                     <div className="inputs-div">
                       <div className="form-group inputs">
@@ -287,7 +292,7 @@ const RequestPage = () => {
                           <select
                             className="annual-budget"
                             style={{
-                              backgroundColor: "transparent",
+                              backgroundColor: "black",
                               color: "white",
                               width: "100%",
                               border: "1px solid #ced4da",
@@ -320,7 +325,7 @@ const RequestPage = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="form-group inputs p-3 ">
+                      <div className="form-group inputs p-3">
                         <h6>Preferred Social Channels?</h6>
                         <div className="d-flex">
                           <div className="d-flex  align-items-center col-6 mt-2">
@@ -454,7 +459,7 @@ const RequestPage = () => {
                           </div>
                         </div>
                       </div>
-                      {platforms.twitter && (
+                      {/* {platforms.twitter && (
                         <div className="col-lg-12 col-md-12">
                           <div className="form-group inputs">
                             <input
@@ -621,9 +626,9 @@ const RequestPage = () => {
                             </p>
                           </div>
                         </div>
-                      )}
+                      )} */}
                       <hr />
-                      <div className="mt-5 d-flex justify-content-center">
+                      <div className="mt-4 d-flex justify-content-center">
                         <div>
                           <div className="box1 position-relative"></div>
                           <div

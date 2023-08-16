@@ -2,7 +2,7 @@
   background-image: url(../../assets/Images/mainbackgroundimg.png);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-  height: 83vh;
+  height: 90vh;
   overflow: hidden;
 
   .left {
@@ -61,14 +61,11 @@
   }
 
   .right {
- 
-
     overflow-y: scroll;
     max-height: 100vh;
     padding-bottom: 20rem !important;
-
     overflow-y: scroll;
-    scrollbar-width: thin; 
+    scrollbar-width: thin;
     -ms-overflow-style: none;
     scrollbar-color: transparent transparent;
     &::-webkit-scrollbar {
@@ -82,7 +79,6 @@
     &::-webkit-scrollbar-thumb {
       background-color: transparent;
     }
-    padding: 0 25px;
     input {
       padding: 12px 20px;
       color: white !important;
@@ -93,6 +89,9 @@
       filter: grayscale(100%);
       background-repeat: no-repeat;
       height: 100%;
+    }
+    .form-control {
+      background: black;
     }
     .error-class {
       color: #f62d51;
@@ -105,7 +104,7 @@
       -webkit-appearance: none;
       appearance: none;
       margin: 0;
-      -webkit-filter: grayscale(100%); 
+      -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       background-repeat: no-repeat;
       height: 32px;
@@ -145,6 +144,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #380f42;
+      opacity: 0.8;
+
+      border-radius: 24px;
 
       .h2 {
         color: #ffffff;
@@ -199,9 +202,7 @@
       }
       .inputs-div {
         .inputs {
-          margin: 10px;
-          background: transparent;
-          // border: #ffffff;
+          margin: 10px 0;
           ::placeholder {
             color: #ffffffd3;
           }
@@ -209,7 +210,6 @@
 
         .select-inputs {
           margin: 10px;
-          width: 100%;
         }
       }
       .upload-div {
@@ -228,6 +228,7 @@
           .img-dropzone {
             height: 100px;
             border: 1px solid white;
+            background-color: black;
             border-radius: 10px;
             opacity: 5;
             display: flex;
@@ -352,6 +353,7 @@
     .right {
       overflow: hidden;
       max-height: 100%;
+      margin-top: 70px;
     }
   }
 }

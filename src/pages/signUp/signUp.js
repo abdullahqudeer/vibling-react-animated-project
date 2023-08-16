@@ -218,7 +218,7 @@ const SignUp = () => {
           )}
           {!success && (
             <div className=" right sign-up col-lg-6 col-md-12 col-sm-12">
-              <div className="right-center-part">
+              <div className="right-center-part p-4">
                 <h2>Create Your Page</h2>
 
                 <div className="inputs-div row">
@@ -335,12 +335,12 @@ const SignUp = () => {
                     <div className="form-group inputs">
                       <select
                         name="country"
-                        className="form-select ms-2"
+                        className="form-select"
                         aria-label="Default select example"
                         style={{
-                          backgroundColor: "transparent",
+                          backgroundColor: "black",
                           color: "white",
-                          padding: 13,
+                          padding: 10,
                           paddingLeft: 21,
                         }}
                         value={Info?.country}
