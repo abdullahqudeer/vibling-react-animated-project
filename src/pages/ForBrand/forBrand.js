@@ -18,7 +18,11 @@ import "./forBrand.scss";
 const ForBrand = () => {
   return (
     <React.Fragment>
-      <div className="brand-main-div">
+      <iframe
+        style={{ width: "100%", height: "99vh" }}
+        src="https://vidbling.vercel.app/brands.html"
+      />
+      {/* <div className="brand-main-div">
         <div style={{ overflow: "hidden",}}>
           <Header  isname={true}  />
           <BrandSuccess />
@@ -35,7 +39,7 @@ const ForBrand = () => {
         <div className="footer">
           <Footer />
         </div>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };
