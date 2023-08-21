@@ -4,21 +4,6 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 
-    .right {
-      .right-center-part {
-        text-align: center;
-
-        h2 {
-          color: #ffffff;
-          opacity: 1;
-          font: normal normal 600 50px/35px Inter;
-        }
-        .success-message {
-          font: normal normal 600 30px/29px Inter;
-        }
-      }
-    }
-
     .left-part {
       .content-div {
         @media (max-width: 1200px) {
