@@ -98,33 +98,75 @@ const SignUp = () => {
       photos: previewSource,
       referrer: Info?.referrer,
       platform: [
-        {
-          name: "Facebook",
-          profileUrl: Info?.facebook,
-        },
-        {
-          name: "Instagram",
-          profileUrl: Info?.instagram,
-        },
-        {
-          name: "Snapchat",
-          profileUrl: Info?.snapchat,
-        },
-        {
-          name: "Youtube",
-          profileUrl: Info?.youtube,
-        },
-        {
-          name: "Pinterest",
-          profileUrl: Info?.pinterest,
-        },
-        {
-          name: "Tiktok",
-          profileUrl: Info?.tiktok,
-        },
+        // {
+        //   name: "Facebook",
+        //   profileUrl: Info?.facebook,
+        // },
+        // {
+        //   name: "Instagram",
+        //   profileUrl: Info?.instagram,
+        // },
+        // {
+        //   name: "Snapchat",
+        //   profileUrl: Info?.snapchat,
+        // },
+        // {
+        //   name: "Youtube",
+        //   profileUrl: Info?.youtube,
+        // },
+        // {
+        //   name: "Pinterest",
+        //   profileUrl: Info?.pinterest,
+        // },
+        // {
+        //   name: "Tiktok",
+        //   profileUrl: Info?.tiktok,
+        // },
       ],
     };
-
+    if (Info?.facebook) {
+      payload?.platform.push({
+        name: "Facebook",
+        profileUrl: Info?.facebook,
+      });
+    }
+    if (Info?.instagram) {
+      payload?.platform.push({
+        name: "Instagram",
+        profileUrl: Info?.instagram,
+      });
+    }
+    if (Info?.snapchat) {
+      payload?.platform.push({
+        name: "Snapchat",
+        profileUrl: Info?.snapchat,
+      });
+    }
+    if (Info?.youtube) {
+      payload?.platform.push({
+        name: "Youtube",
+        profileUrl: Info?.youtube,
+      });
+    }
+    if (Info?.tiktok) {
+      payload?.platform.push({
+        name: "Tiktok",
+        profileUrl: Info?.tiktok,
+      });
+    }
+    if(Info?.twitter){
+      payload?.platform.push({
+        name:"Twitter",
+        profileUrl:Info?.twitter
+      })
+    }
+    if(Info?.pinterest){
+      payload?.platform.push({
+        name:"Twitter",
+        profileUrl:Info?.pinterest
+      })
+    }
+    console.log(payload,"paylooooddddd");
     axios
       .post(`${BASE_URL}/influencer/signup`, payload)
       .then((res) => {
@@ -142,6 +184,7 @@ const SignUp = () => {
           number: "",
           address: "",
           photos: [],
+          platform:""
         });
       })
       .catch((err) => {
