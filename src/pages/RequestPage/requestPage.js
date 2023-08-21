@@ -7,7 +7,7 @@ import thankyou from "../../assets/Images/thankyou.png";
 import Branding from "../../component/Branding/Branding";
 import axios from "axios";
 import { BASE_URL } from "../../constants/axios";
-import TimezoneSelect, { allTimezones } from "react-timezone-select";
+
 const RequestPage = () => {
   const [requestInfo, setRequestInfo] = useState();
   const [isSuccess, setIsSuccess] = useState(false);
