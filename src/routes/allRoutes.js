@@ -6,6 +6,7 @@ import App from "../component/app";
 import SuccessSignUp from "../pages/SuccessSignUp/successSignUp";
 import ForBrand from "../pages/ForBrand/forBrand";
 import RequestPage from "../pages/RequestPage/requestPage";
+import PaymentMethod from "../modals/paymentMethods";
 
 const AllRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AllRoutes = () => {
 
               <Route index path="/forbrand" element={<ForBrand/>} />
               <Route index path="/request-a-demo" element={<RequestPage/>}/>
+              <Route index path="/payment" element={<PaymentMethod/>}/>
             </Route>
           </Route>
         </Routes>

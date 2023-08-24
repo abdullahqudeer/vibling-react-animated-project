@@ -10,9 +10,11 @@ import countryList from "react-select-country-list";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import loadingimg from "../../assets/videos/Loading.gif";
 import Header from "../../component/Header/Header";
+import PaymentMethods from "../../modals/paymentMethods";
 
 const SignUp = () => {
   const [Info, setInfo] = useState();
+  const [openAddModal, setOpenAddModal] = useState();
   const [error, setError] = useState(false);
   const [previewSource, setPreviewSource] = useState([]);
   const [mediafiles, setMediaFiles] = useState([]);
@@ -931,10 +933,16 @@ const SignUp = () => {
                         </div>
                       </div>
                     </div>
+                          <button
+                          // onClick={()=>{
+                          //   setOpenAddModal(true)
+                          // }}
+                           onClick={()=>navigate("/payment")}
+                           >abcddd</button>
 
                     <div className="footer-span-div d-flex justify-content-center">
                       <span className="span-1 text-[#94A3B8]">
-                        Already have an accoun?
+                        Already have an account?
                       </span>
                       <span className="span-2 mx-2">Login</span>
                     </div>
@@ -954,6 +962,9 @@ const SignUp = () => {
           )}
         </div>
       </div>
+      {/* {openAddModal && (
+        <PaymentMethods data={openAddModal} onClose={() => setOpenAddModal()} />
+      )} */}
     </React.Fragment>
   );
 };
