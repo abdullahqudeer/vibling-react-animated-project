@@ -7,6 +7,7 @@ import thankyou from "../../assets/Images/thankyou.png";
 import Branding from "../../component/Branding/Branding";
 import axios from "axios";
 import { BASE_URL } from "../../constants/axios";
+import { useNavigate } from "react-router-dom";
 const RequestPage = () => {
   const [requestInfo, setRequestInfo] = useState();
   const [isSuccess, setIsSuccess] = useState(false);
@@ -20,7 +21,7 @@ const RequestPage = () => {
     twitter: false,
     pinterest: false,
   });
-
+  const navigate = useNavigate();
   const [value, onChange] = useState(new Date());
   const [tz, setTz] = useState(
     Intl.DateTimeFormat().resolvedOptions().timeZone
@@ -87,19 +88,28 @@ const RequestPage = () => {
       console.log(res, "siiii");
       setIsSuccess(true);
       if (res && res.data.code === 200)
-        setRequestInfo({
-          firstName: "",
-          lastName: "",
-          company: "",
-          workEmail: "",
-          password: "",
-          revenue: "",
-          goals: "",
-          currentlySelling: "",
-          annualInfluencerBudget: "",
-          brandPlatform: "",
-        });
-      window.open("https://calendly.com/zalitni-vidbling/30min");
+        localStorage.setItem(
+          "userdata",
+          JSON.stringify({
+            email: requestInfo?.workEmail,
+            userId: res.data.data._id,
+          })
+        );
+      setRequestInfo({
+        firstName: "",
+        lastName: "",
+        company: "",
+        workEmail: "",
+        password: "",
+        revenue: "",
+        goals: "",
+        currentlySelling: "",
+        annualInfluencerBudget: "",
+        brandPlatform: "",
+      });
+      navigate("/payment");
+
+      // window.open("https://calendly.com/zalitni-vidbling/30min");
     });
   };
   return (
@@ -130,12 +140,14 @@ const RequestPage = () => {
               <div className="right-part col-lg-6 col-md-12 col-sm-12">
                 <div className="book-demo mx-3 p-4">
                   <h3>See the Power of Vidbling Today</h3>
+                  {/* <form handleSubmit={handleSubmit}> */}
                   <div className="inputs-div">
                     <div className="form-group inputs">
                       <input
                         type="text"
                         className="form-control inputs me-0"
                         placeholder="First Name"
+                        required
                         value={requestInfo?.firstName}
                         onChange={(e) => {
                           setRequestInfo({
@@ -154,6 +166,7 @@ const RequestPage = () => {
                       <input
                         type="text"
                         className="form-control inputs me-0"
+                        required
                         placeholder="Last Name"
                         value={requestInfo?.lastName}
                         onChange={(e) => {
@@ -173,6 +186,7 @@ const RequestPage = () => {
                       <input
                         type="text"
                         className="form-control inputs me-0"
+                        required
                         placeholder="Company"
                         value={requestInfo?.company}
                         onChange={(e) => {
@@ -192,6 +206,7 @@ const RequestPage = () => {
                       <input
                         type="text"
                         className="form-control inputs me-0"
+                        required
                         placeholder="Work Email Address"
                         value={requestInfo?.workEmail}
                         onChange={(e) => {
@@ -209,8 +224,9 @@ const RequestPage = () => {
                     </div>
                     <div className="form-group inputs">
                       <input
-                        type="text"
+                        type="password"
                         className="form-control inputs me-0"
+                        required
                         placeholder="Password"
                         value={requestInfo?.password}
                         onChange={(e) => {
@@ -230,6 +246,7 @@ const RequestPage = () => {
                       <input
                         type="text"
                         className="form-control inputs me-0"
+                        required
                         placeholder="Current revenue?"
                         value={requestInfo?.revenue}
                         onChange={(e) => {
@@ -249,6 +266,7 @@ const RequestPage = () => {
                       <input
                         type="text"
                         className="form-control inputs me-0"
+                        required
                         placeholder="What Goals You Want To Accomplish Through Vidbling?"
                         value={requestInfo?.goals}
                         onChange={(e) => {
@@ -268,6 +286,7 @@ const RequestPage = () => {
                       <input
                         type="text"
                         className="form-control inputs me-0"
+                        required
                         placeholder="where are You Selling Currently?"
                         value={requestInfo?.currentlySelling}
                         onChange={(e) => {
@@ -290,6 +309,7 @@ const RequestPage = () => {
                       <div className="col-lg-7 col-md-12 col-sm-12 p-0">
                         <select
                           className="annual-budget"
+                          required
                           style={{
                             backgroundColor: "black",
                             color: "white",
@@ -486,10 +506,12 @@ const RequestPage = () => {
                         </div>
                       </div>
                     </div>
+
                     <p className="privacy-policy mt-4">
                       Vidbling <span> Privacy Policy</span>
                     </p>
                   </div>
+                  {/* </form> */}
                 </div>
               </div>
             </div>

@@ -106,30 +106,41 @@ const CheckoutForm = () => {
       setProcessing(true);
     }
 
-    const payload = await stripe.createPaymentMethod({
+    const createPaymentMethod = await stripe.createPaymentMethod({
       type: "card",
       card: elements.getElement(CardElement),
       billing_details: billingDetails,
     });
+    console.log(createPaymentMethod.paymentMethod.id, "paaaa");
 
     setProcessing(false);
 
-    if (payload.error) {
-      setError(payload.error);
+    if (createPaymentMethod.error) {
+      setError(createPaymentMethod.error);
     } else {
-      setPaymentMethod(payload.paymentMethod);
+      addpaymentdetail(createPaymentMethod);
     }
   };
-  const addpaymentdetail = () => {
+
+  const addpaymentdetail = (createPaymentMethod) => {
+    console.log(createPaymentMethod.paymentMethod.id, "-------------");
+
+    let userdata = JSON.parse(localStorage.getItem("userdata"));
+    console.log(userdata, "userdataaa");
     let payload = {
-      payment_method_id: "",
-      TotalAmount: "$299",
-      email: "",
+      payment_method_id: createPaymentMethod.paymentMethod.id,
+      TotalAmount: "299",
+      email: userdata.email,
+      userId: userdata.userId,
+      customerId: "",
     };
     console.log(payload, "payload");
     axios
       .post(`${BASE_URL}/payment/pay`, payload)
-      .then((res) => {})
+      .then((res) => {
+        setPaymentMethod(createPaymentMethod.paymentMethod);
+        localStorage.removeItem("userdata");
+      })
       .catch((err) => {
         console.log(err);
       });
@@ -149,7 +160,7 @@ const CheckoutForm = () => {
   return paymentMethod ? (
     <div className="Result">
       <div className="ResultTitle" role="alert">
-        Payment successful {paymentMethod.id}
+        Payment successfully
       </div>
 
       <ResetButton onClick={reset} />
@@ -165,8 +176,13 @@ const CheckoutForm = () => {
         />
       </fieldset>
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
-      <SubmitButton processing={processing} error={error} disabled={!stripe}>
-        Pay $25
+      <SubmitButton
+        processing={processing}
+        error={error}
+        disabled={!stripe}
+        onClick={addpaymentdetail}
+      >
+        Pay
       </SubmitButton>
     </form>
   );
@@ -180,7 +196,9 @@ const ELEMENTS_OPTIONS = {
   ],
 };
 
-const stripePromise = loadStripe("pk_test_6pRNASCoBOKtIshFeQd4XMUh");
+const stripePromise = loadStripe(
+  "pk_test_51NVVzsSDfpupfTYPUg9dfZ9VkM7tjPSAOWxlL20GD5FqMs1jNkaBwIok0bzj5ShRvbxI2R7nFIdgjUWQoOsF83Wd00WcByZmmr"
+);
 
 const App = () => {
   return (

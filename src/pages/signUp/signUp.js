@@ -45,7 +45,7 @@ const SignUp = () => {
   const imageupload = async (acceptedFiles) => {
     let temp = Object.assign([], previewSource);
     try {
-      if (acceptedFiles.length + previewSource.length < 5) {
+      if (acceptedFiles.length + previewSource.length <= 5) {
         setLoading(true);
 
         let array = Object.assign([], acceptedFiles);
@@ -156,19 +156,19 @@ const SignUp = () => {
         profileUrl: Info?.tiktok,
       });
     }
-    if(Info?.twitter){
+    if (Info?.twitter) {
       payload?.platform.push({
-        name:"Twitter",
-        profileUrl:Info?.twitter
-      })
+        name: "Twitter",
+        profileUrl: Info?.twitter,
+      });
     }
-    if(Info?.pinterest){
+    if (Info?.pinterest) {
       payload?.platform.push({
-        name:"Twitter",
-        profileUrl:Info?.pinterest
-      })
+        name: "Twitter",
+        profileUrl: Info?.pinterest,
+      });
     }
-    console.log(payload,"paylooooddddd");
+    console.log(payload, "paylooooddddd");
     axios
       .post(`${BASE_URL}/influencer/signup`, payload)
       .then((res) => {
@@ -186,7 +186,7 @@ const SignUp = () => {
           number: "",
           address: "",
           photos: [],
-          platform:""
+          platform: "",
         });
       })
       .catch((err) => {
@@ -232,7 +232,7 @@ const SignUp = () => {
           </div>
           {success && (
             <div
-              className="right  thankyou col-lg-6 col-md-12 col-sm-12 "
+              className="right thankyou col-lg-6 col-md-12 col-sm-12"
               style={{ paddingBottom: 0 }}
             >
               <div className="right-center-part">
@@ -262,11 +262,11 @@ const SignUp = () => {
             </div>
           )}
           {!success && (
-            <div className=" right sign-up col-lg-6 col-md-12 col-sm-12">
+            <div className="right sign-up col-lg-6 col-md-12 col-sm-12">
               <div className="right-center-part p-4">
                 <h2>Create Your Page</h2>
 
-                <div className="inputs-div row">
+                <div className="form inputs-div row">
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="form-group inputs">
                       <input
@@ -933,12 +933,6 @@ const SignUp = () => {
                         </div>
                       </div>
                     </div>
-                          <button
-                          // onClick={()=>{
-                          //   setOpenAddModal(true)
-                          // }}
-                           onClick={()=>navigate("/payment")}
-                           >abcddd</button>
 
                     <div className="footer-span-div d-flex justify-content-center">
                       <span className="span-1 text-[#94A3B8]">
