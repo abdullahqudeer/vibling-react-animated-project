@@ -224,13 +224,14 @@ const SignUp = () => {
               <p className="inf2-div fw-semibold mb-0" style={{ fontSize: 22 }}>
                 Power of AI-driven matching on Vidbling{" "}
               </p>
-              <p style={{ fontSize: 18, fontWeight: "normal" }}>
+              <p style={{ fontSize: 18, fontWeight: "normal" }} className="px-3">
                 where creators like you connect with brands that understand and
                 appreciate your creative vision
               </p>
             </div>
           </div>
           {success && (
+            <div className="row">
             <div
               className="right thankyou col-lg-6 col-md-12 col-sm-12"
               style={{ paddingBottom: 0 }}
@@ -260,11 +261,12 @@ const SignUp = () => {
                 <p className="mb-0">The Vidbling Team</p>
               </div>
             </div>
+            </div>
           )}
           {!success && (
             <div className="right sign-up col-lg-6 col-md-12 col-sm-12">
               <div className="right-center-part p-4">
-                <h2>Create Your Page</h2>
+                <h1>Create Your Page</h1>
 
                 <div className="form inputs-div row">
                   <div className="col-lg-6 col-md-6 col-sm-12">

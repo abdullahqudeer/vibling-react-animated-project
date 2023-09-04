@@ -8,7 +8,7 @@
   .left {
     .left-center-part {
       .sign-connect {
-        animation: slideIn 3.2s forwards ease-in-out infinite;
+        animation: slideIn 3.2s forwards infinite;
         animation-delay: 3s;
         opacity: 0;
       }
@@ -21,7 +21,7 @@
         }
         .clb {
           margin-top: -20px;
-          animation: slideIn 3.2s forwards ease-in-out infinite;
+          animation: slideIn 3.2s forwards infinite;
           animation-delay: 3s;
           opacity: 0;
         }
@@ -46,7 +46,7 @@
             0% 0% no-repeat padding-box;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          animation: slideIn 3s forwards ease-in-out infinite;
+          animation: slideIn 3s forwards infinite;
           animation-delay: 3s;
           opacity: 0;
         }
@@ -63,8 +63,6 @@
   .right {
     overflow-y: scroll;
     max-height: 100vh;
-    padding-bottom: 20rem !important;
-    overflow-y: scroll;
     scrollbar-width: thin;
     -ms-overflow-style: none;
     scrollbar-color: transparent transparent;
@@ -140,19 +138,33 @@
     }
 
     .right-center-part {
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // flex-direction: column;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       background-color: #380f42;
       opacity: 0.8;
 
       border-radius: 24px;
 
-      .h2 {
+      h1 {
+        text-align: center;
         color: #ffffff;
+        font-weight: bold;
+
         opacity: 1;
-        font: normal normal 600 24px/29px Inter;
+        // font: normal normal 600 24px/29px Inter;
+        background: transparent
+        linear-gradient(
+          90deg,
+          #b827dc 20%,
+          #a322de 40%,
+          #4190f5 86%,
+          #6bdef8 100%
+        )
+        0% 0% no-repeat padding-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       }
 
       .top-btn-div {
@@ -347,15 +359,14 @@
   }
 }
 @media (max-width: 572px) {
-  .signup-main-div {
-    overflow: scroll !important;
 
     .right {
-      overflow: hidden;
-      max-height: 100%;
-      margin-top: 70px;
+      overflow-y: hidden;
+        max-height: 100%;
+        padding-left: 20px;
+      margin-top: 50px !important;
     }
-  }
+  
 }
 
 @media (max-width: 992px) {
