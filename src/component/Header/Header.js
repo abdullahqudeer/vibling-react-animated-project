@@ -45,9 +45,9 @@ const Header = (props) => {
                 </p>
               </>
             )}
-            <p className="mx-3 mt-1">About Us</p>
+            {/* <p className="mx-3 mt-1">About Us</p> */}
             <div className="d-flex justify-content-center">
-              <button className="login mx-3 d-flex">Login</button>
+              <button className="login mx-3 d-flex" onClick={() => navigate("/signup")}>Signup</button>
             </div>
           </div>
         </nav>
