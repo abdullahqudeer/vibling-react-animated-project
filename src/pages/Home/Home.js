@@ -20,11 +20,7 @@ import Header from "../../component/Header/Header";
 const Home = () => {
   return (
     <div>
-      <iframe
-        style={{ width: "100%", height: "99vh" }}
-        src="https://vidbling.vercel.app/creators.html"
-      />
-      {/* <Header/>
+      <Header/>
       <div className="home-main-div container">
         <Unleash />
       </div>
@@ -50,7 +46,7 @@ const Home = () => {
       <div className="home-main-div container">
         <JoinNow />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 };

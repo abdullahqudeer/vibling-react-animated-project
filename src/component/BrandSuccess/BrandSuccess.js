@@ -78,7 +78,7 @@ const BrandSuccess = () => {
                   </div>
                 </div>
               </div>
-              <div class="mt-4 d-flex  align-items-center social-media-icons justify-content-center justify-content-md-start">
+              <div className="mt-4 d-flex  align-items-center social-media-icons justify-content-center justify-content-md-start">
                 <img
                   width={40}
                   height={40}
